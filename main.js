@@ -125,6 +125,8 @@ function startGame() {
 
     }
 
+    // Ensure creatures are displayed before attempting to get the selected creature
+    showCreatures("Fire"); // Replace "Fire" with the desired default power if needed
     const myCreature = getSelectedCreature();
     console.log(myCreature);
 
@@ -193,26 +195,28 @@ function startGame() {
 
     }
 
-    function selectCreature() {
-
-        const selectedCreature = document.querySelector("input[name='creature'].checked");
-
-        if (!selectedCreature) {
-
-            alert("Please pick a creature on the list");
-            return;
-        }
-        alert(`You selected III : ${selectedCreature.id}`);
-    }
 
 
 }
-
 
 function selectWater() {
     console.log("Water selected");
     alert("Water selected");
 }
+
+
+function selectCreature() {
+
+    const selectedCreature = document.querySelector("input[name='creature']:checked");
+
+    if (!selectedCreature) {
+
+        alert("Please pick a creature on the list");
+        return;
+    }
+    alert(`You selected III : ${selectedCreature.id}`);
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
         
@@ -224,7 +228,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-
 
 
 window.addEventListener("load", startGame );
