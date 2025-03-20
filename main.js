@@ -2,37 +2,36 @@ console.log("Hello World");
 function startGame() {
 
     const creaturesByPower = {
-        Fire: ["Phoenix", "Sphinx", "Dragon"],
-        Water: ["catFish", "Piranha", "eel", "Hippo"],
-        Snow: ["Seal", "whiteBear", "orca", "blueWhale","Ice Dragon"],
-        Forest: ["Fox", "Wolf", "Grizzly Bear", "Deer"],
-        Air : [ "Eagle", "Owl", "Hawk", "Falcon"],
-        Earth: ["Elephant", "Rhino", "Gorilla", "Lion"],
-        tree : ["Oak", "Pine", "Maple", "Birch"],
-        rock : ["Granite", "Marble", "Slate", "Sandstone"],
-        light : ["Sun", "Moon", "Star", "Lightning"],
-        dark : ["Shadow", "Night", "Eclipse", "Black Hole"],
-        space : ["Alien","Galaxy", "Nebula", "Quasar", "Black Hole"],
-        time : ["Past", "Present", "Future", "Era"],
-        Poison: ["Snake", "Scorpion", "Spider", "Wasp","SeaUrchin"],
-        Ice: ["Iceberg", "Glacier", "Ice Cube", "Ice Cream"],
-        Lava: ["Volcano", "Magma", "Lava Flow", "Lava Lamp"],
+
+        Fire: ["Phoenix", "Sphinx", "Dragon","WildFire"],
+        Water: ["catFish", "Piranha", "eel", "Hippo", "Dolphin", "Shark", "Whale","SeaSerpent"],
+        Snow: ["Seal", "WhiteBear", "Orca", "BlueWhale","IceDragon"],
+        Forest: ["Fox", "Wolf", "Grizzly Bear", "Deer","Oak","Pine", "Maple",],
+        Air : [ "Parrot","Eagle", "Owl", "Hawk", "Falcon",],
+        Earth: ["Elephant", "Rhino", "Gorilla", "Lion","Mammoth"],
+        Light: ["Sun", "Moon", "Star", "Lightning", "SuperNova"],
+        River: ["Fish", "trout","Otter", "Beaver", "Duck", "Swan", "Salmon","Waterfall",],
+        Poison: ["Snake", "Scorpion", "Spider", "Wasp","SeaUrchin","GlobeFish"],
+        Ice: ["Iceberg", "Glacier","SnowStorm", "IceCube", "iceDragon"],
         Desert: ["Cactus", "YellowScorpion", "desertsnake", "Vulture", "Camel"],
-        Jungle: ["Tiger", "Monkey", "Parrot", "Anaconda"],
-        Mountain: ["Goat", "Eagle", "Bear", "Mountain Lion"],
-        Ocean: ["Shark", "Whale", "Octopus", "Jellyfish"],
-        Sky: ["Cloud", "Rainbow", "Sunset", "Meteor"],
+        Mountain: ["Goat", "Eagle", "Bear", "MountainLion","rock","cliff","Granite"],
+        Sky: ["Cloud", "Rainbow", "Sunset", "Meteor","Eclipse"],
         Swamp: ["Alligator", "Mosquito", "Frog", "Flamingo", "crocodrile"],
-        Volcano: ["Lava", "Ash", "Smoke", "Fire"],
-        Forest: [ "Bison", "Deer", "Fox", "Wolf"],
-        Jungle: ["Tiger", "Monkey", "Parrot", "giraffe"],
-        Sea: ["Fish", "Shark", "Whale", "Octopus", "Jellyfish", "elver", "squid"],
-        wWind: ["Breeze", "Gust", "Tornado", "Hurricane"],
-        Storm: ["Rain", "Flood", "Tsunami", "Waterfall"],
-        Earthquake: ["Tremor", "Quake", "Aftershock", "Fault"],
-        Blizzard: ["Snow", "Ice", "Cold", "Frost"],
-        Tornado: ["Twister", "Vortex", "Funnel", "Cyclone"],
-        Hurricane: ["Typhoon", "Cyclone", "Storm", "Tornado"],
+        Volcano: ["Lava", "Ash", "Smoke", "magma","Eruption"],
+        Forest: ["Beetle","Hive", "raccoon","Bison", "Deer", "Fox", "Wolf","Bear","Owl","Raven","BaldEagle"],
+        Jungle: ["Lizard","Tiger", "Monkey","ostrich" , "Orangutan", "Lion","giraffe","Buffalo","Elephant"],
+        Sea: ["seaFish", "Shark", "Whale", "Octopus", "Jellyfish", "elver", "squid","seahorse","Starfish","SeaTurtle"],
+        Wind: ["Breeze", "Gust", "Twister", "Typhoon","Hurricane"],
+        Storm: ["Breeze","Thunder","Lightning","Rain", "Flood", "Typhoon","Twister" ,"Vortex","Hurricane"],
+        Disasters: ["Flood", "Drought","Earthquake","Tsunami", "Landslide"],
+        Darkness : ["Shadow", "Night", "Eclipse", "BlackHole"],
+        OuterSpace: ["Planet", "Alien", "Galaxy", "Nebula", "Quasar", "BlackHole"],
+        Cold: ["Snow", "Ice", "SnowStorm", "Frost","WaterWave"],
+        Monster: ["Witch","Goblin", "Ogre", "Troll", "Dragon", "Cyclops", "Minotaur", "Sasquatch"],
+        SeaMonster: ["Kraken", "Hydra","MerMaid", "SeaSerpent", "SeaDragon"],
+        UnderGround: [ "Ghost", "Witch", "Demon", "Vampire", "Zombie", ] ,
+        Mythical: ["Elf", "Unicorn", "Griffin", "Centaur","harpy" , "Sphinx", "Phoenix", "Dragon", "Fairy", "EvilEye"],
+       
     };
 
     let selectFire = document.getElementById("fire-btn--select");
@@ -61,8 +60,8 @@ function startGame() {
             console.log(creaturesByPower[selectedPower]);
             showCreaturesOnConsole(selectedPower);
             //showCreaturesOnAlert(selectedPower);
-            checkedSelectedCreature();
-            getSelectedCreature();
+            // checkedSelectedCreature();
+            // getSelectedCreature();
             showCreatures(selectedPower);
 
         });
@@ -195,8 +194,6 @@ function startGame() {
 
     }
 
-
-
 }
 
 function selectWater() {
@@ -208,13 +205,20 @@ function selectWater() {
 function selectCreature() {
 
     const selectedCreature = document.querySelector("input[name='creature']:checked");
+    let playerCreature = selectedCreature.id;
+    console.log(playerCreature);
+    let playerCreatureName = document.getElementById("player-creature--name");
 
     if (!selectedCreature) {
 
         alert("Please pick a creature on the list");
         return;
     }
-    alert(`You selected III : ${selectedCreature.id}`);
+    const capitalizedCreature = playerCreature.charAt(0).toUpperCase() + playerCreature.slice(1);
+    alert(`You selected III : ${capitalizedCreature}`);
+    playerCreatureName.innerHTML = `Your have Chosen: ${capitalizedCreature} as your Creature and it `;
+    console.log(playerCreatureName);
+    return playerCreature;
 }
 
 
