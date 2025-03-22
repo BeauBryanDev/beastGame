@@ -226,6 +226,7 @@ function startGame() {
             const computerCreature = computerPlay();
             console.log(`Computer selected creature: ${computerCreature}`);
         });
+
     }
 
     let computerCreature = computerPlay();
@@ -237,6 +238,12 @@ function startGame() {
 
     let computerCreatureName = document.getElementById("computer-creature--name");
     computerCreatureName.innerHTML = `Computer has Chosen: ${computerCreature} as its Creature`;
+
+
+    
+
+    //End of the Game Function() ...
+
 }
 
 function selectWater() {
@@ -277,8 +284,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-
-   
 
 
 
