@@ -127,3 +127,9 @@ button:hover {
     list-style :armenian;
     padding: 0;
 }
+
+.inactive {
+
+    display: none;
+    
+}

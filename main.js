@@ -1,4 +1,19 @@
 console.log("Hello World");
+
+// Function to start the game
+// This function will be called when the window is loaded
+// It will contain all the game logic
+// It will be responsible for starting the game
+// It will be responsible for getting the selected creature
+// It will be responsible for getting the computer's selected creature
+// It will be responsible for displaying the selected creatures
+// It will be responsible for displaying the computer's selected creature
+// It will be responsible for displaying the player's selected creature
+// It will be responsible for displaying the computer's selected creature
+// It will be responsible for displaying the selected creatures
+
+let playerAttack;
+
 function startGame() {
 
     const creaturesByPower = {
@@ -45,7 +60,7 @@ function startGame() {
     let selectWaterBtn = document.getElementById("water-btn--select");
     selectWaterBtn.addEventListener("click", selectWater );
 
-    const creatureContainer = document.getElementById("Choose-Creature");
+    let creatureContainer = document.getElementById("Creature-Container");
 
     const powerButtons = document.querySelectorAll(".rootElements button");
 
@@ -164,7 +179,7 @@ function startGame() {
         h2Power.textContent = `Your have Chosen  ${power}, Then these are Creatures of ${power}`;
         creatureContainer.appendChild(h2Power);
 
-        //create an h2 title inside choose-creature div
+        //create an h2 title inside Creature-Container div
         const h2Title = document.createElement("h2");
         h2Title.textContent = "Choose your Creature";
         creatureContainer.appendChild(h2Title);
@@ -233,14 +248,73 @@ function startGame() {
 
     console.log(`Computer selected creature: ${computerCreature}`); 
 
-    // let playerCreature = getSelectedCreature();
-    // console.log(`Player selected creature: ${playerCreature}`);
+    let playerCreature = getSelectedCreature();
+    console.log(`Player selected creature: ${playerCreature}`);
 
     let computerCreatureName = document.getElementById("computer-creature--name");
-    computerCreatureName.innerHTML = `Computer has Chosen: ${computerCreature} as its Creature`;
+    // computerCreatureName.innerHTML = `Computer has Chosen: ${computerCreature} as its Creature`;
+
+    // Ensure the computer chooses its creature after the user has chosen theirs
+    chooseCreatureBtn.addEventListener("click", function () {
+
+        const selectedCreature = document.querySelector("input[name='creature']:checked");
+        if (!selectedCreature) {
+            alert("Please select a creature before proceeding.");
+            return;
+        }
+
+        const computerCreature = computerPlay();
+        console.log(`Computer selected creature: ${computerCreature}`);
+        computerCreatureName.innerHTML = `Computer has Chosen: ${computerCreature} as its Creature`;
+    });
+    // Manipulate the DOM in oder to clear the container and display the selected creatures and its svg pictures ...
+    // Create a function that will display the selected creatures and its svg pictures ...
 
 
-    
+
+    function displaySelectedCreatures() {
+
+        //clear the container 
+        const battleContainer = document.getElementById("battle-Container");
+        battleContainer.innerHTML = "";
+        const chosenCreatueres = document.createElement("h2");
+        const thisCreatuere = selectCreature();
+        chosenCreatueres.textContent = `Your have Chosen  ${thisCreatuere}, and the Computer has Chosen ${computerCreature} as its Creature`;
+        battleContainer.appendChild(chosenCreatueres);
+
+        const playerCreatureDiv = document.createElement("div");
+        playerCreatureDiv.classList.add("creature-card");
+
+        playerCreatureDiv.innerHTML = `
+            <h3>Your Creature</h3>io" name="creature" id="${thisCreatuere.toLowerCase()}" />
+            <label for="${playerAttack = document.getElementById("player-creature--name")}">${thisCreatuere}</label>
+            <img src="./creatures/${thisCreatuere.toLowerCase()}.svg" alt="${thisCreatuere} Creature" class="creature-image">
+            <input type="radayerCreature.toLowerCase()}">${thisCreatuere}</label>
+            <img src="./creatures/${thisCreatuere.toLowerCase()}.svg" alt="${thisCreatuere} Creature" class="creature-image">
+        `;
+        creatureContainer.appendChild(playerCreatureDiv);
+
+        const computerCreatureDiv = document.createElement("div");
+        computerCreatureDiv.classList.add("creature-card");
+        computerCreatureDiv.innerHTML = `
+            <h3>Computer's Creature</h3>
+            <input type="radio" name="creature" id="${computerCreature.toLowerCase()}" />
+            <label for="${computerCreature.toLowerCase()}">${computerCreature}</label>
+            <img src="./creatures/${computerCreature.toLowerCase()}.svg" alt="${computerCreature} Creature" class="creature-image">
+        `;
+        creatureContainer.appendChild(computerCreatureDiv);
+
+    }
+
+    const battleBtn = document.getElementById("battle--btn");
+
+    if (battleBtn) {
+        battleBtn.addEventListener("click", function () {
+            displaySelectedCreatures();
+        });
+    } else {
+        alert("You have to pick a creature before you can battle");
+    }
 
     //End of the Game Function() ...
 
@@ -266,7 +340,7 @@ function selectCreature() {
     }
     const capitalizedCreature = playerCreature.charAt(0).toUpperCase() + playerCreature.slice(1);
     alert(`You selected III : ${capitalizedCreature}`);
-    playerCreatureName.innerHTML = `Your have Chosen: ${capitalizedCreature} as your Creature and it `;
+    playerCreatureName.innerHTML = `Your have Chosen: ${capitalizedCreature} as your Creature, `;
     console.log(playerCreatureName);
     return playerCreature;
 }

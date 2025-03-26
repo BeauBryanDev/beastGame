@@ -54,7 +54,7 @@
 
     </section>
 
-    <section id="Choose-Creature" >
+    <section id="Creature-Container">
         <h2>Choose your Creature </h2>
       
         <div class="creature-card">
@@ -65,12 +65,29 @@
 
     </section>
 
-    <button id="select-creature--btn" type="button"> Choose Creature </button>
+    <section id="select-your-creature">
 
-        <p><span id="player-creature--name"></span> has <span id="player-creature--lives"> 3</span> lives .</p>
-        <p><span id="computer-creature--name"></span> and it has <span id="pc-creature--lives">3</span> lives .</p>
+        <h3> Select a Creature on the List </h3>
+        <button id="select-creature--btn" type="button"> Choose Creature </button>
+
+        <p><span id="player-creature--name"></span>it has <span id="player-creature--lives"> 3</span> lives .</p>
+        <p><span id="computer-creature--name"></span>it and it has <span id="pc-creature--lives">3</span> lives .</p>
+
+        
+    </section>
+
+    <section id="battle-Container">
+
+        <h2> Battle </h2>
+        <p id="playver-vs-computer"> <span id="player-creature"></span> vs <span id="computer-creauture"></span></p>
+        <link rel="stylesheet" href="./buttonStyles.css">
+        <script src="./buttonLogic.js"></script>
+        <button id="battle--btn"> Fight </button>
+        <p> <span id="player-attack--name"></span> </p>
+        <p> <span id="computer-attack--name"></span> </p>
 
     </section>
+
     <section id="msg">
         <p>
             creature attack <span> Fire </span>
