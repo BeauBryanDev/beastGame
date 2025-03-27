@@ -14,7 +14,7 @@
 //The object should have at least 3 different creatures
 //The object should have at least 3 different attacks
 
-const FirecreaturesAttacks = { 
+export const FireCreaturesAttacks = { 
 
     Dragon: { 
 
