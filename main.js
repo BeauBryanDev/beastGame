@@ -258,7 +258,9 @@ function startGame() {
     battleContainer.style.borderRadius = "10px";
     battleContainer.style.backgroundColor = "lightgrey";
     battleContainer.style.gap = "10px";
-        
+    
+    // let thisCreatuere = getSelectedCreature();
+    // let currentPower = getSelectedPower(thisCreatuere);
 
     function displaySelectedCreatures() {
 
@@ -267,7 +269,7 @@ function startGame() {
         battleContainer.innerHTML = "";
         const chosenCreatueres = document.createElement("h2");
         const thisCreatuere = selectCreature();
-        chosenCreatueres.textContent = `Your have Chosen  ${thisCreatuere}, and the Computer has Chosen ${computerCreature} as its Creature`;
+        chosenCreatueres.textContent = `Your have Chosen  ${thisCreatuere}, and the Web Browser has Chosen ${computerCreature} as its Creature`;
         battleContainer.appendChild(chosenCreatueres);
         const fightingField = document.createElement("div");
         fightingField.classList.add("fighting-field");
@@ -292,7 +294,6 @@ function startGame() {
         battleContainer.appendChild(fightingField);
 
         let currentPower = getSelectedPower(thisCreatuere);
-
         console.log("this is the current player Power here : ", currentPower);
 
         //Set div container for the computer creature ...
@@ -328,35 +329,60 @@ function startGame() {
         const h3Attacks = document.createElement("h3");
         h3Attacks.textContent = "Choose your Attack";
         myAttacks.appendChild(h3Attacks);
-        const attacks = attacksByPower.Fire;
+        let thisCreatuere = getSelectedCreature();
+        let currentPower = getSelectedPower(thisCreatuere);
+        const attacks = attacksByPower[currentPower];
         console.log(attacks);
-        //battleContainer.appendChild(myAttacks);
+        battleContainer.appendChild(myAttacks);
         attacks.forEach(attack => {
 
             const attackBtn = document.createElement("button");
             attackBtn.textContent = attack.name;
+            //set styles to attackBtns 
+            attackBtn.style.padding = "10px";
+            attackBtn.style.margin = "10px";
+            attackBtn.style.border = "2px solid black";
+            attackBtn.style.borderRadius = "10px";
+            attackBtn.style.cursor = "pointer";
+            attackBtn.style.fontSize = "1.2rem";
+            attackBtn.style.backgroundColor = attack.BackGroundColor; 
+            attackBtn.style.color = "black";
             attackBtn.id = attack.name.toLowerCase().split(" ").join("-");
+            console.log(attackBtn.id);
             attackBtn.classList.add("attack-btn");
             myAttacks.appendChild(attackBtn);
 
         });
         
+        let attackBtns = document.querySelectorAll(".attack-btn");
+        attackBtns.forEach(attackBtn => {
+            attackBtn.addEventListener("click", function() {
+                playerAttack = attackBtn.id;
+                console.log(playerAttack);
+                // const computerAttack = computerChooseAttack( computerCreature );
+                // console.log(`Computer selected attack: ${computerAttack}`);
+                // battle(playerAttack, computerAttack);
+                
+            });
+            
+        });
 
+        return playerAttack;
 
     }
+
+    
 
     function attack() { 
 
-        const playerAttack = document.querySelector("input[name='attack']:checked");
-        if (!playerAttack) {
-            alert("Please select an attack before proceeding.");
-            return;
-        }
-
-        console.log(`Player selected attack: ${playerAttack.id}`);
-        return playerAttack.id;
+        let playerAttack = showAvailableAttacks();
+        console.log(playerAttack);
+        let computerAttack = computerChooseAttack(computerCreature);
+        console.log(`Computer selected attack: ${computerAttack}`);
+        battle(playerAttack, computerAttack);        
 
     }
+
 
     const battleBtn = document.getElementById("battle--btn");
 

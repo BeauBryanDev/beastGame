@@ -20,7 +20,8 @@ export const attacksByPower = {
                 WildFire : 84,
                 Volcano : 86,
             },
-            description : "The Fire Creature throws a fire ball"
+            description : "The Fire Creature throws a fire ball",
+            BackGroundColor : "red",
         },
         { 
             name : "Fire Breath",
@@ -33,7 +34,8 @@ export const attacksByPower = {
                 WildFire : 84,
                 Volcano : 86,
             },
-            description : "The Fire Creature breathes fire"
+            description : "The Fire Creature breathes fire",
+            BackGroundColor : "red",
         },
         { 
             name : "Fire Claw",
@@ -46,7 +48,8 @@ export const attacksByPower = {
                 WildFire : 84,
                 Volcano : 86,
             },
-            description : "The Fire Creature scratches with its claws"
+            description : "The Fire Creature scratches with its claws",
+            BackGroundColor : "red",
         }
     ],
     Water : [
@@ -64,7 +67,8 @@ export const attacksByPower = {
                 SeaSerpent : 86,
             },
 
-            description : "The Water Creature throws a water ball"
+            description : "The Water Creature throws a water ball",
+            BackGroundColor : "blue",
         },
         { 
             name : "Water Flow",
@@ -79,7 +83,8 @@ export const attacksByPower = {
                 Whale : 86,
                 SeaSerpent : 86,
             },
-            description : "The Water Creature breathes water"
+            description : "The Water Creature breathes water",
+            BackGroundColor : "blue",
         },
         { 
             name : "Water Claw",
@@ -94,7 +99,8 @@ export const attacksByPower = {
                 Whale : 86,
                 SeaSerpent : 86,
             },
-            description : "The Water Creature scratches with its claws"
+            description : "The Water Creature scratches with its claws",
+            BackGroundColor : "blue",
         }
     ],
     Snow : [
@@ -108,7 +114,8 @@ export const attacksByPower = {
                 BlueWhale : 84,
                 IceDragon : 86,
             },
-            description : "The Snow Creature throws a snow ball"
+            description : "The Snow Creature throws a snow ball",
+            BackGroundColor : "white",
         },
         { 
             name : "Snow Breath",
@@ -120,7 +127,8 @@ export const attacksByPower = {
                 BlueWhale : 84,
                 IceDragon : 86,
             },
-            description : "The Snow Creature breathes snow"
+            description : "The Snow Creature breathes snow",
+            BackGroundColor  : "white",
         },
         { 
             name : "Snow Claw",
@@ -132,7 +140,8 @@ export const attacksByPower = {
                 BlueWhale : 84,
                 IceDragon : 86,
             },
-            description : "The Snow Creature scratches with its claws"
+            description : "The Snow Creature scratches with its claws",
+            BackGroundColor : "white",
         }
     ],
     Forest : [
@@ -148,7 +157,8 @@ export const attacksByPower = {
                 Pine : 86,
                 Maple : 86,
             },
-            description : "The Forest Creature throws a forest ball"
+            description : "The Forest Creature throws a forest ball",
+            BackGroundColor: "green",
         },
         { 
             name : "Forest Growth",
@@ -162,7 +172,8 @@ export const attacksByPower = {
                 Pine : 86,
                 Maple : 86,
             },
-            description : "The Forest Creature rise roots underground"
+            description : "The Forest Creature rise roots underground",
+            BackGroundColor : "green",
         },
         { 
             name : "Forest Claw",
@@ -177,6 +188,7 @@ export const attacksByPower = {
                 Maple : 86,
             },
             description : "The Forest Creature scratches with its claws",
+            BackGroundColor : "green",
 
         },
         {
@@ -191,7 +203,8 @@ export const attacksByPower = {
                 Pine : 86,
                 Maple : 86,
             },
-            description: "The Forest Creature hits with its body"
+            description: "The Forest Creature hits with its body",
+            BackGroundColor : "green",
         }
     ],  
     Earth : [
@@ -205,7 +218,8 @@ export const attacksByPower = {
                 Lion : 84,
                 Mammoth : 86,
             },
-            description : "The Earth Creature throws a earth ball"
+            description : "The Earth Creature throws a earth ball",
+            BackGroundColor : "brown",
         },
         { 
             name : "EarthQuake",
@@ -217,7 +231,8 @@ export const attacksByPower = {
                 Lion : 84,
                 Mammoth : 86,
             },
-            description : "The Earth Creature breathes earth"
+            description : "The Earth Creature breathes earth",
+            BackGroundColor : "brown",
         },
         { 
             name : "Earth Claw",
@@ -229,7 +244,8 @@ export const attacksByPower = {
                 Lion : 84,
                 Mammoth : 86,
             },
-            description : "The Earth Creature scratches with its claws"
+            description : "The Earth Creature scratches with its claws",
+            BackGroundColor : "brown",
         }
     ],
     River : [
@@ -247,7 +263,8 @@ export const attacksByPower = {
                 FisherBird : 86,
                 Waterfall : 86,
             },
-            description : "The River Creature throws a river ball"
+            description : "The River Creature throws a river ball",
+            BackGroundColor : "lightblue",
         },
         { 
             name : "River Flow",
@@ -263,7 +280,9 @@ export const attacksByPower = {
                 FisherBird : 86,
                 Waterfall : 86,
             },
-            description : "The River elicit a river flow that wipe everything"
+            description : "The River elicit a river flow that wipe everything",
+            BackGroundColor : "lightblue",
+            
         },
         { 
             name : "River Flood",
@@ -279,7 +298,8 @@ export const attacksByPower = {
                 FisherBird : 86,
                 Waterfall : 86,
             },
-            description : "The River Creature drown the enemy"
+            description : "The River Creature drown the enemy",
+            BackGroundColor : "lightblue",
         }
     ],
     Poison : [
@@ -294,7 +314,8 @@ export const attacksByPower = {
                 SeaUrchin : 86,
                 GlobeFish : 86,
             },
-            description : "The Poison Creature throws a poison ball"
+            description : "The Poison Creature throws a poison ball",
+            BackGroundColor : "purple",
         },
         { 
             name : "Poison Sting",
@@ -307,10 +328,11 @@ export const attacksByPower = {
                 SeaUrchin : 86,
                 GlobeFish : 86,
             },
-            description : "The Poison Creature stings with its tail"
+            description : "The Poison Creature stings with its tail",
+            BackGroundColor : "purple",
         },
         { 
-            name : "Poison bite",
+            name : "Poison Bite",
             type : "Poison",
             damage : { 
                 Snake : 24,
@@ -320,7 +342,8 @@ export const attacksByPower = {
                 SeaUrchin : 86,
                 GlobeFish : 86,
             },
-            description : "The Poison Creature bites the enemy"
+            description : "The Poison Creature bites the enemy",
+            BackGroundColor : "purple",
         }
     ],
     Ice : [
@@ -334,7 +357,8 @@ export const attacksByPower = {
                 IceCube : 84,
                 iceDragon : 86,
             },
-            description : "The Ice Creature throws a ice ball"
+            description : "The Ice Creature throws a ice ball",
+            BackGroundColor : "cyan",
         },
         { 
             name : "Ice Breath",
@@ -346,7 +370,8 @@ export const attacksByPower = {
                 IceCube : 84,
                 iceDragon : 86,
             },
-            description : "The Ice Creature breathes ice"
+            description : "The Ice Creature breathes ice",
+            BackGroundColor : "cyan",
         },
         { 
             name : "Ice Claw",
@@ -358,7 +383,8 @@ export const attacksByPower = {
                 IceCube : 84,
                 iceDragon : 86,
             },
-            description : "The Ice Creature scratches with its claws"
+            description : "The Ice Creature scratches with its claws",
+            BackGroundColor : "cyan",
         }
     ],
     Desert : [
@@ -372,7 +398,8 @@ export const attacksByPower = {
                 Vulture : 84,
                 Camel : 86,
             },
-            description : "The Desert Creature throws a desert ball"
+            description : "The Desert Creature throws a desert ball",
+            BackGroundColor : "orange",
         },
         { 
             name : "Desert Wind",
@@ -384,7 +411,8 @@ export const attacksByPower = {
                 Vulture : 84,
                 Camel : 86,
             },
-            description : "The Desert Creature breathes desert wind"
+            description : "The Desert Creature breathes desert wind",
+            BackGroundColor : "orange",
         },
         { 
             name : "Desert Claw",
@@ -396,7 +424,8 @@ export const attacksByPower = {
                 Vulture : 84,
                 Camel : 86,
             },
-            description : "The Desert Creature scratches with its claws"
+            description : "The Desert Creature scratches with its claws",
+            BackGroundColor : "orange",
         }
     ],
     Jungle : [
@@ -416,7 +445,8 @@ export const attacksByPower = {
                 Buffalo : 86,
                 Elephant : 86,
             },
-            description : "The Jungle Creature throws a jungle ball"
+            description : "The Jungle Creature throws a jungle ball",
+            BackGroundColor : "darkgreen",
         },
         { 
             name : "Jungle Wind",
@@ -434,7 +464,9 @@ export const attacksByPower = {
                 Buffalo : 86,
                 Elephant : 86,
             },
-            description : "The Jungle Creature breathes jungle wind"
+            description : "The Jungle Creature breathes jungle wind",
+            BackGroundColor : "darkgreen",
+
         },
         { 
             name : "Jungle Claw",
@@ -452,7 +484,8 @@ export const attacksByPower = {
                 Buffalo : 86,
                 Elephant : 86,
             },
-            description : "The Jungle Creature scratches with its claws"
+            description : "The Jungle Creature scratches with its claws",
+            BackGroundColor : "darkgreen",
         }
     ],
     Sky : [
@@ -466,7 +499,8 @@ export const attacksByPower = {
                 Meteor : 84,
                 Eclipse : 86,
             },
-            description : "The Sky Creature throws a sky ball"
+            description : "The Sky Creature throws a sky ball",
+            BackGroundColor : "skyblue",
         },
         { 
             name : "Sky Wind",
@@ -478,7 +512,8 @@ export const attacksByPower = {
                 Meteor : 84,
                 Eclipse : 86,
             },
-            description : "The Sky Creature breathes sky wind"
+            description : "The Sky Creature breathes sky wind",
+            BackGroundColor : "skyblue",
         },
         { 
             name : "Sky Claw",
@@ -490,7 +525,8 @@ export const attacksByPower = {
                 Meteor : 84,
                 Eclipse : 86,
             },
-            description : "The Sky Creature scratches with its claws"
+            description : "The Sky Creature scratches with its claws",
+            BackGroundColor : "skyblue",
         }
     ],
     Swamp : [
@@ -504,7 +540,8 @@ export const attacksByPower = {
                 Flamingo : 84,
                 crocodrile : 86,
             },
-            description : "The Swamp Creature throws a swamp ball"
+            description : "The Swamp Creature throws a swamp ball",
+            BackGroundColor : "darkcyan",
         },
         { 
             name : "Swamp Wind",
@@ -516,7 +553,8 @@ export const attacksByPower = {
                 Flamingo : 84,
                 crocodrile : 86,
             },
-            description : "The Swamp Creature breathes swamp wind"
+            description : "The Swamp Creature breathes swamp wind",
+            BackGroundColor : "darkcyan",
         },
         { 
             name : "Swamp Claw",
@@ -528,7 +566,8 @@ export const attacksByPower = {
                 Flamingo : 84,
                 crocodrile : 86,
             },
-            description : "The Swamp Creature scratches with its claws"
+            description : "The Swamp Creature scratches with its claws",
+            BackGroundColor : "darkcyan",
         }
     ],
     Volcano : [
@@ -543,7 +582,8 @@ export const attacksByPower = {
                 magma : 84,
                 Eruption : 86,
             },
-            description : "The Volcano Creature throws a volcano ball"
+            description : "The Volcano Creature throws a volcano ball",
+            BackGroundColor : "darkred",
         },
         { 
             name : "Lava Blast",
@@ -555,7 +595,8 @@ export const attacksByPower = {
                 magma : 84,
                 Eruption : 86,
             },
-            description : "The Volcano Creature breathes volcano wind"
+            description : "The Volcano Creature breathes volcano wind",
+            BackGroundColor : "darkred",
         },
         { 
             name : "Volcano Claw",
@@ -567,7 +608,8 @@ export const attacksByPower = {
                 magma : 84,
                 Eruption : 86,
             },
-            description : "The Volcano Creature scratches with its claws"
+            description : "The Volcano Creature scratches with its claws",
+            BackGroundColor : "darkred",
         }
     ],
     Light : [
@@ -582,7 +624,8 @@ export const attacksByPower = {
                 Lightning : 84,
                 SuperNova : 86,
             },
-            description : "The Light Creature throws a light ball"
+            description : "The Light Creature throws a light ball",
+            BackGroundColor : "yellow",
         },
         { 
             name : "Light Wind",
@@ -594,7 +637,8 @@ export const attacksByPower = {
                 Lightning : 84,
                 SuperNova : 86,
             },
-            description : "The Light Creature breathes light wind"
+            description : "The Light Creature breathes light wind",
+            BackGroundColor : "yellow",
         },
         { 
             name : "Light Claw",
@@ -606,7 +650,8 @@ export const attacksByPower = {
                 Lightning : 84,
                 SuperNova : 86,
             },
-            description : "The Light Creature scratches with its claws"
+            description : "The Light Creature scratches with its claws",
+            BackGroundColor : "yellow",
         }
     ],
     Air : [
@@ -621,7 +666,8 @@ export const attacksByPower = {
                 Hawk : 84,
                 Falcon : 86,
             },
-            description : "The Air Creature throws a air ball"
+            description : "The Air Creature throws a air ball",
+            BackGroundColor : "lightgrey",
         },
         { 
             name : "Air Wind",
@@ -633,7 +679,8 @@ export const attacksByPower = {
                 Hawk : 84,
                 Falcon : 86,
             },
-            description : "The Air Creature breathes air wind"
+            description : "The Air Creature breathes air wind",
+            BackGroundColor : "lightgrey",
         },
         { 
             name : "Air Claw",
@@ -645,7 +692,8 @@ export const attacksByPower = {
                 Hawk : 84,
                 Falcon : 86,
             },
-            description : "The Air Creature scratches with its claws"
+            description : "The Air Creature scratches with its claws",
+            BackGroundColor : "lightgrey",
         }
     ],
 

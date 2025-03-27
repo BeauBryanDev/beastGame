@@ -1,7 +1,7 @@
 export const creaturesByPower = {
 
         Fire: ["Phoenix", "Sphinx", "Dragon","Wildfire","Volcano"],
-        Water: ["catFish", "Piranha", "Eel", "Hippo", "Dolphin", "Shark", "Whale","Sea-serpent"],
+        Water: ["Catfish", "Piranha", "Eel", "Hippo", "Dolphin", "Shark", "Whale","Sea-serpent"],
         Snow: ["Seal", "White-bear", "Orca", "Blue-whale","Ice-dragon"],
         Forest: ["Fox", "Wolf", "Grizzly Bear", "Deer","Oak","Pine", "Maple",],
         Air : [ "Parrot","Eagle", "Owl", "Hawk", "Falcon",],
