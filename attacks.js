@@ -717,3 +717,27 @@ function showFireAttacks() {
 // Llamamos a la función
 showFireAttacks();
 
+// 🔥❄️ Funtion to get the Damage that make an specific creature
+function getAttackDamage(creatureName, attackName) {
+    for (let category in attacksByPower) {
+        for (let attack of attacksByPower[category]) {
+            if (attack.name === attackName) {
+                if (creatureName in attack.damage) {
+                    return `⚔️ ${creatureName} make ${attack.damage[creatureName]} damage point on its enemy within this attack "${attackName}"! 🔥❄️`;
+                }
+            }
+        }
+    }
+    return `⚠️ No Information found about this '${creatureName}' within this '${attackName}'.`;
+}
+
+
+// 🔥❄️ Some Examples 
+console.log(getAttackDamage("IceDragon", "Snow Ball")); 
+
+console.log(getAttackDamage("Phoenix", "Fire Ball")); 
+
+console.log(getAttackDamage("Sphinx", "Fire Breath")); 
+
+console.log(getAttackDamage("Dragon", "Fire Claw")); 
+

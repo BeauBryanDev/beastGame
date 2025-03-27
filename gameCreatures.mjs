@@ -10,7 +10,7 @@ export const creaturesByPower = {
         River: ["Fish", "trout","Otter", "Beaver", "Duck", "Swan", "Salmon","Fisherbird","Waterfall",],
         Poison: ["Snake", "Scorpion", "Spider", "Wasp","Sea-urchin","Globefish"],
         Ice: ["Iceberg", "Glacier","Snow-storm", "Ice-cube", "ice-dragon"],
-        Desert: ["Cactus", "Yellow-scorpion", "desert-snake", "Vulture", "Camel"],
+        Desert: ["Cactus", "Yellow-scorpion", "Desert-snake", "Vulture", "Camel"],
         Mountain: ["Goat", "Eagle", "Bear", "MountainLion","rock","cliff","Granite"],
         Sky: ["Cloud", "Rainbow", "Sunset", "Meteor","Eclipse"],
         Swamp: ["Alligator", "Mosquito", "Frog", "Flamingo", "crocodrile"],
@@ -46,9 +46,9 @@ export const creaturesByPower = {
 
     }
 
-    let playerCreature = "Frost";
+    // let playerCreature = "Frost";
 
-    let currentPower = getSelectedPower(playerCreature);
+    // let currentPower = getSelectedPower(playerCreature);
 
-    console.log("this is the current player Power here : ", currentPower);
+    // console.log("this is the current player Power here : ", currentPower);
 

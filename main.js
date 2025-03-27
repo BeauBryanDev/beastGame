@@ -93,23 +93,6 @@ function startGame() {
 
     }
 
-    function getSelectedCreature() { 
-
-        const selectedCreature = document.querySelector("input[name='creature']:checked");
-
-        if (!selectedCreature) {
-
-            alert("Please select a creature II ");
-            return;
-        } 
-        else {
-
-            alert(`You selected II : ${selectedCreature.id}`);
-            return selectedCreature.id;
-        }
-        
-
-    }
 
     // Ensure creatures are displayed before attempting to get the selected creature
     showCreatures("Fire"); // Replace "Fire" with the desired default power if needed
@@ -375,7 +358,7 @@ function startGame() {
 
     function attack() { 
 
-        let playerAttack = showAvailableAttacks();
+        let playerAttack = showAvailableAttacks(selectCreature());
         console.log(playerAttack);
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected attack: ${computerAttack}`);
@@ -389,11 +372,15 @@ function startGame() {
     if (battleBtn) {
         battleBtn.addEventListener("click", function () {
             displaySelectedCreatures();
+
         });
+
     } else {
+        
         alert("You have to pick a creature before you can battle");
     }
 
+    console.log("Player Attack| ", playerAttack);
     //End of the Game Function() ...
 
 }
@@ -419,7 +406,6 @@ function selectCreature() {
     const capitalizedCreature = playerCreature.charAt(0).toUpperCase() + playerCreature.slice(1);
     alert(`You selected III : ${capitalizedCreature}`);
     playerCreatureName.innerHTML = `Your have Chosen: ${capitalizedCreature} as your Creature, `;
-    console.log(playerCreatureName);
     return capitalizedCreature;
 }
 
@@ -437,6 +423,23 @@ function getSelectedPower(animal) {
 
 }
 
+function getSelectedCreature() { 
+
+    const selectedCreature = document.querySelector("input[name='creature']:checked");
+
+    if (!selectedCreature) {
+
+        alert("Please select a creature II ");
+        return;
+    } 
+    else {
+
+        alert(`You selected II : ${selectedCreature.id}`);
+        return selectedCreature.id;
+    }
+    
+
+}
 
 
 document.addEventListener("DOMContentLoaded", function () {
