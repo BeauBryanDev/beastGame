@@ -650,3 +650,22 @@ export const attacksByPower = {
     ],
 
 };
+
+
+
+// Función para mostrar ataques de Fire
+function showFireAttacks() {
+    console.log("🔥 Fire Attacks 🔥");
+    attacksByPower.Fire.forEach(attack => {
+        console.log(`\n🗡️ Attack: ${attack.name}`);
+        console.log(`📖 Description: ${attack.description}`);
+        console.log("💥 Damage: ");
+        for (let creature in attack.damage) {
+            console.log(`   - ${creature}: ${attack.damage[creature]}`);
+        }
+    });
+}
+
+// Llamamos a la función
+showFireAttacks();
+

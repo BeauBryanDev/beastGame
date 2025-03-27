@@ -248,6 +248,7 @@ function startGame() {
 
 
     let battleContainer = document.getElementById("battle-Container");
+
     battleContainer.style.display = "block";
     battleContainer.style.textAlign = "center";
     battleContainer.style.margin = "auto";
@@ -327,8 +328,9 @@ function startGame() {
         const h3Attacks = document.createElement("h3");
         h3Attacks.textContent = "Choose your Attack";
         myAttacks.appendChild(h3Attacks);
-        const attacks = attacksByPower.Fire[creature];
-        battleContainer.appendChild(myAttacks);
+        const attacks = attacksByPower.Fire;
+        console.log(attacks);
+        //battleContainer.appendChild(myAttacks);
         attacks.forEach(attack => {
 
             const attackBtn = document.createElement("button");
