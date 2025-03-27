@@ -290,6 +290,10 @@ function startGame() {
         fightingField.appendChild(playerCreatureDiv);
         battleContainer.appendChild(fightingField);
 
+        let currentPower = getSelectedPower(thisCreatuere);
+
+        console.log("this is the current player Power here : ", currentPower);
+
         //Set div container for the computer creature ...
 
         const computerCreatureDiv = document.createElement("div");
@@ -391,6 +395,19 @@ function selectCreature() {
     return capitalizedCreature;
 }
 
+function getSelectedPower(animal) {
+
+    animal = animal.charAt(0).toUpperCase() + animal.slice(1);
+
+    for (const [category, creatures] of Object.entries(creaturesByPower)) {
+
+        if (creatures.includes(animal)) {
+            return category;
+        }
+    }
+    return "Not found";
+
+}
 
 
 

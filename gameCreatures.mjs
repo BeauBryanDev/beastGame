@@ -46,7 +46,7 @@ export const creaturesByPower = {
 
     }
 
-    let playerCreature = "Spider";
+    let playerCreature = "Frost";
 
     let currentPower = getSelectedPower(playerCreature);
 
