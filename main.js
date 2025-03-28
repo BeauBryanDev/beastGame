@@ -1,6 +1,7 @@
 console.log("Hello World");
 import { creaturesByPower } from "./gameCreatures.mjs";
-import { attacksByPower } from "./attacks.js";
+import { attacksByPower  } from "./attacks.js";
+import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
 // Function to start the game
 // This function will be called when the window is loaded
@@ -113,20 +114,6 @@ function startGame() {
         //Avoid Template Literals, it is a major CyberSecurity concern as it can be used to inject malicious codeXXS to daface my game webpage , 
         //It is not secure.  interms of security, it is not recommended to use Template Literals
         //Instead use the DOM API to create elements and append them to the container
-        // creatureContainer.innerHTML = `<h2>Choose your Creature</h2>`;
-    
-        // creaturesByPower[power].forEach(creature => {
-        //     const creatureDiv = document.createElement("div");
-        //     creatureDiv.classList.add("creature-card");
-        //     creatureDiv.innerHTML = `
-        //         <input type="radio" name="creature" id="${creature.toLowerCase()}" />
-        //         <label for="${creature.toLowerCase()}">${creature}</label>
-        //         <img src="./creatures/${creature.toLowerCase()}.svg" alt="${creature} Creature" class="creature-image">
-        //     `;
-        //     creatureContainer.appendChild(creatureDiv);
-        // });
-
-        //Clear the container
         creatureContainer.innerHTML = "";
         //create an h2 title that show the Power selected by the User ...
         const h2Power = document.createElement("h2");
@@ -229,7 +216,6 @@ function startGame() {
     // This function will travers the creatureByPoser Object , then get the selected power by the Player / User
     // This function will return the selected power by the Player / User beased on the selected creature ...
 
-
     let battleContainer = document.getElementById("battle-Container");
 
     battleContainer.style.display = "block";
@@ -275,10 +261,13 @@ function startGame() {
         playerCreatureDiv.appendChild(imgPlayerCreature);
         fightingField.appendChild(playerCreatureDiv);
         battleContainer.appendChild(fightingField);
-
+        // Get the User Creature Selected Power ...
         let currentPower = getSelectedPower(thisCreatuere);
         console.log("this is the current player Power here : ", currentPower);
-
+        //Get the computer  selected Power 
+        let computerPower = getSelectedPower(computerCreature);
+        console.log("this is the current computer Power here : ", computerPower);
+        
         //Set div container for the computer creature ...
 
         const computerCreatureDiv = document.createElement("div");
@@ -296,11 +285,10 @@ function startGame() {
         fightingField.appendChild(computerCreatureDiv)
         battleContainer.appendChild(fightingField);
         showAvailableAttacks(thisCreatuere);
-        //showAvailableAttacks(computerCreature);
-        //console.log(`Computer selected creature: ${computerCreature}`);
-        //console.log(`Player selected creature: ${playerCreature}`);
-        //console.log(`Player selected attack: ${playerAttack}`);
-        //console.log(`Computer selected attack: ${computerAttack}`);
+        //Get the computer selected attack
+        let computerAttack = computerChooseAttack(computerCreature);
+        console.log(`Computer selected creature: ${computerCreature}`);
+        console.log(`Computer selected attack: ${computerAttack}`);
         
 
     }
@@ -334,9 +322,10 @@ function startGame() {
             console.log(attackBtn.id);
             attackBtn.classList.add("attack-btn");
             myAttacks.appendChild(attackBtn);
+            displayAttackDescription(attack);
 
         });
-        
+        //Get the player selected attack
         let attackBtns = document.querySelectorAll(".attack-btn");
         attackBtns.forEach(attackBtn => {
             attackBtn.addEventListener("click", function() {
@@ -354,7 +343,42 @@ function startGame() {
 
     }
 
-    
+
+    function computerChooseAttack(creature) {
+
+        let currentPower = getSelectedPower(creature);
+        const attacks = attacksByPower[currentPower];
+        const randomAttack = attacks[randomNumber(0, attacks.length - 1)];
+
+        return randomAttack.name.toLowerCase().split(" ").join("-");
+
+    }
+
+    function displayAttackDescription(attack) { 
+
+        const attackName = document.createElement("h4");
+        attackName.textContent = attack.name;
+        battleContainer.appendChild(attackName);
+
+        const myAttacks = document.createElement("div");
+        myAttacks.classList.add("my-attacks");
+        // const h3Attacks = document.createElement("h3");
+        // h3Attacks.textContent = "Choose your Attack";
+        // myAttacks.appendChild(h3Attacks);
+        let thisCreatuere = getSelectedCreature();
+        let currentPower = getSelectedPower(thisCreatuere);
+        const attacks = attacksByPower[currentPower];
+        console.log(attacks);
+        battleContainer.appendChild(myAttacks);
+
+        const attackDamage = document.createElement("p");
+        attackDamage.textContent = `Damage: ${attack.damage}`;
+
+        const attackDescription = document.createElement("p");
+        attackDescription.textContent = attack.description;
+        battleContainer.appendChild(attackDescription);
+    }
+
 
     function attack() { 
 
@@ -376,7 +400,7 @@ function startGame() {
         });
 
     } else {
-        
+
         alert("You have to pick a creature before you can battle");
     }
 

@@ -1,0 +1,8 @@
+#Ignore .txt files
+
+aux.txt
+
+
+#Ignore myTester JS File 
+
+myTester.JS
