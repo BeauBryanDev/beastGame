@@ -5,4 +5,10 @@ aux.txt
 
 #Ignore myTester JS File 
 
-myTester.JS
+myTester.js
+
+#Ignore myTester HTML File
+
+myTester.html
+
+
