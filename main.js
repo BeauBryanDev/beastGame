@@ -302,6 +302,12 @@ function startGame() {
         myAttacks.appendChild(h3Attacks);
         let thisCreatuere = getSelectedCreature();
         let currentPower = getSelectedPower(creature);
+        /* Beau , You have to CHANGE ALL THIS LOGIC SINCE I WILL BE USING THE Main Object attackByCreatures
+        that is in ./creaturesAttack.js file, I will be using the attackByCreatures object to get the attacks of the creatures
+        based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file,
+        I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
+
+        */
         const attacks = attacksByPower[currentPower];
         console.log(attacks);
         battleContainer.appendChild(myAttacks);
@@ -361,7 +367,11 @@ function startGame() {
 
         const myAttacks = document.createElement("div");
         myAttacks.classList.add("my-attacks");
-
+        /* Beau , You have to CHANGE ALL THIS LOGIC SINCE I WILL BE USING THE Main Object attackByCreatures
+        that is in ./creaturesAttack.js file, I will be using the attackByCreatures object to get the attacks of the creatures
+        based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file,
+        I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
+*/
         let thisCreatuere = selectCreature();
         let currentPower = getSelectedPower(thisCreatuere);
         const attacks = attacksByPower[currentPower];

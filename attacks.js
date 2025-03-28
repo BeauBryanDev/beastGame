@@ -13,14 +13,14 @@ export const attacksByPower = {
             name : "Fire Ball",
             type : "Fire",
             damage : {
-                
+                //damagelevel should be a number between 10 to 100 ...
                 Phoenix : 24,
                 Sphinx: 54,
                 Dragon : 64,
-                WildFire : 84,
+                WildFire : 68,
                 Volcano : 86,
             },
-            description : "The Fire Creature throws a fire ball",
+            description : "The Fire Creature throws a Fire Ball",
             BackGroundColor : "red",
         },
         { 
@@ -28,11 +28,11 @@ export const attacksByPower = {
             type : "Fire",
             damage : {
 
-                Phoenix : 24,
-                Sphinx: 54,
-                Dragon : 64,
-                WildFire : 84,
-                Volcano : 86,
+                Phoenix : 48,
+                Sphinx: 34,
+                Dragon : 84,
+                WildFire : 86,
+                Volcano : 94,
             },
             description : "The Fire Creature breathes fire",
             BackGroundColor : "red",
@@ -42,10 +42,10 @@ export const attacksByPower = {
             type : "Fire",
             damage : {
 
-                Phoenix : 24,
+                Phoenix : 28,
                 Sphinx: 54,
-                Dragon : 64,
-                WildFire : 84,
+                Dragon : 76,
+                WildFire : 46,
                 Volcano : 86,
             },
             description : "The Fire Creature scratches with its claws",
