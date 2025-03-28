@@ -140,7 +140,7 @@ function startGame() {
             label.textContent = creature;
 
             const img = document.createElement("img");
-            img.src = `./creatures/${creature.toLowerCase()}.svg`;
+            img.src = `./creatures/${creature}.svg`;
             img.alt = `${creature} Creature`;
             img.classList.add("creature-image");
 
@@ -169,8 +169,8 @@ function startGame() {
         const randomPower = powers[randomNumber(0, powers.length - 1)];
         const creatures = creaturesByPower[randomPower];
         const randomCreature = creatures[randomNumber(0, creatures.length - 1)];
-        const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
-        return capitalizedComputerCreature;
+        //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
+        return randomCreature;
 
     }
 
@@ -255,7 +255,7 @@ function startGame() {
         playerCreatureDiv.appendChild(playerCreatureName);
 
         const imgPlayerCreature = document.createElement("img");
-        imgPlayerCreature.src = `./creatures/${thisCreatuere.toLowerCase()}.svg`;
+        imgPlayerCreature.src = `./creatures/${thisCreatuere}.svg`;
         imgPlayerCreature.alt = `${thisCreatuere} Creature`;
         imgPlayerCreature.classList.add("creature-image");
         playerCreatureDiv.appendChild(imgPlayerCreature);
@@ -278,7 +278,7 @@ function startGame() {
         computerCreatureDiv.appendChild(computerCreatureName);
 
         const imgComputerCreature = document.createElement("img");
-        imgComputerCreature.src = `./creatures/${computerCreature.toLowerCase()}.svg`;
+        imgComputerCreature.src = `./creatures/${computerCreature}.svg`;
         imgComputerCreature.alt = `${computerCreature} Creature`;
         imgComputerCreature.classList.add("creature-image");
         computerCreatureDiv.appendChild(imgComputerCreature);
@@ -301,7 +301,7 @@ function startGame() {
         h3Attacks.textContent = "Choose your Attack";
         myAttacks.appendChild(h3Attacks);
         let thisCreatuere = getSelectedCreature();
-        let currentPower = getSelectedPower(thisCreatuere);
+        let currentPower = getSelectedPower(creature);
         const attacks = attacksByPower[currentPower];
         console.log(attacks);
         battleContainer.appendChild(myAttacks);
@@ -343,7 +343,6 @@ function startGame() {
 
     }
 
-
     function computerChooseAttack(creature) {
 
         let currentPower = getSelectedPower(creature);
@@ -362,18 +361,31 @@ function startGame() {
 
         const myAttacks = document.createElement("div");
         myAttacks.classList.add("my-attacks");
-        // const h3Attacks = document.createElement("h3");
-        // h3Attacks.textContent = "Choose your Attack";
-        // myAttacks.appendChild(h3Attacks);
-        let thisCreatuere = getSelectedCreature();
+
+        let thisCreatuere = selectCreature();
         let currentPower = getSelectedPower(thisCreatuere);
         const attacks = attacksByPower[currentPower];
         console.log(attacks);
         battleContainer.appendChild(myAttacks);
 
         const attackDamage = document.createElement("p");
-        attackDamage.textContent = `Damage: ${attack.damage}`;
+        console.log("Debugging attack.damage object:", attack.damage);
+        console.log("Debugging thisCreatuere value:", thisCreatuere);
 
+        //const capitalizedCreature = thisCreatuere.charAt(0).toUpperCase() + thisCreatuere.slice(1);
+        const creatureDamage = attack.damage && attack.damage[thisCreatuere];
+        console.log("Fetched creatureDamage:", creatureDamage);
+
+        if (creatureDamage !== undefined) {
+
+            attackDamage.textContent = `Damage: ${creatureDamage}`;
+
+        } else {
+
+            attackDamage.textContent = "Damage: Not available";
+
+        }
+        battleContainer.appendChild(attackDamage);
         const attackDescription = document.createElement("p");
         attackDescription.textContent = attack.description;
         battleContainer.appendChild(attackDescription);
@@ -382,11 +394,10 @@ function startGame() {
 
     function attack() { 
 
-        let playerAttack = showAvailableAttacks(selectCreature());
-        console.log(playerAttack);
+        
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected attack: ${computerAttack}`);
-        battle(playerAttack, computerAttack);        
+        //battle(playerAttack, computerAttack);        
 
     }
 
@@ -395,13 +406,14 @@ function startGame() {
 
     if (battleBtn) {
         battleBtn.addEventListener("click", function () {
+            const selectedCreature = document.querySelector("input[name='creature']:checked");
+            if (!selectedCreature) {
+                alert("You have to pick a creature before you can battle");
+                return;
+            }
             displaySelectedCreatures();
-
+            attack();
         });
-
-    } else {
-
-        alert("You have to pick a creature before you can battle");
     }
 
     console.log("Player Attack| ", playerAttack);
@@ -458,7 +470,7 @@ function getSelectedCreature() {
     } 
     else {
 
-        alert(`You selected II : ${selectedCreature.id}`);
+        //alert(`You selected II : ${selectedCreature.id}`);
         return selectedCreature.id;
     }
     
