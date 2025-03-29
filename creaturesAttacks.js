@@ -19,7 +19,7 @@ GameAttacks  = {
     Fire : [
 
         Phoenix = {
-            name : "Fire Phoenix",
+            name : "Phoenix",
             type : "Fire",
             strength : 75,
             weak : 25,
@@ -49,7 +49,7 @@ GameAttacks  = {
             ]
         },
         Sphinx = {
-            name : "Fire Sphinx",
+            name : "Sphinx",
             type : "Fire",
             strength : 75,
             weak : 15,
@@ -80,7 +80,7 @@ GameAttacks  = {
         },
         Dragon = {
 
-            name : "Fire Dragon",
+            name : "FireDragon",
             type : "Fire",
             strength : 85,
             weak : 20,
@@ -112,7 +112,7 @@ GameAttacks  = {
 
         WildFire = {
 
-            name : "Wild Fire",
+            name : "WildFire",
             type : "Fire",
             strength : 85,
             weak : 35,
@@ -181,7 +181,7 @@ GameAttacks  = {
 
         CatFish = {
 
-            name : "Cat Fish",
+            name : "CatFish",
             type : "Water",
             strength : 35,
             weak : 55,
@@ -398,7 +398,7 @@ GameAttacks  = {
         },
         SeaSerpent = {
 
-            name : "Sea Serpent",
+            name : "SeaSerpent",
             type : "Water",
             strength : 75,
             weak : 35,
@@ -464,7 +464,7 @@ GameAttacks  = {
         },
         WhiteBear = {
             
-            name : "White Bear",
+            name : "WhiteBear",
             type : "Snow",
             strength : 75,
             weak : 35,
@@ -495,7 +495,7 @@ GameAttacks  = {
         },
         KillerWhale = {
             
-            name : "Orca",
+            name : "KillerWhale",
             type : "Snow",
             strength : 75,
             weak : 35,
@@ -526,7 +526,7 @@ GameAttacks  = {
         },
         BlueWhale = {
             
-            name : "Blue Whale",
+            name : "BlueWhale",
             type : "Snow",
             strength : 75,
             weak : 35,
@@ -557,12 +557,12 @@ GameAttacks  = {
         },
         IceDragon = {
             
-            name : "Ice Dragon",
+            name : "IceDragon",
             type : "Snow",
             strength : 75,
             weak : 35,
             Power : 55 ,
-            BtnColor : "blue",
+            BtnColor : "lightblue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Ice Dragon swims in the snow",
             attacks : [
@@ -1184,7 +1184,7 @@ GameAttacks  = {
         },
         SeaUrchin = {
 
-            name: "Sea Urchin",
+            name: "SeaUrchin",
             type: "Poison",
             strength: 60,
             weak: 40,
@@ -1216,7 +1216,7 @@ GameAttacks  = {
         },
         GlobeFish = {
 
-            name: "Globe Fish",
+            name: "GlobeFish",
             type: "Poison",
             strength: 55,
             weak: 35,
@@ -1287,7 +1287,7 @@ GameAttacks  = {
 
         YellowScorpion = {
 
-            name: "Yellow Scorpion",
+            name: "YellowScorpion",
             type: "Desert",
             strength: 75,
             weak: 25,
@@ -1318,7 +1318,7 @@ GameAttacks  = {
         },
         DesertSnake = {
 
-            name: "Desert Snake",
+            name: "DesertSnake",
             type: "Desert",
             strength: 70,
             weak: 30,
@@ -1416,7 +1416,7 @@ GameAttacks  = {
 
         Hive = {
 
-            name: "Hive",
+            name: "Bee_Hive",
             type: "Forest",
             strength: 60,
             weak: 20,
@@ -1425,6 +1425,12 @@ GameAttacks  = {
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swarm of bees attacks.",
             attacks: [
+                {
+                    name : "Swarm Attack",
+                    type : "Poison",
+                    damage : 9,
+                    description : "A Fourious Swarm of Bees come after You to kill You in Group."
+                },
                 {
                     name: "Bee Sting",
                     type: "Forest",
@@ -1838,7 +1844,7 @@ GameAttacks  = {
         },
         JungleBoar = {
 
-            name: "Jungle Boar",
+            name: "Jungle_Boar",
             type: "Jungle",
             strength: 75,
             weak: 30,
@@ -2053,7 +2059,7 @@ GameAttacks  = {
         },
         Bear = {
 
-            name: "Mountain Bear",
+            name: "MountainBear",
             type: "Mountain",
             strength: 80,
             weak: 30,
@@ -2078,7 +2084,7 @@ GameAttacks  = {
         },
         MountainLion = {
 
-            name: "Mountain Lion",
+            name: "MountainLion",
             type: "Mountain",
             strength: 75,
             weak: 30,
@@ -2376,7 +2382,7 @@ GameAttacks  = {
         },
         JellyFish = {
 
-            name: "Jellyfish",
+            name: "JellyFish",
             type: "Sea",
             strength: 65,
             weak: 40,
@@ -2681,7 +2687,7 @@ GameAttacks  = {
         },
         EvilBug = {
 
-            name: "Evil Bug",
+            name: "EvilBug",
             type: "Bugs",
             strength: 90,
             weak: 10,
@@ -2715,7 +2721,7 @@ GameAttacks  = {
         } ,
         EvilVirus = {
 
-            name: "Evil Virus",
+            name: "EvilVirus",
             type: "Bugs",
             strength: 95,
             weak: 5,
@@ -2822,7 +2828,7 @@ GameAttacks  = {
 
         },
         EvilEye = {
-            name: "Evil Eye",
+            name: "EvilEye",
             type: "Darkness",
             strength: 85,
             weak: 15,
@@ -3117,7 +3123,7 @@ GameAttacks  = {
         },
         SeaDragon = {
 
-            name: "Sea Dragon",
+            name: "SeaDragon",
             type: "SeaMonster",
             strength: 100,
             weak: 15,
@@ -3675,14 +3681,14 @@ if (spider) {
 }
 
 
-const Mosquito = GameAttacks.Swamp.find( creature => creature.name === "Mosquito" );
+const Mosquit0 = GameAttacks.Swamp.find( creature => creature.name === "Mosquito" );
 //const Mosquito = GameAttacks.Swamp.Mosquito;
 
-if ( Mosquito ) {
+if ( Mosquit0 ) {
 
     console.log("Mosquito Attacks");
 
-    Mosquito.attacks.forEach( attack => {
+    Mosquit0.attacks.forEach( attack => {
 
         console.log(`Mosquito ${attack.name}: ${attack.description} _Damage: ${attack.damage} ` );
 
@@ -3690,6 +3696,106 @@ if ( Mosquito ) {
 
 } else {
 
-    console.log( "Mosquito was not found");
+    console.log( "Mosquit0 was not found");
 
 }
+console.log("\n--------------\n");
+console.log("Check the Desert_Snake Sub Object \n");
+// Access the DesertSnake object in the Desert array
+const desertSnake = GameAttacks.Desert.find(creature => creature.name === "DesertSnake");
+
+if (desertSnake) {
+    // Extract the desired properties
+    const desertSnakeName = desertSnake.name;
+    const desertSnakeType = desertSnake.type;
+    const desertSnakeStrength = desertSnake.strength;
+    const desertSnakeWeak = desertSnake.weak;
+    const desertSnakeBtnColor = desertSnake.BtnColor;
+    const desertSnakePower = desertSnake.Power;
+    const desertSnakeRanDamage = desertSnake.ranDamage;
+    const desertSnakeDescription = desertSnake.description;
+
+    // Log the extracted properties to the console
+    console.log("DesertSnake Name:", desertSnakeName);
+    console.log("DesertSnake Type:", desertSnakeType);
+    console.log("DesertSnake Strength:", desertSnakeStrength);
+    console.log("DesertSnake Weakness:", desertSnakeWeak);
+    console.log("DesertSnake Button Color:", desertSnakeBtnColor);
+    console.log("DesertSnake Power:", desertSnakePower);
+    console.log("DesertSnake Random Damage:", desertSnakeRanDamage);
+    console.log("DesertSnake Description:", desertSnakeDescription);
+
+    // Log the attacks to the console
+    console.log("DesertSnake Attacks:");
+    desertSnake.attacks.forEach(attack => {
+        console.log(`${attack.name}: ${attack.description} - Damage: ${attack.damage}`);
+    });
+    
+} else {
+    console.log("DesertSnake creature not found in the Desert array.");
+}
+
+//Function to get the Creature Information ...
+//This function takes the creature's name (creatureName) as input.
+//then it fetch all is data from the GameAttacks Arrays....
+console.log("++++++++++++++++++++++++++++++++\n");
+
+function getCreatureInfo(creatureName) {
+
+    console.log("Results for " + creatureName + "\n");
+    let foundCreature = null;
+
+    // Iterate through all arrays within meAttacks
+    for (const key in GameAttacks) {
+
+        if (Array.isArray(GameAttacks[key])) {
+
+            const creature = GameAttacks[key].find(c => c.name === creatureName);
+
+            if (creature) {
+
+                foundCreature = creature;
+                break; // Stop searching once found .
+
+            }
+        }
+    }
+
+    if (foundCreature) {
+        // Extract and log information
+        console.log("Creature Name:", foundCreature.name);
+        console.log("Creature Type:", foundCreature.type);
+        console.log("Creature Strength:", foundCreature.strength);
+        console.log("Creature Weakness:", foundCreature.weak);
+        console.log("Creature Button Color:", foundCreature.BtnColor);
+        console.log("Creature Power:", foundCreature.Power);
+        console.log("Creature Random Damage:", foundCreature.ranDamage);
+        console.log("Creature Description:", foundCreature.description);
+        console.log("\n");
+        console.log(`${foundCreature.name} Attacks`);
+        console.log("\n");
+        let i = 1;
+        foundCreature.attacks.forEach( attack => {
+
+        console.log( `${i}. ${attack.name } : ${attack.description} : Damage: ${attack.damage}`);
+        i++;    
+    });
+
+    } else {
+
+        console.log(`Creature "${creatureName}" not found.`);
+
+    }
+
+}
+console.log("/*****************\n");
+// Example usage
+const searchCreature = "YellowScorpion"; // Change this to the desired creature name
+getCreatureInfo(searchCreature);
+console.log("*****************\n");
+const searchCreature2 = "Bee_Hive";
+getCreatureInfo(searchCreature2);
+console.log("*****************\n");
+const searchCreature3 = "SeaSerpent";
+getCreatureInfo(searchCreature3);
+console.log("*****************\n");
