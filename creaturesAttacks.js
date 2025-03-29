@@ -26,25 +26,25 @@ GameAttacks  = {
             BtnColor : "red",
             Power : 45 ,
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Fire Phoenix rises from the ashes",
+            description : "The Fire Phoenix rises from the ashes.",
             attacks : [
                 { 
                     name : "Fire Wing",
                     type : "Fire",
                     damage : 7,
-                    description : "The Fire Phoenix flaps its wings"
+                    description : "The Fire Phoenix flaps its wings."
                 },
                 { 
                     name : "Fire Feather",
                     type : "Fire",
                     damage : 8,
-                    description : "The Fire Phoenix shoots a fire feather"
+                    description : "The Fire Phoenix shoots a fire feather."
                 },
                 { 
                     name : "Fire Tail",
                     type : "Fire",
                     damage : 8.5,
-                    description : "The Fire Phoenix whips with its tail"
+                    description : "The Fire Phoenix whips with its tail."
                 }
             ]
         },
@@ -56,25 +56,25 @@ GameAttacks  = {
             BtnColor : "red",
             Power : 65 ,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Fire Sphinx guards the temple",
+            description : "The Fire Sphinx guards the temple.",
             attacks : [
                 { 
                     name : "Fire Eye",
                     type : "Fire",
                     damage : 7,
-                    description : "The Fire Sphinx shoots fire from its eyes"
+                    description : "The Fire Sphinx shoots fire from its eyes."
                 },
                 { 
                     name : "Fire Claw",
                     type : "Fire",
                     damage : 8,
-                    description : "The Fire Sphinx scratches with its claws"
+                    description : "The Fire Sphinx scratches with its claws."
                 },
                 { 
                     name : "Fire Tail",
                     type : "Fire",
                     damage : 8.5,
-                    description : "The Fire Sphinx whips with its tail"
+                    description : "The Fire Sphinx whips with its tail."
                 }
             ]
         },
@@ -87,25 +87,25 @@ GameAttacks  = {
             BtnColor : "red",
             Power : 85 ,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Fire Dragon breathes fire",
+            description : "The Fire Dragon breathes fire to Destroy its Enemies.",
             attacks : [
                 { 
                     name : "Fire Ball",
                     type : "Fire",
                     damage : 7.5,
-                    description : "The Fire Dragon throws a fire ball"
+                    description : "The Fire Dragon throws a fire ball."
                 },
                 { 
                     name : "Fire Breath",
                     type : "Fire",
                     damage : 8.5,
-                    description : "The Fire Dragon breathes fire"
+                    description : "The Fire Dragon breathes fire."
                 },
                 { 
                     name : "Fire Claw",
                     type : "Fire",
                     damage : 8,
-                    description : "The Fire Dragon scratches with its claws"
+                    description : "The Fire Dragon scratches with its claws."
                 }
             ]
         },
@@ -119,25 +119,25 @@ GameAttacks  = {
             BtnColor : "red",
             Power : 95 ,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Wild Fire burns everything in its path",
+            description : "The Wild Fire burns everything in its path.",
             attacks : [
                 { 
                     name : "Fire Blast",
                     type : "Fire",
                     damage : 7,
-                    description : "The Wild Fire shoots a fire blast"
+                    description : "The Wild Fire shoots a fire blast."
                 },
                 { 
                     name : "Fire Wave",
                     type : "Fire",
                     damage : 8,
-                    description : "The Wild Fire sends a wave of fire"
+                    description : "The Wild Fire sends a wave of fire that burn its enemies."
                 },
                 { 
                     name : "Fire Storm",
                     type : "Fire",
                     damage : 9,
-                    description : "The Wild Fire creates a fire storm"
+                    description : "The Wild Fire creates a fire storm that set fire everything aroung."
                 }
             ]
         },
@@ -156,19 +156,19 @@ GameAttacks  = {
                     name : "Lava Blast",
                     type : "Fire",
                     damage : 7,
-                    description : "The Volcano shoots a lava blast"
+                    description : "The Volcano shoots a lava blast."
                 },
                 { 
                     name : "Lava Wave",
                     type : "Fire",
                     damage : 8,
-                    description : "The Volcano sends a wave of lava"
+                    description : "The Volcano sends a wave of lava."
                 },
                 { 
                     name : "Lava Storm",
                     type : "Fire",
                     damage : 9,
-                    description : "The Volcano creates a lava storm"
+                    description : "The Volcano creates a lava storm."
                 }
     
             ],
@@ -188,25 +188,25 @@ GameAttacks  = {
             BtnColor : "blue",
             Power : 25 ,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Cat Fish swims in the river",
+            description : "The Cat Fish swims in the river.",
             attacks : [
                 { 
                     name : "Water Splash",
                     type : "Water",
                     damage : 5,
-                    description : "The Cat Fish splashes water",
+                    description : "The Cat Fish splashes water.",
                 },
                 { 
                     name : "Water Wave",
                     type : "Water",
                     damage : 3,
-                    description : "The Cat Fish sends a wave of water",
+                    description : "The Cat Fish sends a wave of water.",
                 },
                 { 
                     name : "Water Storm",
                     type : "Water",
                     damage : 3,
-                    description : "The Cat Fish creates a water storm"
+                    description : "The Cat Fish creates a water storm.",
                 }
             ]
         },
@@ -219,25 +219,25 @@ GameAttacks  = {
             BtnColor : "blue",
             Power : 55 ,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Piranha swims in the river and they attack in groups",
+            description : "The Piranha swims in the river and they attack in groups.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Water",
                     damage : 7,
-                    description : "The Piranha bites"
+                    description : "The Piranha bites with its sharp teeth."
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Piranha scratches with its claws"
+                    description : "The Piranha scratches with its claws."
                 },
                 { 
                     name : "Group River Pack",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Piranha hunt un the river"
+                    description : "The Piranhas hunt un the river as Group."
                 }
             ]
         },
@@ -250,25 +250,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Eel swims in the river and relase electric shocks",
+            description : "The Eel swims in the river and relase electric shocks.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Electricity",
                     damage : 7,
-                    description : "The Eel bites"
+                    description : "The Eel bites."
                 },
                 { 
                     name : "Water Claw",
                     type : "Electricity",
                     damage : 8,
-                    description : "The Eel scratches with its claws"
+                    description : "The Eel scratches with its claws."
                 },
                 { 
                     name : "Electrical Shock",
                     type : "Electricity",
                     damage : 8.5,
-                    description : "The Eel release a powerfull electric shock in the river"
+                    description : "The Eel release a powerfull electric shock in the river."
                 }
             ]
         },
@@ -281,25 +281,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Hippo swims in the river and it is very aggressive",
+            description : "The Hippo swims in the river and it is very aggressive.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Water",
                     damage : 7,
-                    description : "The Hippo bites"
+                    description : "The Hippo bites."
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Hippo scratches with its claws"
+                    description : "The Hippo drawn its victim with its claws."
                 },
                 { 
                     name : "Hippo Squeeze",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Hippo crush with its powerful claws"
+                    description : "The Hippo crush with its powerful claws."
                 }
             ]
         },
@@ -312,25 +312,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Dolphin swims in open Seas",
+            description : "The Dolphin swims in open Seas.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Water",
                     damage : 7,
-                    description : "The Dolphin bites"
+                    description : "The Dolphin bites."
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Dolphin scratches with its claws"
+                    description : "The Dolphin finds its victim with its echo sonar."
                 },
                 { 
                     name : "Water Tail",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Dolphin whips with its tail"
+                    description : "The Dolphin whips with its tail."
                 }
             ]
         },
@@ -343,25 +343,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Shark swims in the blue Sea",
+            description : "The Shark swims in the blue Sea.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Water",
                     damage : 7,
-                    description : "The Shark bites"
+                    description : "The Shark bites with sharp teeth."
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Shark scratches with its claws"
+                    description : "The Shark scratches with its Jaws."
                 },
                 { 
                     name : "Water Tail",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Shark whips with its tail"
+                    description : "The Shark whips with its tail."
                 }
             ]
         },
@@ -374,25 +374,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Whale swims in the deep Sea and it is very big",
+            description : "The Whale swims in the deep Sea and it is very big.",
             attacks : [
                 { 
                     name : "Water Tail Hit",
                     type : "Water",
                     damage : 7,
-                    description : "The Whale bites"
+                    description : "The Whale bites.",
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Whale scratches with its claws"
+                    description : "The Whale swallow everything in the sea.",
                 },
                 { 
                     name : "Water Tail",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Whale whips with its tail"
+                    description : "The Whale whips with its tail."
                 }
             ]
         },
@@ -405,25 +405,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Sea Serpent swims in the river",
+            description : "The Sea Serpent swims in the Oveam.",
             attacks : [
                 { 
                     name : "Water Bite",
                     type : "Water",
                     damage : 7,
-                    description : "The Sea Serpent bites"
+                    description : "The Sea Serpent bites."
                 },
                 { 
                     name : "Water Claw",
                     type : "Water",
                     damage : 8,
-                    description : "The Sea Serpent scratches with its claws"
+                    description : "The Sea Serpent scratches with its Jaws."
                 },
                 { 
                     name : "Water Tail",
                     type : "Water",
                     damage : 8.5,
-                    description : "The Sea Serpent whips with its Body"
+                    description : "The Sea Serpent whips with its long Body."
                 }
             ]
         }
@@ -440,25 +440,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "white",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Seal swims in the snow",
+            description : "The Seal swims in the snow.",
             attacks : [
                 { 
                     name : "Snow Ball",
                     type : "Snow",
                     damage : 7,
-                    description : "The Seal throws a snow ball"
+                    description : "The Seal throws a snow ball."
                 },
                 { 
                     name : "Snow Claw",
                     type : "Snow",
                     damage : 8,
-                    description : "The Seal scratches with its claws"
+                    description : "The Seal scratches with its claws."
                 },
                 { 
                     name : "Snow Tail",
                     type : "Snow",
                     damage : 8.5,
-                    description : "The Seal whips with its tail"
+                    description : "The Seal whips with its tail.",
                 }
             ]
         },
@@ -471,25 +471,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The White Bear swims in the snow",
+            description : "The White Bear swims in the snow.",
             attacks : [
                 { 
                     name : "Snow Ball",
                     type : "Snow",
                     damage : 7,
-                    description : "The White Bear throws a snow ball"
+                    description : "The White Bear throws a snow ball."
                 },
                 { 
                     name : "Snow Claw",
                     type : "Snow",
                     damage : 8,
-                    description : "The White Bear scratches with its claws"
+                    description : "The White Bear scratches with its claws."
                 },
                 { 
                     name : "Snow Tail",
                     type : "Snow",
                     damage : 8.5,
-                    description : "The White Bear whips with its tail"
+                    description : "The White Bear whips with its tail."
                 }
             ]
         },
@@ -502,25 +502,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Orca swims in the snow",
+            description : "The Orca swims in the snow.",
             attacks : [
                 { 
                     name : "Snow Ball",
                     type : "Snow",
                     damage : 7,
-                    description : "The Orca throws a snow ball"
+                    description : "The Orca throws a snow ball."
                 },
                 { 
                     name : "Snow Claw",
                     type : "Snow",
                     damage : 8,
-                    description : "The Orca scratches with its claws"
+                    description : "The Orca scratches with its big teeth and jaus."
                 },
                 { 
                     name : "Snow Tail",
                     type : "Snow",
                     damage : 8.5,
-                    description : "The Orca whips with its tail"
+                    description : "The Orca whips with its tail."
                 }
             ]
         },
@@ -533,25 +533,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "blue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Blue Whale swims in the snow",
+            description : "The Blue Whale swims in the cold seas.",
             attacks : [
                 { 
                     name : "Snow Ball",
                     type : "Snow",
                     damage : 7,
-                    description : "The Blue Whale throws a snow ball"
+                    description : "The Blue Whale throws a snow ball."
                 },
                 { 
-                    name : "Snow Claw",
+                    name : "Cold Water Bubble",
                     type : "Snow",
                     damage : 8,
-                    description : "The Blue Whale scratches with its claws"
+                    description : "The Blue Whale attack with a bubble flow to sneeze its victims."
                 },
                 { 
                     name : "Snow Tail",
                     type : "Snow",
                     damage : 8.5,
-                    description : "The Blue Whale whips with its tail"
+                    description : "The Blue Whale whips with its tail."
                 }
             ]
         },
@@ -564,7 +564,7 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightblue",
             ranDamage  : Math.floor(Math.random() * 10) + 1,
-            description : "The Ice Dragon swims in the snow",
+            description : "The Ice Dragon swims in the snow.",
             attacks : [
                 { 
                     name : "Snow Ball",
@@ -576,13 +576,13 @@ GameAttacks  = {
                     name : "Snow Claw",
                     type : "Snow",
                     damage : 8,
-                    description : "The Ice Dragon scratches with its claws"
+                    description : "The Ice Dragon scratches with its claws."
                 },
                 { 
                     name : "Snow Tail",
                     type : "Snow",
                     damage : 8.5,
-                    description : "The Ice Dragon whips with its tail"
+                    description : "The Ice Dragon whips with its tail."
                 }
             ]
         }
@@ -595,8 +595,8 @@ GameAttacks  = {
 
             name : "Parrot",
             type : "Air",
-            strength : 75,
-            weak : 35,
+            strength : 35,
+            weak : 65,
             Power : 55 ,
             BtnColor : "ligthgray",
             ranDamage : Math.floor(Math.random() * 10) + 1,
@@ -606,19 +606,19 @@ GameAttacks  = {
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Parrot flaps its wings"
+                    description : "The Parrot flaps its wings."
                 },
                 { 
                     name : "Air Feather",
                     type : "Air",
                     damage : 8,
-                    description : "The Parrot shoots a feather"
+                    description : "The Parrot shoots a feather."
                 },
                 { 
                     name : "Air Tail",
                     type : "Air",
                     damage : 8.5,
-                    description : "The Parrot whips with its tail"
+                    description : "The Parrot bite with its beck peak."
                 }
             ]
 
@@ -633,25 +633,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "cyan",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Eagle flies in the sky",
+            description : "The Eagle flies in the sky.",
             attacks : [
                 { 
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Eagle flaps its wings"
+                    description : "The Eagle flaps its wings."
                 },
                 { 
                     name : "Air Feather",
                     type : "Air",
                     damage : 8,
-                    description : "The Eagle shoots a feather"
+                    description : "The Eagle shoots a feather."
                 },
                 { 
                     name : "Air Claws",
                     type : "Air",
                     damage : 8.5,
-                    description : "The Eagle Scratch with its claws"
+                    description : "The Eagle Scratch with its claws."
                 }
             ]
 
@@ -666,25 +666,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightgray",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Owl flies in the sky",
+            description : "The Owl flies in the sky.",
             attacks : [
                 { 
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Owl flaps its wings"
+                    description : "The Owl flaps its wings."
                 },
                 { 
                     name : "Air Feather",
                     type : "Air",
                     damage : 8,
-                    description : "The Owl shoots a feather"
+                    description : "The Owl shoots a feather."
                 },
                 { 
                     name : "Air Claws",
                     type : "Air",
                     damage : 8.5,
-                    description : "The Owl whips with its claws"
+                    description : "The Owl whips with its claws."
                 }
             ]
 
@@ -701,25 +701,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightgray",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Hawk flies in the sky",
+            description : "The Hawk flies in the sky.",
             attacks : [
                 { 
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Hawk flaps its wings"
+                    description : "The Hawk flaps its wings."
                 },
                 { 
                     name : "Air Feather",
                     type : "Air",
                     damage : 8,
-                    description : "The Hawk shoots a feather"
+                    description : "The Hawk shoots a feather."
                 },
                 { 
                     name : "Air Tail",
                     type : "Air",
                     damage : 8.5,
-                    description : "The Hawk whips with its tail"
+                    description : "The Hawk whips with its tail."
                 }
             ]
 
@@ -736,25 +736,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightgray",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Falcon flies in the sky",
+            description : "The Falcon flies in the sky.",
             attacks : [
                 { 
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Falcon flaps its wings"
+                    description : "The Falcon flaps its wings."
                 },
                 { 
                     name : "Air Feather",
                     type : "Air",
                     damage : 8,
-                    description : "The Falcon shoots a feather"
+                    description : "The Falcon shoots a feather."
                 },
                 { 
                     name : "Air Tail",
                     type : "Air",
                     damage : 8.5,
-                    description : "The Falcon whips with its tail"
+                    description : "The Falcon whips with its tail."
                 }
             ]
 
@@ -775,25 +775,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "brown",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Elephant walks on the ground",
+            description : "The Elephant heavily walks on the ground.",
             attacks : [
                 { 
                     name : "Earth Stomp",
                     type : "Earth",
                     damage : 7,
-                    description : "The Elephant stomps the ground"
+                    description : "The Elephant stomps the ground."
                 },
                 { 
                     name : "Earth Tusk",
                     type : "Earth",
                     damage : 8,
-                    description : "The Elephant attacks with its tusks"
+                    description : "The Elephant attacks with its tusks."
                 },
                 { 
                     name : "Earth Tail",
                     type : "Earth",
                     damage : 8.5,
-                    description : "The Elephant whips with its tail"
+                    description : "The Elephant whips with its thrump."
                 }
             ]
         },
@@ -806,25 +806,25 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "brown",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Rhino walks on the ground",
+            description : "The Rhino walks on the ground.",
             attacks : [
                 { 
                     name : "Earth Stomp",
                     type : "Earth",
                     damage : 7,
-                    description : "The Rhino stomps the ground"
+                    description : "The Rhino stomps the ground."
                 },
                 { 
                     name : "Earth Tusk",
                     type : "Earth",
                     damage : 8,
-                    description : "The Rhino attacks with its tusks"
+                    description : "The Rhino attacks with its tusks."
                 },
                 { 
                     name : "Earth Tail",
                     type : "Earth",
                     damage : 8.5,
-                    description : "The Rhino whips with its tail"
+                    description : "The Rhino whips with its sharp head."
                 }
             ]
         },
@@ -838,7 +838,7 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "green",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "Gorilla walks on the ground and hit its chest",
+            description : "Gorilla walks on the ground and hit its chest.",
 
             attacks : [
 
@@ -846,19 +846,19 @@ GameAttacks  = {
                     name : "Earth Punch",
                     type : "Earth",
                     damage : 7,
-                    description : "The Gorilla punches the ground"
+                    description : "The Gorilla punches the ground."
                 },
                 {
                     name : "Earth Kick",
                     type : "Earth",
                     damage : 8,
-                    description : "The Gorilla kicks the ground"
+                    description : "The Gorilla kicks the ground."
                 },
                 {
                     name : "Earth Tail",
                     type : "Earth",
                     damage : 8.5,
-                    description : "The Gorilla whips with its tail"
+                    description : "The Gorilla hit with its fist."
                 }
 
             ]
@@ -869,12 +869,12 @@ GameAttacks  = {
 
             name : "Lion",
             type : "Earth",
-            strength : 75,
+            strength : 85,
             weak : 35,
-            Power : 55 ,
+            Power : 85 ,
             BtnColor : "brown",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Lion walks on the ground and roars",
+            description : "The Lion walks on the ground and roars.",
 
             attacks : [
 
@@ -882,19 +882,19 @@ GameAttacks  = {
                     name : "Earth Bite",
                     type : "Earth",
                     damage : 7,
-                    description : "The Lion bites"
+                    description : "The Lion bites."
                 },
                 {
                     name : "Earth Claw",
                     type : "Earth",
                     damage : 8,
-                    description : "The Lion scratches with its claws"
+                    description : "The Lion scratches with its claws."
                 },
                 {
                     name : "Earth Scratch",
                     type : "Earth",
                     damage : 8.5,
-                    description : "The Lion Scratch within its claws"
+                    description : "The Lion Scratch within its claws."
                 }
 
             ]
@@ -910,7 +910,7 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "brown",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Mammoth walks on the ground and trumpets",
+            description : "The Mammoth walks on the ground and trumpets.",
 
             attacks : [
 
@@ -918,19 +918,19 @@ GameAttacks  = {
                     name : "Earth Stomp",
                     type : "Earth",
                     damage : 7,
-                    description : "The Mammoth stomps the ground"
+                    description : "The Mammoth stomps the ground."
                 },
                 {
                     name : "Earth Tusk",
                     type : "Earth",
                     damage : 8,
-                    description : "The Mammoth attacks with its tusks"
+                    description : "The Mammoth attacks with its tusks."
                 },
                 {
                     name : "Earth Tail",
                     type : "Earth",
                     damage : 8.5,
-                    description : "The Mammoth whips with its tail"
+                    description : "The Mammoth whips with its long trumpet."
                 }
 
             ]
@@ -950,13 +950,13 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightblue",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Fish walks Swim in the River",
+            description : "The Fish walks Swim in the River.",
             attacks : [
                 { 
                     name : "Swimming Flee",
                     type : "River",
                     damage : 7,
-                    description : "The Trout Escape by Fast Swimming",
+                    description : "The Trout Escape by Fast Swimming.",
                 },
             ]
         },
@@ -969,19 +969,19 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightblue",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Fish walks Swim in the River",
+            description : "The Fish walks Swim in the Rive.r",
             attacks : [
                 { 
                     name : "bite",
                     type : "River",
                     damage : 7,
-                    description : "The otter bites with is little mouth"
+                    description : "The otter bites with is little mouth."
                 },
                 {
                     name : "Fast Swimm",
                     type : "River",
                     damage : 6,
-                    description : "The Otter rapidly escape  flee from its enemies by swimming downstream"
+                    description : "The Otter rapidly escape  flee from its enemies by swimming downstream."
                 }
             ]
         },
@@ -994,13 +994,13 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightblue",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Fish walks Swim in the River",
+            description : "The Fish walks Swim in the River.",
             attacks : [
                 { 
                     name : "bite",
                     type : "River",
                     damage : 7,
-                    description : "The Beaver bites with is little mouth"
+                    description : "The Beaver bites with is little mouth."
                 },
             ]
         },
@@ -1014,19 +1014,19 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "lightblue",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Fish walks Swim in the River",
+            description : "The Fish walks Swim in the River.",
             attacks : [
                 { 
                     name : "bite",
                     type : "River",
                     damage : 7,
-                    description : "This Bird bite with is little powerfull beak"
+                    description : "This Bird bite with is little powerfull beak."
                 },
                 {
                     name : "Hunt in the River",
                     type : " River",
                     damage : 6,
-                    description : "The Fishing Bird attack river animals"
+                    description : "The Fishing Bird attack river animals."
                 }
             ]
 
@@ -1070,19 +1070,19 @@ GameAttacks  = {
             Power : 55 ,
             BtnColor : "purple",
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Snake crawls on the ground and bite at first seen",
+            description : "The Snake crawls on the ground and bite at first seen.",
             attacks : [
                 { 
                     name : "bite",
                     type : "Posion",
                     damage : 7,
-                    description : "The Snake bite with is two poisonous fangs"
+                    description : "The Snake bite with is two poisonous fangs."
                 },
                 {
                     name : "harsh-hug",
                     type : "Poison",
                     damage : 5,
-                    description : "The Snake squeeze its victim with a mortal hug"
+                    description : "The Snake squeeze its victim with a mortal hug."
                 }
             ]
         },
@@ -1261,25 +1261,25 @@ GameAttacks  = {
             Power: 50,
             BtnColor: "sandybrown",
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A spiky cactus that thrives in the arid desert",
+            description: "A spiky cactus that thrives in the arid desert.",
             attacks: [
                 { 
                     name: "Needle Shot",
                     type: "Desert",
                     damage: 7,
-                    description: "Shoots sharp needles at the enemy"
+                    description: "Shoots sharp needles at the enemy."
                 },
                 { 
                     name: "Thorn Shield",
                     type: "Desert",
                     damage: 5,
-                    description: "Uses thorns to protect itself and counterattack"
+                    description: "Uses thorns to protect itself and counterattack."
                 },
                 { 
                     name: "Desert Growth",
                     type: "Desert",
                     damage: 6,
-                    description: "Rapidly grows and extends its roots to trap its enemy"
+                    description: "Rapidly grows and extends its roots to trap its enemy."
                 }
             ]
 
@@ -1294,25 +1294,25 @@ GameAttacks  = {
             Power: 65,
             BtnColor: "gold",
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A venomous scorpion lurking under the desert sands",
+            description: "A venomous scorpion lurking under the desert sands.",
             attacks: [
                 { 
                     name: "Venom Sting",
                     type: "Desert",
                     damage: 8,
-                    description: "Injects venom with a powerful sting"
+                    description: "Injects venom with a powerful sting."
                 },
                 { 
                     name: "Sand Ambush",
                     type: "Desert",
                     damage: 7,
-                    description: "Hides under the sand and strikes suddenly"
+                    description: "Hides under the sand and strikes suddenly."
                 },
                 { 
                     name: "Claw Crush",
                     type: "Desert",
                     damage: 6,
-                    description: "Uses its strong claws to grip and crush the enemy"
+                    description: "Uses its strong claws to grip and crush the enemy."
                 }
             ]
         },
@@ -1325,25 +1325,25 @@ GameAttacks  = {
             Power: 60,
             BtnColor: "tan",
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A stealthy snake that blends with the desert sands",
+            description: "A stealthy snake that blends with the desert sands.",
             attacks: [
                 { 
                     name: "Sandbite",
                     type: "Desert",
                     damage: 8,
-                    description: "A quick and venomous bite"
+                    description: "A quick and venomous bite."
                 },
                 { 
                     name: "Sand Camouflage",
                     type: "Desert",
                     damage: 5,
-                    description: "Blends into the environment, making it harder to hit"
+                    description: "Blends into the environment, making it harder to hit."
                 },
                 { 
                     name: "Coil Crush",
                     type: "Desert",
                     damage: 7,
-                    description: "Wraps around the enemy and squeezes tightly"
+                    description: "Wraps around the enemy and squeezes tightly."
                 }
             ]
         },
@@ -1356,58 +1356,59 @@ GameAttacks  = {
             Power: 55,
             BtnColor: "brown",
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A scavenger bird circling over the desert, waiting for its prey to weaken",
+            description: "A scavenger bird circling over the desert, waiting for its prey to weaken.",
             attacks: [
                 { 
                     name: "Talon Strike",
                     type: "Desert",
                     damage: 7,
-                    description: "Attacks with its razor-sharp talons"
+                    description: "Attacks with its razor-sharp talons."
                 },
                 { 
                     name: "Sandstorm Dive",
                     type: "Desert",
                     damage: 6,
-                    description: "Creates a sandstorm before diving onto the enemy"
+                    description: "Creates a sandstorm before diving onto the enemy."
                 },
                 { 
                     name: "Desert Screech",
                     type: "Desert",
                     damage: 5,
-                    description: "Unleashes a terrifying screech that weakens the opponent"
+                    description: "Unleashes a terrifying screech that weakens the opponent."
                 }
             ]
         },
         Camel = {
 
-            name: "Vulture",
+            name: "Camel",
             type: "Desert",
-            strength: 65,
-            weak: 35,
-            Power: 55,
-            BtnColor: "brown",
+            strength: 80,
+            weak: 20,
+            Power: 70,
+            BtnColor: "khaki",
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A scavenger bird circling over the desert, waiting for its prey to weaken",
+            description: "A resilient camel that endures the harsh desert conditions.",
             attacks: [
                 { 
-                    name: "Talon Strike",
+                    name: "Sand Kick",
                     type: "Desert",
                     damage: 7,
-                    description: "Attacks with its razor-sharp talons"
+                    description: "Kicks up sand to blind the enemy."
                 },
                 { 
-                    name: "Sandstorm Dive",
+                    name: "Water Reserve",
                     type: "Desert",
                     damage: 6,
-                    description: "Creates a sandstorm before diving onto the enemy"
+                    description: "Replenishes stamina with stored water."
                 },
                 { 
-                    name: "Desert Screech",
+                    name: "Hump Slam",
                     type: "Desert",
-                    damage: 5,
-                    description: "Unleashes a terrifying screech that weakens the opponent"
+                    damage: 8,
+                    description: "Uses its weight to slam into the enemy."
                 }
             ]
+
         },
 
     ],
@@ -1485,7 +1486,7 @@ GameAttacks  = {
                     name: "Tusk Charge",
                     type: "Forest",
                     damage: 8,
-                    description: "The Wildboar charges with its tusks."
+                    description: "The Wildboar charges against its enemy with its tusks."
                 },
                 {
                     name: "Mud Throw",
@@ -1563,7 +1564,7 @@ GameAttacks  = {
                     name: "Bite",
                     type: "Forest",
                     damage: 7,
-                    description: "The Fox bites."
+                    description: "The Fox quicky bites its pray in stealth."
                 },
                 {
                     name: "Sly Dodge",
@@ -1590,19 +1591,19 @@ GameAttacks  = {
                     name: "Bite",
                         type: "Forest",
                         damage: 8,
-                        description: "The Wolf bites."
+                        description: "The Wolf bites and make blood its enemy."
                     },
                     {
                         name: "Howl",
                         type: "Forest",
                         damage: 5,
-                        description: "The Wolf howls, causing fear."
+                        description: "The Wolf howls, causing fear its enemy."
                     },
                     {
                         name : "Pack Attack",
                         type : "Forest",
                         damage : 8,
-                        description : "A Whole Pack of Wolves attacks its Enemy",
+                        description : "A Whole Pack of Wolves attacks its Enemy.",
                     }
                 ]
 
@@ -1674,7 +1675,7 @@ GameAttacks  = {
                     name: "Peck",
                     type: "Forest",
                     damage: 7,
-                    description: "The Raven pecks."
+                    description: "The Raven pecks the eyes of its enemy."
                 },
                 {
                     name: "Shadow Dive",
@@ -1736,7 +1737,7 @@ GameAttacks  = {
                     name: "Bite",
                     type: "Jungle",
                     damage: 6,
-                    description: "The Lizard bites and leave a rotten blood on its victim."
+                    description: "The Lizard bites and leave a rotten hurt on its victim."
                 }
             ]
         },
@@ -1920,7 +1921,7 @@ GameAttacks  = {
                     name : "Clauws Hurt",
                     type : "Jungle",
                     damage : 8.5,
-                    description : "The Lion King Graps tis Prays with its claws"
+                    description : "The Lion King Graps tis Prays with its claws."
                 }
             ]
 
@@ -2078,7 +2079,7 @@ GameAttacks  = {
                     name: "Bear Hug",
                     type: "Mountain",
                     damage: 7,
-                    description: "The Bear hugs tightly and scratch with is clawsNails."
+                    description: "The Bear hugs tightly and scratch with is claws Nails."
                 }
             ]
         },
@@ -2262,6 +2263,12 @@ GameAttacks  = {
                     type: "Swamp",
                     damage: Math.floor(Math.random() * 9) + 1,
                     description: "The Crocodile swings its tail with brutal strength."
+                },
+                {
+                    name : "Sudden Attacl",
+                    type : "Swamp",
+                    damage : Math.floor(Math.random() * 9) + 3,
+                    description : "The Crocodrile hide it dark water and suddenly attack is prey."
                 }
             ]
 
@@ -2486,7 +2493,7 @@ GameAttacks  = {
                     name : "Abbysal Lure",
                     type : "Sea",
                     damage : 6,
-                    description : "The CaveFish lure in the abyssal Deep Sea"
+                    description : "The CaveFish lure in the abyssal Deep Sea."
                 }
             ]
 
@@ -2621,7 +2628,7 @@ GameAttacks  = {
                 {
                     name: "Burrow",
                     type: "Bugs",
-                    damage: 3,
+                    damage: 1,
                     description: "The Worm burrows."
                 },
                 {
@@ -2701,7 +2708,7 @@ GameAttacks  = {
                     name : "Toxic Sting",
                     type : "Bugs",
                     damage : 7,
-                    description : "The Evil Bug bite and Sting, it relase a toxic fluid on its victim"
+                    description : "The Evil Bug bite and Sting, it relase a toxic fluid on its victims."
 
                 },
                 {
@@ -2734,7 +2741,7 @@ GameAttacks  = {
                     name: "Lethal Contagion",
                     type: "Bugs",
                     damage: 10,
-                    description: "The Evil Virus is highly contagious."
+                    description: "The Evil Virus is highly contagious and cause pain and dead."
                 },
                 {
                     name: "Cellular Decay",
@@ -2813,7 +2820,7 @@ GameAttacks  = {
             type: "Darkness",
             strength: 90,
             weak: 10,
-            Power: 85,
+            Power: 95,
             BtnColor: "black",
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A black hole consumes all.",
@@ -2822,7 +2829,7 @@ GameAttacks  = {
                     name: "Consume",
                     type: "Darkness",
                     damage: 10,
-                    description: "The Black Hole consumes its target."
+                    description: "The Black Hole fully consumes its target."
                 }
             ]
 
@@ -2841,7 +2848,7 @@ GameAttacks  = {
                     name: "Curse",
                     type: "Darkness",
                     damage: 9,
-                    description: "The Evil Eye curses the target."
+                    description: "The Evil Eye see everything and curses the target."
                 }
             ]
         },
@@ -3058,13 +3065,13 @@ GameAttacks  = {
                 { 
                     name: "Multi-Head-Strike",
                     type: "SeaMonster",
-                    damage: Math.floor(Math.random() * 9) + 1,
+                    damage: Math.floor(Math.random() * 9) + 5,
                     description: "The Hydra attacks with all its heads simultaneously."
                 },
                 { 
                     name: "Toxic-Spit",
                     type: "SeaMonster",
-                    damage: Math.floor(Math.random() * 9) + 1,
+                    damage: Math.floor(Math.random() * 9) + 3,
                     description: "The Hydra spews a deadly toxin at its enemy."
                 }
             ]
@@ -3097,7 +3104,7 @@ GameAttacks  = {
         },
         SeaSerpent = {
 
-            name: "Sea Serpent",
+            name: "SeaSerpent",
             type: "SeaMonster",
             strength: 85,
             weak: 30,
@@ -3187,6 +3194,13 @@ GameAttacks  = {
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful spellcaster skilled in dark magic.",
             attacks: [
+                {
+                    name : "Poison Drink",
+                    type : "Poison",
+                    damage : 7,
+                    description : "The Witch make a harsh Poison and throw it to its enemies.",
+
+                },
                 { 
                     name: "Hex Curse",
                     type: "underGround",
@@ -3331,7 +3345,7 @@ GameAttacks  = {
                     name : "Frog Spell",
                     type : "underGround",
                     damage : Math.floor(Math.random() + 10) + 5,
-                    description : "Magician Wizard turn its enemy into a tiny Green Frog", 
+                    description : "Magician Wizard turn its enemy into a tiny Green Frog.", 
                 }
             ],
 
@@ -3503,13 +3517,13 @@ GameAttacks  = {
                     name : "Hurt Wing Attack",
                     type : "Mythical",
                     damage : Math.floor(Math.random() * 10 ) + 3 ,
-                    description : "Throw its Stingy Sharp Wings agains its enemies"
+                    description : "Throw its Stingy Sharp Wings agains its enemies."
                 }
             ]
         },
         Sphinx = {
             
-            name : "Fire Sphinx",
+            name : "Sphinx",
             type : "Fire",
             strength : 75,
             weak : 15,
@@ -3522,19 +3536,19 @@ GameAttacks  = {
                     name : "Fire Eye",
                     type : "Fire",
                     damage : 7,
-                    description : "The Sphinx shoots fire from its eyes"
+                    description : "The Sphinx shoots fire from its eyes."
                 },
                 { 
                     name : "Fire Claw",
                     type : "Fire",
                     damage : 8,
-                    description : "The  Sphinx scratches with its claws"
+                    description : "The  Sphinx scratches with its claws."
                 },
                 { 
                     name : "Fire Tail",
                     type : "Fire",
                     damage : 8.5,
-                    description : "The Sphinx whips with its tail"
+                    description : "The Sphinx whips with its tail."
                 }
             ]
 
@@ -3579,7 +3593,7 @@ GameAttacks  = {
                     name : "Gamma Ray",
                     type : "Mythical",
                     damage : Math.floor(Math.random() + 10 )  + 10,
-                    description : "SpaceDragon breath a powerfull Gamma Ray against its enemies",
+                    description : "SpaceDragon breath a Powerfull Gamma Ray against its enemies.",
                 },
                 { 
                     name: "Galactic Breath",
