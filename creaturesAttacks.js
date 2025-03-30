@@ -25,6 +25,8 @@ GameAttacks  = {
             weak : 25,
             BtnColor : "red",
             Power : 45 ,
+            catId : 3500,
+            creatureId : 3501,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Phoenix rises from the ashes.",
             attacks : [
@@ -55,6 +57,8 @@ GameAttacks  = {
             weak : 15,
             BtnColor : "red",
             Power : 65 ,
+            catId : 3500,
+            creatureId : 3502,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Sphinx guards the temple.",
             attacks : [
@@ -86,6 +90,8 @@ GameAttacks  = {
             weak : 20,
             BtnColor : "red",
             Power : 85 ,
+            catId : 3500,
+            creatureId : 3503,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Dragon breathes fire to Destroy its Enemies.",
             attacks : [
@@ -118,6 +124,8 @@ GameAttacks  = {
             weak : 35,
             BtnColor : "red",
             Power : 95 ,
+            catId : 3500,
+            creatureId : 3504,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Wild Fire burns everything in its path.",
             attacks : [
@@ -149,6 +157,8 @@ GameAttacks  = {
             weak : 15,
             BtnColor : "red",
             Power : 90 ,
+            catId : 3500,
+            creatureId : 3505,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Volcano erupts",
             attacks : [
@@ -187,6 +197,8 @@ GameAttacks  = {
             weak : 55,
             BtnColor : "blue",
             Power : 25 ,
+            catId : 3100,
+            creatureId : 3101,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Cat Fish swims in the river.",
             attacks : [
@@ -218,6 +230,8 @@ GameAttacks  = {
             weak : 35,
             BtnColor : "blue",
             Power : 55 ,
+            catId : 3100,
+            creatureId : 3102,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Piranha swims in the river and they attack in groups.",
             attacks : [
@@ -249,6 +263,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3103,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Eel swims in the river and relase electric shocks.",
             attacks : [
@@ -280,6 +296,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3104,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Hippo swims in the river and it is very aggressive.",
             attacks : [
@@ -311,6 +329,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3105,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Dolphin swims in open Seas.",
             attacks : [
@@ -342,6 +362,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3106,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Shark swims in the blue Sea.",
             attacks : [
@@ -373,6 +395,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3107,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Whale swims in the deep Sea and it is very big.",
             attacks : [
@@ -404,6 +428,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3100,
+            creatureId : 3108,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Sea Serpent swims in the Oveam.",
             attacks : [
@@ -439,6 +465,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "white",
+            catId : 3200,
+            creatureId : 3201,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Seal swims in the snow.",
             attacks : [
@@ -470,6 +498,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3200,
+            creatureId : 3202,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The White Bear swims in the snow.",
             attacks : [
@@ -501,6 +531,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3200,
+            creatureId : 3203,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Orca swims in the snow.",
             attacks : [
@@ -532,6 +564,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "blue",
+            catId : 3200,
+            creatureId : 3204,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Blue Whale swims in the cold seas.",
             attacks : [
@@ -563,6 +597,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightblue",
+            catId : 3200,
+            creatureId : 3205,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Ice Dragon swims in the snow.",
             attacks : [
@@ -591,35 +627,32 @@ GameAttacks  = {
 
     Air : [
 
-        Parrot = {
+        Bat = {
 
-            name : "Parrot",
+            name : "Bat",
             type : "Air",
             strength : 35,
             weak : 65,
             Power : 55 ,
-            BtnColor : "ligthgray",
+            BtnColor : "Bat",
+            catId : 1200,
+            creatureId : 1201,
             ranDamage : Math.floor(Math.random() * 10) + 1,
-            description : "The Parrot flies in the sky",
+            description : "The Bat flies at Night",
             attacks : [
                 { 
                     name : "Air Wing",
                     type : "Air",
                     damage : 7,
-                    description : "The Parrot flaps its wings."
+                    description : "The Bat flaps its wings."
                 },
                 { 
-                    name : "Air Feather",
+                    name : "Bloody Sucks",
                     type : "Air",
                     damage : 8,
-                    description : "The Parrot shoots a feather."
+                    description : "The Bat drain the blood from its victim."
                 },
-                { 
-                    name : "Air Tail",
-                    type : "Air",
-                    damage : 8.5,
-                    description : "The Parrot bite with its beck peak."
-                }
+
             ]
 
         },
@@ -632,6 +665,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "cyan",
+            catId : 1200,
+            creatureId : 1202,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Eagle flies in the sky.",
             attacks : [
@@ -665,6 +700,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightgray",
+            catId : 1200,
+            creatureId : 1205,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Owl flies in the sky.",
             attacks : [
@@ -694,12 +731,12 @@ GameAttacks  = {
             
             name : "Hawk",
             type : "Air",
-            name : "Eagle",
-            type : "Air",
             strength : 75,
             weak : 35,
             Power : 55 ,
             BtnColor : "lightgray",
+            catId : 1200,
+            creatureId : 1203,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Hawk flies in the sky.",
             attacks : [
@@ -729,12 +766,12 @@ GameAttacks  = {
 
             name : "Falcon",
             type : "Air",
-            name : "Eagle",
-            type : "Air",
             strength : 75,
             weak : 35,
             Power : 55 ,
             BtnColor : "lightgray",
+            catId : 1200,
+            creatureId : 1204,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Falcon flies in the sky.",
             attacks : [
@@ -768,12 +805,12 @@ GameAttacks  = {
             
             name : "Elephant",
             type : "Earth",
-            name : "Eagle",
-            type : "Air",
             strength : 75,
             weak : 35,
-            Power : 55 ,
+            Power : 80 ,
             BtnColor : "brown",
+            catId : 2100,
+            creatureId : 2104,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Elephant heavily walks on the ground.",
             attacks : [
@@ -805,6 +842,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "brown",
+            catId : 2100,
+            creatureId : 2101,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Rhino walks on the ground.",
             attacks : [
@@ -837,6 +876,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "green",
+            catId : 2100,
+            creatureId : 2103,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "Gorilla walks on the ground and hit its chest.",
 
@@ -873,6 +914,8 @@ GameAttacks  = {
             weak : 35,
             Power : 85 ,
             BtnColor : "brown",
+            catId : 2100,
+            creatureId : 2105,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Lion walks on the ground and roars.",
 
@@ -909,6 +952,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "brown",
+            catId : 2100,
+            creatureId : 2106,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Mammoth walks on the ground and trumpets.",
 
@@ -949,6 +994,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightblue",
+            catId : 1300,
+            creatureId : 1301,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
             attacks : [
@@ -968,6 +1015,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightblue",
+            catId : 1300,
+            creatureId : 1303,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the Rive.r",
             attacks : [
@@ -993,6 +1042,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightblue",
+            catId : 1300,
+            creatureId : 1302,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
             attacks : [
@@ -1013,6 +1064,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "lightblue",
+            catId : 1300,
+            creatureId : 1306,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
             attacks : [
@@ -1039,6 +1092,8 @@ GameAttacks  = {
             weak: 25,
             Power: 75,
             BtnColor: "darkolivegreen",
+            catId : 1300,
+            creatureId : 1305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful reptile lurking beneath the water surface.",
             attacks: [
@@ -1069,6 +1124,8 @@ GameAttacks  = {
             weak : 35,
             Power : 55 ,
             BtnColor : "purple",
+            catId : 3300,
+            creatureId : 3005,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Snake crawls on the ground and bite at first seen.",
             attacks : [
@@ -1094,6 +1151,8 @@ GameAttacks  = {
             weak: 30,
             Power: 60,
             BtnColor: "purple",
+            catId : 3300,
+            creatureId : 3003,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Scorpion lurks in the shadows, ready to strike with its venomous sting.",
             attacks: [
@@ -1126,6 +1185,8 @@ GameAttacks  = {
             weak: 25,
             Power: 50,
             BtnColor: "purple",
+            catId : 3300,
+            creatureId : 3004,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Spider weaves deadly webs and waits for its prey to get trapped.",
             attacks: [
@@ -1158,6 +1219,8 @@ GameAttacks  = {
             weak: 20,
             Power: 55,
             BtnColor: "purple",
+            catId : 3300,
+            creatureId : 3006,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Wasp is fast and deadly, striking with precision.",
             attacks: [
@@ -1190,6 +1253,8 @@ GameAttacks  = {
             weak: 40,
             Power: 50,
             BtnColor: "purple",
+            catId : 3300,
+            creatureId : 3001,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Sea Urchin lies in waitin the sea bottom, covered in deadly spikes.",
             attacks: [
@@ -1222,6 +1287,8 @@ GameAttacks  = {
             weak: 35,
             Power: 45,
             BtnColor: "purple",
+            catId : 3300,
+            creatureId : 3002,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Globe Fish inflates itself as a defense mechanism, secreting a deadly toxin.",
             attacks: [
@@ -1260,6 +1327,8 @@ GameAttacks  = {
             weak: 40,
             Power: 50,
             BtnColor: "sandybrown",
+            catId : 3400,
+            creatureId : 3401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A spiky cactus that thrives in the arid desert.",
             attacks: [
@@ -1293,6 +1362,8 @@ GameAttacks  = {
             weak: 25,
             Power: 65,
             BtnColor: "gold",
+            catId : 3400,
+            creatureId : 3402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A venomous scorpion lurking under the desert sands.",
             attacks: [
@@ -1324,6 +1395,8 @@ GameAttacks  = {
             weak: 30,
             Power: 60,
             BtnColor: "tan",
+            catId : 3400,
+            creatureId : 3403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stealthy snake that blends with the desert sands.",
             attacks: [
@@ -1355,6 +1428,8 @@ GameAttacks  = {
             weak: 35,
             Power: 55,
             BtnColor: "brown",
+            catId : 3400,
+            creatureId : 3405,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A scavenger bird circling over the desert, waiting for its prey to weaken.",
             attacks: [
@@ -1386,6 +1461,8 @@ GameAttacks  = {
             weak: 20,
             Power: 70,
             BtnColor: "khaki",
+            catId : 3400,
+            creatureId : 3404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A resilient camel that endures the harsh desert conditions.",
             attacks: [
@@ -1423,6 +1500,8 @@ GameAttacks  = {
             weak: 20,
             Power: 50,
             BtnColor: "yellow",
+            catId : 1400,
+            creatureId : 1401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swarm of bees attacks.",
             attacks: [
@@ -1454,6 +1533,8 @@ GameAttacks  = {
             weak: 25,
             Power: 55,
             BtnColor: "gray",
+            catId : 1400,
+            creatureId : 1402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A sneaky raccoon attacks.",
             attacks: [
@@ -1479,6 +1560,8 @@ GameAttacks  = {
             weak: 30,
             Power: 65,
             BtnColor: "brown",
+            catId : 1400,
+            creatureId : 1404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful wild boar charges.",
             attacks: [
@@ -1505,6 +1588,8 @@ GameAttacks  = {
             weak: 35,
             Power: 70,
             BtnColor: "brown",
+            catId : 1400,
+            creatureId : 1403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive bison charges.",
             attacks: [
@@ -1531,6 +1616,8 @@ GameAttacks  = {
             weak: 20,
             Power: 50,
             BtnColor: "tan",
+            catId : 1400,
+            creatureId : 1406,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swift deer kicks.",
             attacks: [
@@ -1557,6 +1644,8 @@ GameAttacks  = {
             weak: 25,
             Power: 55,
             BtnColor: "orange",
+            catId : 1400,
+            creatureId : 1407,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning fox bites.",
             attacks: [
@@ -1584,6 +1673,8 @@ GameAttacks  = {
             weak: 30,
             Power: 60,
             BtnColor: "gray",
+            catId : 1400,
+            creatureId : 1408,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fierce wolf bites.",
             attacks: [
@@ -1616,6 +1707,8 @@ GameAttacks  = {
             weak: 35,
             Power: 75,
             BtnColor: "brown",
+            catId : 1400,
+            creatureId : 1409,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful bear swipes.",
             attacks: [
@@ -1642,6 +1735,8 @@ GameAttacks  = {
             weak: 20,
             Power: 50,
             BtnColor: "white",
+            catId : 1200,
+            creatureId : 1205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A silent owl swoops.",
             attacks: [
@@ -1666,8 +1761,8 @@ GameAttacks  = {
             type: "Forest",
             strength: 65,
             weak: 25,
-            Power: 55,
-            BtnColor: "black",
+            catId : 1200,
+            creatureId : 1209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A Cunning raven pecks.",
             attacks: [
@@ -1692,8 +1787,8 @@ GameAttacks  = {
             type: "Forest",
             strength: 70,
             weak: 30,
-            Power: 60,
-            BtnColor: "brown",
+            catId : 1200,
+            creatureId : 1208,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic eagle swoops.",
             attacks: [
@@ -1724,6 +1819,8 @@ GameAttacks  = {
             weak: 20,
             Power: 40,
             BtnColor: "green",
+            catId : 1500,
+            creatureId : 1501,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A quick and agile lizard attacks.",
             attacks: [
@@ -1742,12 +1839,15 @@ GameAttacks  = {
             ]
         },
         Tiger = {
+
             name: "Tiger",
             type: "Jungle",
             strength: 80,
             weak: 30,
             Power: 70,
             BtnColor: "orange",
+            catId : 1500,
+            creatureId : 1502,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful tiger pounces.",
             attacks: [
@@ -1773,6 +1873,8 @@ GameAttacks  = {
             weak: 25,
             Power: 50,
             BtnColor: "brown",
+            catId : 1500,
+            creatureId : 1503,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mischievous monkey throws objects.",
             attacks: [
@@ -1799,6 +1901,8 @@ GameAttacks  = {
             weak: 35,
             Power: 60,
             BtnColor: "tan",
+            catId : 1500,
+            creatureId : 1504,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fast ostrich kicks.",
             attacks: [
@@ -1825,6 +1929,8 @@ GameAttacks  = {
             weak: 40,
             Power: 45,
             BtnColor: "gray",
+            catId : 1500,
+            creatureId : 1505,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A defensive porcupine throws quills.",
             attacks: [
@@ -1851,6 +1957,8 @@ GameAttacks  = {
             weak: 30,
             Power: 65,
             BtnColor: "brown",
+            catId : 1500,
+            creatureId : 1508,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A ferocious jungle boar charges.",
             attacks: [
@@ -1877,6 +1985,8 @@ GameAttacks  = {
             weak: 25,
             Power: 60,
             BtnColor: "orange",
+            catId : 1500,
+            creatureId : 1506,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful orangutan swings and strikes.",
             attacks: [
@@ -1896,12 +2006,15 @@ GameAttacks  = {
 
         },
         Lion = {
+
             name: "Lion",
             type: "Jungle",
             strength: 85,
             weak: 30,
             Power: 75,
             BtnColor: "goldenrod",
+            catId : 1500,
+            creatureId : 1509,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic lion roars and attacks.",
             attacks: [
@@ -1933,6 +2046,8 @@ GameAttacks  = {
             weak: 35,
             Power: 60,
             BtnColor: "yellow",
+            catId : 1500,
+            creatureId : 1513,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tall giraffe kicks with its long legs.",
             attacks: [
@@ -1959,6 +2074,8 @@ GameAttacks  = {
             weak: 30,
             Power: 70,
             BtnColor: "brown",
+            catId : 1500,
+            creatureId : 1512,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A strong buffalo charges with its horns.",
             attacks: [
@@ -1985,6 +2102,8 @@ GameAttacks  = {
             weak: 40,
             Power: 80,
             BtnColor: "gray",
+            catId : 1500,
+            creatureId : 1515,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive elephant charges with its tusks.",
             attacks: [
@@ -2015,6 +2134,8 @@ GameAttacks  = {
             weak: 25,
             Power: 50,
             BtnColor: "gray",
+            catId : 2400,
+            creatureId : 2401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A nimble goat strikes with its horns.",
             attacks: [
@@ -2041,6 +2162,8 @@ GameAttacks  = {
             weak: 30,
             Power: 60,
             BtnColor: "brown",
+            catId : 2400,
+            creatureId : 2402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic Eagle swoops.",
             attacks: [
@@ -2066,6 +2189,8 @@ GameAttacks  = {
             weak: 30,
             Power: 70,
             BtnColor: "brown",
+            catId : 2400,
+            creatureId : 2403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful mountain bear swipes.",
             attacks: [
@@ -2091,6 +2216,8 @@ GameAttacks  = {
             weak: 30,
             Power: 65,
             BtnColor: "tan",
+            catId : 2400,
+            creatureId : 2405,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stealthy mountain lion pounces.",
             attacks: [
@@ -2116,7 +2243,8 @@ GameAttacks  = {
             weak: 30,
             Power: 60,
             BtnColor: "black",
-
+            catId : 2400,
+            creatureId : 2408,
             attacks: [
                 {
                 name : "Rollong Rock",
@@ -2149,6 +2277,8 @@ GameAttacks  = {
             weak: 30,
             Power: 70,
             BtnColor: "darkgreen",
+            catId : 2300,
+            creatureId : 2301,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fierce alligator lurking in the murky waters.",
             attacks: [
@@ -2174,6 +2304,8 @@ GameAttacks  = {
             weak: 80,
             Power: 35,
             BtnColor: "brown",
+            catId : 2300,
+            creatureId : 2302,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodsucking menace of the swamp.",
             attacks: [
@@ -2199,6 +2331,8 @@ GameAttacks  = {
             weak: 40,
             Power: 50,
             BtnColor: "green",
+            catId : 2300,
+            creatureId : 2303,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A nimble amphibian that leaps through the swamp.",
             attacks: [
@@ -2224,6 +2358,8 @@ GameAttacks  = {
             weak: 45,
             Power: 60,
             BtnColor: "pink",
+            catId : 2300,
+            creatureId : 2304,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic bird standing tall in swamp waters.",
             attacks: [
@@ -2249,6 +2385,8 @@ GameAttacks  = {
             weak: 25,
             Power: 75,
             BtnColor: "darkolivegreen",
+            catId : 2300,
+            creatureId : 2305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful reptile lurking beneath the water surface.",
             attacks: [
@@ -2286,6 +2424,8 @@ GameAttacks  = {
             weak: 30,
             Power: 45,
             BtnColor: "red",
+            catId : 2200,
+            creatureId : 2201,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tough crab pinches with its claws.",
             attacks: [
@@ -2311,6 +2451,8 @@ GameAttacks  = {
             weak: 20,
             Power: 70,
             BtnColor: "blue",
+            catId : 2200,
+            creatureId : 2202,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful shark bites with its sharp teeth.",
             attacks: [
@@ -2343,6 +2485,8 @@ GameAttacks  = {
             weak: 35,
             Power: 75,
             BtnColor: "blue",
+            catId : 2200,
+            creatureId : 2205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive whale strikes with its tail.",
             attacks: [
@@ -2369,6 +2513,8 @@ GameAttacks  = {
             weak: 25,
             Power: 60,
             BtnColor: "purple",
+            catId : 2200,
+            creatureId : 2208,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning octopus wraps with its tentacles.",
             attacks: [
@@ -2395,6 +2541,8 @@ GameAttacks  = {
             weak: 40,
             Power: 50,
             BtnColor: "lightblue",
+            catId : 2200,
+            creatureId : 2209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stinging jellyfish releases its tentacles.",
             attacks: [
@@ -2421,6 +2569,8 @@ GameAttacks  = {
             weak: 30,
             Power: 40,
             BtnColor: "green",
+            catId : 2200,
+            creatureId : 2205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A slippery elver bites.",
             attacks: [
@@ -2448,6 +2598,8 @@ GameAttacks  = {
             weak: 25,
             Power: 65,
             BtnColor: "black",
+            catId : 2200,
+            creatureId : 2212,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fast squid strikes with its tentacles.",
             attacks: [
@@ -2474,6 +2626,8 @@ GameAttacks  = {
             weak: 40,
             Power: 45,
             BtnColor: "gray",
+            catId : 2200,
+            creatureId : 2215,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A blind cave fish bites.",
             attacks: [
@@ -2507,6 +2661,8 @@ GameAttacks  = {
             weak: 30,
             Power: 70,
             BtnColor: "green",
+            catId : 2200,
+            creatureId : 2218,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A resilient sea turtle bites.",
             attacks: [
@@ -2538,6 +2694,8 @@ GameAttacks  = {
             weak: 90,
             Power: 5,
             BtnColor: "green",
+            catId : 1100,
+            creatureId : 1101,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tiny amoeba engulfs.",
             attacks: [
@@ -2564,6 +2722,8 @@ GameAttacks  = {
             weak: 85,
             Power: 10,
             BtnColor: "yellow",
+            catId : 1100,
+            creatureId : 1103,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swarm of bacteria infects.",
             attacks: [
@@ -2596,6 +2756,8 @@ GameAttacks  = {
             weak: 80,
             Power: 15,
             BtnColor: "brown",
+            catId : 1100,
+            creatureId : 1102,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tough beetle bites.",
             attacks: [
@@ -2622,6 +2784,8 @@ GameAttacks  = {
             weak: 82,
             Power: 12,
             BtnColor: "red",
+            catId : 1100,
+            creatureId : 1105,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A slithering worm burrows.",
             attacks: [
@@ -2648,6 +2812,8 @@ GameAttacks  = {
             weak: 75,
             Power: 20,
             BtnColor: "red",
+            catId : 1100,
+            creatureId : 1106,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodsucking bug drains life.",
             attacks: [
@@ -2674,6 +2840,8 @@ GameAttacks  = {
             weak: 70,
             Power: 25,
             BtnColor: "purple",
+            catId : 1100,
+            creatureId : 1109,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A parasite drains and weakens.",
             attacks: [
@@ -2700,7 +2868,9 @@ GameAttacks  = {
             weak: 10,
             Power: 85,
             BtnColor: "black",
-            ranDamage: Math.floor(Math.random() * 10) + 1,
+            catId : 1100,
+            creatureId : 1113,
+            ranDamage: Math.floor(Math.random() * 10) + 11,
             description: "A highly dangerous bug that spreads deadly diseases.",
             attacks: [
 
@@ -2734,7 +2904,9 @@ GameAttacks  = {
             weak: 5,
             Power: 90,
             BtnColor: "darkred",
-            ranDamage: Math.floor(Math.random() * 10) + 1,
+            catId : 1100,
+            creatureId : 1115,
+            ranDamage: Math.floor(Math.random() * 10) + 13,
             description: "A highly contagious and lethal virus.",
             attacks: [
                 {
@@ -2765,6 +2937,8 @@ GameAttacks  = {
             weak: 30,
             Power: 65,
             BtnColor: "black",
+            catId : 5400,
+            creatureId : 5401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A shadowy figure strikes.",
             attacks: [
@@ -2784,6 +2958,8 @@ GameAttacks  = {
             weak: 35,
             Power: 60,
             BtnColor: "gray",
+            catId : 5400,
+            creatureId : 5402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cloud of ash chokes.",
             attacks: [
@@ -2802,7 +2978,9 @@ GameAttacks  = {
             strength: 80,
             weak: 20,
             Power: 75,
-            BtnColor: "darkblue",
+            BtnColor: "black",
+            catId : 5400,
+            creatureId : 5404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "An eclipse drains light and energy.",
             attacks: [
@@ -2822,6 +3000,8 @@ GameAttacks  = {
             weak: 10,
             Power: 95,
             BtnColor: "black",
+            catId : 5400,
+            creatureId : 5410,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A black hole consumes all.",
             attacks: [
@@ -2841,6 +3021,8 @@ GameAttacks  = {
             weak: 15,
             Power: 80,
             BtnColor: "black",
+            catId : 5400,
+            creatureId : 5420,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "An evil eye curses.",
             attacks: [
@@ -2865,6 +3047,8 @@ GameAttacks  = {
             weak: 25,
             Power: 60,
             BtnColor: "green",
+            catId : 4100,
+            creatureId : 4101,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A brutal orc swings its axe.",
             attacks: [
@@ -2891,6 +3075,8 @@ GameAttacks  = {
             weak: 35,
             Power: 45,
             BtnColor: "brown",
+            catId : 4100,
+            creatureId : 4103,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning goblin throws daggers.",
             attacks: [
@@ -2917,6 +3103,8 @@ GameAttacks  = {
             weak: 20,
             Power: 70,
             BtnColor: "darkgreen",
+            catId : 4100,
+            creatureId : 4105,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive ogre clubs with its fist.",
             attacks: [
@@ -2943,6 +3131,8 @@ GameAttacks  = {
             weak: 30,
             Power: 65,
             BtnColor: "darkgray",
+            catId : 4100,
+            creatureId : 4108,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A regenerative troll claws.",
             attacks: [
@@ -2969,6 +3159,8 @@ GameAttacks  = {
             weak: 25,
             Power: 75,
             BtnColor: "brown",
+            catId : 4100,
+            creatureId : 4110,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive cyclops swings its club.",
             attacks: [
@@ -2996,6 +3188,8 @@ GameAttacks  = {
             weak: 40,
             Power: 80,
             BtnColor: "red",
+            catId : 4100,
+            creatureId : 4116,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mighty dragon breathes fire.",
             attacks: [
@@ -3033,6 +3227,8 @@ GameAttacks  = {
             weak: 20,
             Power: 90,
             BtnColor: "darkblue",
+            catId : 4200,
+            creatureId : 4218,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A legendary sea creature with massive tentacles.",
             attacks: [
@@ -3059,6 +3255,8 @@ GameAttacks  = {
             weak: 25,
             Power: 85,
             BtnColor: "darkcyan",
+            catId : 4200,
+            creatureId : 4210,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A monstrous serpent with multiple regenerating heads.",
             attacks: [
@@ -3084,6 +3282,8 @@ GameAttacks  = {
             weak: 50,
             Power: 60,
             BtnColor: "aqua",
+            catId : 4200,
+            creatureId : 4205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mystical sea being with enchanting powers.",
             attacks: [
@@ -3110,6 +3310,8 @@ GameAttacks  = {
             weak: 30,
             Power: 80,
             BtnColor: "teal",
+            catId : 4200,
+            creatureId : 4209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A colossal serpent lurking beneath the waves.",
             attacks: [
@@ -3136,6 +3338,8 @@ GameAttacks  = {
             weak: 15,
             Power: 95,
             BtnColor: "navy",
+            catId : 4200,
+            creatureId : 4216,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fearsome dragon that commands the power of the ocean.",
             attacks: [
@@ -3166,6 +3370,8 @@ GameAttacks  = {
             weak: 70,
             Power: 55,
             BtnColor: "gray",
+            catId : 4300,
+            creatureId : 4301,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A restless spirit that haunts the living.",
             attacks: [
@@ -3191,6 +3397,8 @@ GameAttacks  = {
             weak: 40,
             Power: 70,
             BtnColor: "purple",
+            catId : 4300,
+            creatureId : 4303,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful spellcaster skilled in dark magic.",
             attacks: [
@@ -3223,6 +3431,8 @@ GameAttacks  = {
             weak: 20,
             Power: 85,
             BtnColor: "darkgreen",
+            catId : 4300,
+            creatureId : 4302,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A monstrous brute with immense strength.",
             attacks: [
@@ -3253,6 +3463,8 @@ GameAttacks  = {
             weak: 30,
             Power: 80,
             BtnColor: "crimson",
+            catId : 4300,
+            creatureId : 4305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodthirsty immortal with supernatural abilities.",
             attacks: [
@@ -3277,6 +3489,8 @@ GameAttacks  = {
             weak: 80,
             Power: 45,
             BtnColor: "olive",
+            catId : 4300,
+            creatureId : 4307,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A reanimated corpse that hungers for flesh.",
             attacks: [
@@ -3302,6 +3516,8 @@ GameAttacks  = {
             weak: 50,
             Power: 60,
             BtnColor: "black",
+            catId : 4300,
+            creatureId : 4309,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A giant spider lurking in the darkness.",
             attacks: [
@@ -3326,6 +3542,8 @@ GameAttacks  = {
             weak: 10,
             Power: 90,
             BtnColor: "gold",
+            catId : 4300,
+            creatureId : 4315,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A master of arcane knowledge and powerful spells.",
             attacks: [
@@ -3362,6 +3580,8 @@ GameAttacks  = {
             weak: 40,
             Power: 85,
             BtnColor: "forestgreen",
+            catId : 4500,
+            creatureId : 4505,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A noble and swift warrior with unmatched agility.",
             attacks: [
@@ -3394,6 +3614,8 @@ GameAttacks  = {
             weak: 35,
             Power: 90,
             BtnColor: "white",
+            catId : 4300,
+            creatureId : 4301,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A mystical horse with a divine horn and healing powers.",
             attacks: [
@@ -3420,6 +3642,8 @@ GameAttacks  = {
             weak: 30,
             Power: 95,
             BtnColor: "brown",
+            catId : 4300,
+            creatureId : 4303,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A fierce warrior with the body of a horse and the skill of a hunter.",
             attacks: [
@@ -3447,6 +3671,8 @@ GameAttacks  = {
             weak: 20,
             Power: 125,
             BtnColor: "darkbrown",
+            catId : 4300,
+            creatureId : 4304,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A monstrous beast with immense strength and a warrior’s rage.",
             attacks: [
@@ -3472,6 +3698,8 @@ GameAttacks  = {
             weak: 60,
             Power: 75,
             BtnColor: "lightpink",
+            catId : 4300,
+            creatureId : 4309,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A small but incredibly powerful magical being.",
             attacks: [
@@ -3498,6 +3726,8 @@ GameAttacks  = {
             weak: 50,
             Power: 80,
             BtnColor: "darkred",
+            catId : 4300,
+            creatureId : 4314,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A winged predator with a voice that can mesmerize or destroy.",
             attacks: [
@@ -3529,6 +3759,8 @@ GameAttacks  = {
             weak : 15,
             BtnColor : "red",
             Power : 65 ,
+            catId : 4300,
+            creatureId : 4315,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Sphinx guards the temple",
             attacks : [
@@ -3561,6 +3793,8 @@ GameAttacks  = {
             weak: 10,
             Power: 110,
             BtnColor: "orange",
+            catId : 4300,
+            creatureId : 4311,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A legendary firebird that is reborn from its ashes.",
             attacks: [
@@ -3586,6 +3820,8 @@ GameAttacks  = {
             weak: 5,
             Power: 140,
             BtnColor: "darkblue",
+            catId : 4300,
+            creatureId : 4320,
             ranDamage: Math.floor(Math.random() * 15) + 15,
             description: "A cosmic being that breathes pure energy from the stars.",
             attacks: [

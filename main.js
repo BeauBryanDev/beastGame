@@ -29,6 +29,9 @@ function startGame() {
     let selectWaterBtn = document.getElementById("water-btn--select");
     selectWaterBtn.addEventListener("click", selectWater );
 
+    let BattleGround = document.getElementById("battle-Container");
+    BattleGround.style.display = 'none';
+
     let creatureContainer = document.getElementById("Creature-Container");
 
     const powerButtons = document.querySelectorAll(".rootElements button");
@@ -164,6 +167,9 @@ function startGame() {
 
     function computerPlay() {
 
+        let BattleGround = document.getElementById("battle-Container");
+        BattleGround.style.display = 'block';
+
         const powers = Object.keys(creaturesByPower);
         //console.log(powers);
         const randomPower = powers[randomNumber(0, powers.length - 1)];
@@ -175,7 +181,7 @@ function startGame() {
     }
 
     // Call computerPlay after the user has selected their creature
-    const chooseCreatureBtn = document.getElementById("select-creature--btn");
+    let chooseCreatureBtn = document.getElementById("select-creature--btn");
 
     if (chooseCreatureBtn) {
         chooseCreatureBtn.addEventListener("click", function () {
@@ -324,6 +330,7 @@ function startGame() {
             attackBtn.style.fontSize = "1.2rem";
             attackBtn.style.backgroundColor = attack.BackGroundColor; 
             attackBtn.style.color = "black";
+            //attackBtn.disabled = true ;
             attackBtn.id = attack.name.toLowerCase().split(" ").join("-");
             console.log(attackBtn.id);
             attackBtn.classList.add("attack-btn");
@@ -401,6 +408,9 @@ function startGame() {
         battleContainer.appendChild(attackDescription);
     }
 
+    let restartBtn = document.getElementById("restart-game--bnt");
+
+    restartBtn.addEventListener("click", restartGame );
 
     function attack() { 
 
@@ -487,6 +497,11 @@ function getSelectedCreature() {
 
 }
 
+function restartGame() {
+
+    location.reload();
+}
+ 
 
 document.addEventListener("DOMContentLoaded", function () {
         
