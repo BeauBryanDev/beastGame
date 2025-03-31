@@ -1,6 +1,6 @@
 console.log("Hello World");
 import { creaturesByPower } from "./gameCreatures.mjs";
-import { attacksByPower  } from "./attacks.js";
+import { AttacksByCreatures  } from "./creaturesAttacks.js";
 import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
 // Function to start the game
@@ -290,7 +290,9 @@ function startGame() {
         computerCreatureDiv.appendChild(imgComputerCreature);
         fightingField.appendChild(computerCreatureDiv)
         battleContainer.appendChild(fightingField);
-        showAvailableAttacks(thisCreatuere);
+        getCreatureInfo(thisCreatuere);
+        showCreaturesInfo(thisCreatuere);
+        getCreatureInfo( thisCreatuere ) ;
         //Get the computer selected attack
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected creature: ${computerCreature}`);
@@ -299,7 +301,7 @@ function startGame() {
 
     }
 
-    function showAvailableAttacks(creature) {   
+    function showCreaturesInfo(creature) {   
 
         const myAttacks = document.createElement("div");
         myAttacks.classList.add("my-attacks");
@@ -314,7 +316,9 @@ function startGame() {
         I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
 
         */
-        const attacks = attacksByPower[currentPower];
+       const currentCreatureAttacks = AttacksByCreatures.currentPower.find( c => c.name = creature );
+
+        const attacks = AttacksByCreatures[currentPower];
         console.log(attacks);
         battleContainer.appendChild(myAttacks);
         attacks.forEach(attack => {
@@ -328,7 +332,7 @@ function startGame() {
             attackBtn.style.borderRadius = "10px";
             attackBtn.style.cursor = "pointer";
             attackBtn.style.fontSize = "1.2rem";
-            attackBtn.style.backgroundColor = attack.BackGroundColor; 
+            attackBtn.style.backgroundColor = attack.BtnColor;
             attackBtn.style.color = "black";
             //attackBtn.disabled = true ;
             attackBtn.id = attack.name.toLowerCase().split(" ").join("-");
@@ -355,6 +359,72 @@ function startGame() {
         return playerAttack;
 
     }
+
+    console.log("++++++++++++++++++++++++++++++++\n");
+
+    function getCreatureInfo(creatureName) {
+
+        console.log("Results for " + creatureName + "\n");
+        let foundCreature = null;
+
+        // Iterate through all arrays within meAttacks
+        for (const key in AttacksByCreatures ) {
+
+            if (Array.isArray(AttacksByCreatures[key])) {
+
+                const creature = AttacksByCreatures[key].find(c => c.name === creatureName);
+
+                if (creature) {
+
+                    foundCreature = creature;
+                    break; // Stop searching once found .
+
+                }
+            }
+        }
+
+        if (foundCreature) {
+            // Extract and log information .
+            const foundCreatureName = foundCreature.name;
+            const foundCreatureType =  foundCreature.type;
+            const foundCreatureStrength = foundCreature.strength;
+            const foundCreatureWeaknessLevel = foundCreature.wearknessLevel;
+            const foundCreaturePower = foundCreature.Power;
+            const foundCreaturepowerId =  foundCreature.powerId;
+            const foundCreatureId =  foundCreature.creatureId;
+            const foundCreatureRandDamage =  foundCreature.ranDamage ;
+            const foundCreatureBtnColor =   foundCreature.BtnColor;
+            const foundCreatureDescription =   foundCreature.description ;
+            //Shows  the foundCreature Info by Console.log(). ...
+            console.log("Creature Name:", foundCreatureName);
+            console.log("Creature Type:", foundCreatureType);
+            console.log("Creature Strength:", foundCreatureStrength);
+            console.log("Creature Weakness:", foundCreatureWeaknessLevel);
+            console.log("Creature Button Color:",foundCreatureBtnColor);
+            console.log("Creature Power:", foundCreaturePower);
+            console.log("Creature Random Damage:", foundCreatureRandDamage);
+            console.log("Creature PowerId : ", foundCreaturepowerId);
+            console.log("Creature Id :", foundCreatureId);
+            console.log("Creature Button Color:",foundCreatureBtnColor);
+            console.log("Creature Description:", foundCreatureDescription);
+            console.log("\n");
+            console.log(`${foundCreature.name} Attacks`);
+            console.log("\n");
+            let i = 1;
+            foundCreature.attacks.forEach( attack => {
+
+            console.log( `${i}. ${attack.name } : ${attack.description} : Damage: ${attack.damage}`);
+            i++;    
+        });
+
+        } else {
+
+            console.log(`Creature "${creatureName}" not found.`);
+
+        }
+
+    }
+    console.log("/*****************\n");
 
     function computerChooseAttack(creature) {
 

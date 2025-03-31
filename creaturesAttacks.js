@@ -14,18 +14,18 @@
 //The object should have at least 3 different creatures
 //The object should have at least 3 different attacks
 
-GameAttacks  = {
+export  const AttacksByCreatures  = {
 
     Fire : [
 
-        Phoenix = {
+        {
             name : "Phoenix",
             type : "Fire",
             strength : 75,
-            weak : 25,
+            wearknessLevel : 25,
             BtnColor : "red",
             Power : 45 ,
-            catId : 3500,
+            powerId : 3500,
             creatureId : 3501,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Phoenix rises from the ashes.",
@@ -50,14 +50,14 @@ GameAttacks  = {
                 }
             ]
         },
-        Sphinx = {
+        {
             name : "Sphinx",
             type : "Fire",
             strength : 75,
-            weak : 15,
+            wearknessLevel : 15,
             BtnColor : "red",
             Power : 65 ,
-            catId : 3500,
+            powerId : 3500,
             creatureId : 3502,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Sphinx guards the temple.",
@@ -82,15 +82,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Dragon = {
+        {
 
             name : "FireDragon",
             type : "Fire",
             strength : 85,
-            weak : 20,
+            wearknessLevel : 20,
             BtnColor : "red",
             Power : 85 ,
-            catId : 3500,
+            powerId : 3500,
             creatureId : 3503,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Dragon breathes fire to Destroy its Enemies.",
@@ -116,15 +116,15 @@ GameAttacks  = {
             ]
         },
 
-        WildFire = {
+        {
 
             name : "WildFire",
             type : "Fire",
             strength : 85,
-            weak : 35,
+            wearknessLevel : 35,
             BtnColor : "red",
             Power : 95 ,
-            catId : 3500,
+            powerId : 3500,
             creatureId : 3504,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Wild Fire burns everything in its path.",
@@ -149,15 +149,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Volcano = {
+        {
 
             name : "Volcano",
             type : "Fire",
             strength : 75,
-            weak : 15,
+            wearknessLevel : 15,
             BtnColor : "red",
             Power : 90 ,
-            catId : 3500,
+            powerId : 3500,
             creatureId : 3505,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Volcano erupts",
@@ -189,15 +189,15 @@ GameAttacks  = {
 
     Water : [ 
 
-        CatFish = {
+        {
 
             name : "CatFish",
             type : "Water",
             strength : 35,
-            weak : 55,
+            wearknessLevel : 55,
             BtnColor : "blue",
             Power : 25 ,
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3101,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Cat Fish swims in the river.",
@@ -222,15 +222,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Piranha = {
+        {
 
             name : "Piranha",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             BtnColor : "blue",
             Power : 55 ,
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3102,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Piranha swims in the river and they attack in groups.",
@@ -255,15 +255,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Eel = {
+        {
 
             name : "Eel",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3103,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Eel swims in the river and relase electric shocks.",
@@ -288,15 +288,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Hippo = {
+        {
 
             name : "Hippo",
             type : "Water",
             strength : 75,
-            weak : 35,
-            Power : 55 ,
+            wearknessLevel : 35,
+            Power : 80 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3104,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Hippo swims in the river and it is very aggressive.",
@@ -308,7 +308,7 @@ GameAttacks  = {
                     description : "The Hippo bites."
                 },
                 { 
-                    name : "Water Claw",
+                    name : "Water Dive",
                     type : "Water",
                     damage : 8,
                     description : "The Hippo drawn its victim with its claws."
@@ -321,15 +321,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Dolphin = {
+        {
 
             name : "Dolphin",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3105,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Dolphin swims in open Seas.",
@@ -354,15 +354,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Shark = {
+        {
 
             name : "Shark",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3106,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Shark swims in the blue Sea.",
@@ -387,15 +387,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Whale = {
+        {
 
             name : "Whale",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3107,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Whale swims in the deep Sea and it is very big.",
@@ -420,15 +420,15 @@ GameAttacks  = {
                 }
             ]
         },
-        SeaSerpent = {
+        {
 
             name : "SeaSerpent",
             type : "Water",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3100,
+            powerId : 3100,
             creatureId : 3108,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Sea Serpent swims in the Oveam.",
@@ -457,15 +457,15 @@ GameAttacks  = {
 
     Snow : [
 
-        Seal = {
+        {
             
             name : "Seal",
             type : "Snow",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "white",
-            catId : 3200,
+            powerId : 3200,
             creatureId : 3201,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Seal swims in the snow.",
@@ -490,15 +490,15 @@ GameAttacks  = {
                 }
             ]
         },
-        WhiteBear = {
+        {
             
             name : "WhiteBear",
             type : "Snow",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3200,
+            powerId : 3200,
             creatureId : 3202,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The White Bear swims in the snow.",
@@ -523,15 +523,15 @@ GameAttacks  = {
                 }
             ]
         },
-        KillerWhale = {
+        {
             
             name : "KillerWhale",
             type : "Snow",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3200,
+            powerId : 3200,
             creatureId : 3203,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Orca swims in the snow.",
@@ -556,15 +556,15 @@ GameAttacks  = {
                 }
             ]
         },
-        BlueWhale = {
+        {
             
             name : "BlueWhale",
             type : "Snow",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "blue",
-            catId : 3200,
+            powerId : 3200,
             creatureId : 3204,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Blue Whale swims in the cold seas.",
@@ -589,15 +589,15 @@ GameAttacks  = {
                 }
             ]
         },
-        IceDragon = {
+        {
             
             name : "IceDragon",
             type : "Snow",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightblue",
-            catId : 3200,
+            powerId : 3200,
             creatureId : 3205,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Ice Dragon swims in the snow.",
@@ -627,15 +627,15 @@ GameAttacks  = {
 
     Air : [
 
-        Bat = {
+        {
 
             name : "Bat",
             type : "Air",
             strength : 35,
-            weak : 65,
+            wearknessLevel : 65,
             Power : 55 ,
             BtnColor : "Bat",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1201,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Bat flies at Night",
@@ -657,15 +657,15 @@ GameAttacks  = {
 
         },
 
-        Eagle = {   
+        {
 
             name : "Eagle",
             type : "Air",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "cyan",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1202,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Eagle flies in the sky.",
@@ -692,15 +692,15 @@ GameAttacks  = {
 
         },
 
-        Owl = {   
+        {   
 
             name : "Owl",
             type : "Air",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightgray",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1205,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Owl flies in the sky.",
@@ -727,15 +727,15 @@ GameAttacks  = {
 
         },
 
-        Hawk = {    
+        {    
             
             name : "Hawk",
             type : "Air",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightgray",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1203,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Hawk flies in the sky.",
@@ -762,15 +762,15 @@ GameAttacks  = {
 
         },
 
-        Falcon = {   
+        {   
 
             name : "Falcon",
             type : "Air",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightgray",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1204,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Falcon flies in the sky.",
@@ -801,15 +801,15 @@ GameAttacks  = {
 
     Earth : [
 
-        Elephant = {
+        {
             
             name : "Elephant",
             type : "Earth",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 80 ,
             BtnColor : "brown",
-            catId : 2100,
+            powerId : 2100,
             creatureId : 2104,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Elephant heavily walks on the ground.",
@@ -834,15 +834,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Rhino = {
+        {
             
             name : "Rhino",
             type : "Earth",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "brown",
-            catId : 2100,
+            powerId : 2100,
             creatureId : 2101,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Rhino walks on the ground.",
@@ -868,15 +868,15 @@ GameAttacks  = {
             ]
         },
 
-        Gorilla = {
+        {
 
             name : "Gorilla",
             type : "Earth",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "green",
-            catId : 2100,
+            powerId : 2100,
             creatureId : 2103,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "Gorilla walks on the ground and hit its chest.",
@@ -906,15 +906,15 @@ GameAttacks  = {
 
         }, 
 
-        Lion = {
+        {
 
             name : "Lion",
             type : "Earth",
             strength : 85,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 85 ,
             BtnColor : "brown",
-            catId : 2100,
+            powerId : 2100,
             creatureId : 2105,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Lion walks on the ground and roars.",
@@ -944,15 +944,15 @@ GameAttacks  = {
 
         },
 
-        Mammoth = {
+        {
 
             name : "Mammoth",
             type : "Earth",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "brown",
-            catId : 2100,
+            powerId : 2100,
             creatureId : 2106,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Mammoth walks on the ground and trumpets.",
@@ -986,15 +986,15 @@ GameAttacks  = {
 
     River : [
 
-        Trout = {
+        {
 
             name : "Trout",
             type : "River",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightblue",
-            catId : 1300,
+            powerId : 1300,
             creatureId : 1301,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
@@ -1007,15 +1007,15 @@ GameAttacks  = {
                 },
             ]
         },
-        Otter = {
+        {
 
             name : "Otter",
             type : "River",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightblue",
-            catId : 1300,
+            powerId : 1300,
             creatureId : 1303,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the Rive.r",
@@ -1034,15 +1034,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Beaver = {
+        {
 
             name : "Beaver",
             type : "River",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightblue",
-            catId : 1300,
+            powerId : 1300,
             creatureId : 1302,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
@@ -1056,15 +1056,15 @@ GameAttacks  = {
             ]
         },
 
-        FisherBird = {
+        {
 
             name : "FisherBird",
             type : "River",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "lightblue",
-            catId : 1300,
+            powerId : 1300,
             creatureId : 1306,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Fish walks Swim in the River.",
@@ -1084,15 +1084,15 @@ GameAttacks  = {
             ]
 
         },
-        Crocodrile = {
+        {
 
             name: "Crocodile",
             type: "Swamp",
             strength: 85,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 75,
             BtnColor: "darkolivegreen",
-            catId : 1300,
+            powerId : 1300,
             creatureId : 1305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful reptile lurking beneath the water surface.",
@@ -1116,15 +1116,15 @@ GameAttacks  = {
 
     Poison : [
 
-        Snake = {
+        {
 
             name : "Snake",
             type : "Poison",
             strength : 75,
-            weak : 35,
+            wearknessLevel : 35,
             Power : 55 ,
             BtnColor : "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3005,
             ranDamage : Math.floor(Math.random() * 10) + 1,
             description : "The Snake crawls on the ground and bite at first seen.",
@@ -1143,15 +1143,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Scorpion = {
+        {
 
             ame: "Scorpion",
             type: "Poison",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 60,
             BtnColor: "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3003,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Scorpion lurks in the shadows, ready to strike with its venomous sting.",
@@ -1177,15 +1177,15 @@ GameAttacks  = {
             ]
 
         },
-        Spider = {
+        {
 
             name: "Spider",
             type: "Poison",
             strength: 70,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 50,
             BtnColor: "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3004,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Spider weaves deadly webs and waits for its prey to get trapped.",
@@ -1211,15 +1211,15 @@ GameAttacks  = {
             ]
 
         },
-        Wasp = {
+        {
 
             name: "Wasp",
             type: "Poison",
             strength: 65,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 55,
             BtnColor: "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3006,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Wasp is fast and deadly, striking with precision.",
@@ -1240,20 +1240,20 @@ GameAttacks  = {
                     name: "Toxic Pollen",
                     type: "Poison",
                     damage: 5,
-                    description: "The Wasp releases a poisonous pollen to weaken its foe."
+                    description: "The Wasp releases a poisonous pollen to wearknessLevelen its foe."
                 }
             ]
 
         },
-        SeaUrchin = {
+        {
 
             name: "SeaUrchin",
             type: "Poison",
             strength: 60,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 50,
             BtnColor: "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3001,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Sea Urchin lies in waitin the sea bottom, covered in deadly spikes.",
@@ -1279,15 +1279,15 @@ GameAttacks  = {
             ]
 
         },
-        GlobeFish = {
+        {
 
             name: "GlobeFish",
             type: "Poison",
             strength: 55,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 45,
             BtnColor: "purple",
-            catId : 3300,
+            powerId : 3300,
             creatureId : 3002,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "The Globe Fish inflates itself as a defense mechanism, secreting a deadly toxin.",
@@ -1319,15 +1319,15 @@ GameAttacks  = {
 
     Desert : [
 
-        Cactus = {
+        {
 
             name: "Cactus",
             type: "Desert",
             strength: 60,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 50,
             BtnColor: "sandybrown",
-            catId : 3400,
+            powerId : 3400,
             creatureId : 3401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A spiky cactus that thrives in the arid desert.",
@@ -1354,15 +1354,15 @@ GameAttacks  = {
 
         },
 
-        YellowScorpion = {
+        {
 
             name: "YellowScorpion",
             type: "Desert",
             strength: 75,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 65,
             BtnColor: "gold",
-            catId : 3400,
+            powerId : 3400,
             creatureId : 3402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A venomous scorpion lurking under the desert sands.",
@@ -1387,15 +1387,15 @@ GameAttacks  = {
                 }
             ]
         },
-        DesertSnake = {
+        {
 
             name: "DesertSnake",
             type: "Desert",
             strength: 70,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 60,
             BtnColor: "tan",
-            catId : 3400,
+            powerId : 3400,
             creatureId : 3403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stealthy snake that blends with the desert sands.",
@@ -1420,18 +1420,18 @@ GameAttacks  = {
                 }
             ]
         },
-        Vulture = {
+        {
 
             name: "Vulture",
             type: "Desert",
             strength: 65,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 55,
             BtnColor: "brown",
-            catId : 3400,
+            powerId : 3400,
             creatureId : 3405,
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A scavenger bird circling over the desert, waiting for its prey to weaken.",
+            description: "A scavenger bird circling over the desert, waiting for its prey to wearknessLevelen.",
             attacks: [
                 { 
                     name: "Talon Strike",
@@ -1449,19 +1449,19 @@ GameAttacks  = {
                     name: "Desert Screech",
                     type: "Desert",
                     damage: 5,
-                    description: "Unleashes a terrifying screech that weakens the opponent."
+                    description: "Unleashes a terrifying screech that wearknessLevelens the opponent."
                 }
             ]
         },
-        Camel = {
+        {
 
             name: "Camel",
             type: "Desert",
             strength: 80,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 70,
             BtnColor: "khaki",
-            catId : 3400,
+            powerId : 3400,
             creatureId : 3404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A resilient camel that endures the harsh desert conditions.",
@@ -1492,15 +1492,15 @@ GameAttacks  = {
 
     Forest : [
 
-        Hive = {
+        {
 
             name: "Bee_Hive",
             type: "Forest",
             strength: 60,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 50,
             BtnColor: "yellow",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swarm of bees attacks.",
@@ -1525,15 +1525,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Raccoon = {
+        {
 
             name: "Raccoon",
             type: "Forest",
             strength: 65,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 55,
             BtnColor: "gray",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A sneaky raccoon attacks.",
@@ -1552,15 +1552,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Wildboar = {
+        {
 
             name: "Wildboar",
             type: "Forest",
             strength: 75,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 65,
             BtnColor: "brown",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful wild boar charges.",
@@ -1580,15 +1580,15 @@ GameAttacks  = {
             ]
 
         },
-        Bison = {
+        {
 
             name: "Bison",
             type: "Forest",
             strength: 80,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 70,
             BtnColor: "brown",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive bison charges.",
@@ -1608,15 +1608,15 @@ GameAttacks  = {
             ]
 
         },
-        Deer = {
+        {
 
             name: "Deer",
             type: "Forest",
             strength: 60,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 50,
             BtnColor: "tan",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1406,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swift deer kicks.",
@@ -1636,15 +1636,14 @@ GameAttacks  = {
             ]
 
         },
-        Fox = {
-
+        {
             name: "Fox",
             type: "Forest",
             strength: 65,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 55,
             BtnColor: "orange",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1407,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning fox bites.",
@@ -1665,15 +1664,15 @@ GameAttacks  = {
 
         },
 
-         Wolf = {
+        {
             
             name: "Wolf",
             type: "Forest",
             strength: 70,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 60,
             BtnColor: "gray",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1408,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fierce wolf bites.",
@@ -1699,15 +1698,15 @@ GameAttacks  = {
                 ]
 
         },
-        Bear = {
+        {
 
             name: "Bear",
             type: "Forest",
             strength: 85,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 75,
             BtnColor: "brown",
-            catId : 1400,
+            powerId : 1400,
             creatureId : 1409,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful bear swipes.",
@@ -1727,15 +1726,15 @@ GameAttacks  = {
             ]
 
         },
-        Owl = {
+        {
 
             name: "Owl",
             type: "Forest",
             strength: 60,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 50,
             BtnColor: "white",
-            catId : 1200,
+            powerId : 1200,
             creatureId : 1205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A silent owl swoops.",
@@ -1755,13 +1754,13 @@ GameAttacks  = {
             ]
 
         },
-        Raven = {
+        {
 
             name: "Raven",
             type: "Forest",
             strength: 65,
-            weak: 25,
-            catId : 1200,
+            wearknessLevel: 25,
+            powerId : 1200,
             creatureId : 1209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A Cunning raven pecks.",
@@ -1781,13 +1780,13 @@ GameAttacks  = {
             ]
 
         },
-        BaldEagle = {
+        {
 
             name: "Bald Eagle",
             type: "Forest",
             strength: 70,
-            weak: 30,
-            catId : 1200,
+            wearknessLevel: 30,
+            powerId : 1200,
             creatureId : 1208,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic eagle swoops.",
@@ -1812,14 +1811,14 @@ GameAttacks  = {
 
     Jungle : [
 
-        Lizard = {
+        {
             name: "Lizard",
             type: "Jungle",
             strength: 55,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 40,
             BtnColor: "green",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1501,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A quick and agile lizard attacks.",
@@ -1838,15 +1837,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Tiger = {
+        {
 
             name: "Tiger",
             type: "Jungle",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 70,
             BtnColor: "orange",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1502,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful tiger pounces.",
@@ -1865,15 +1864,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Monkey = {
+        {
 
             name: "Monkey",
             type: "Jungle",
             strength: 65,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 50,
             BtnColor: "brown",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1503,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mischievous monkey throws objects.",
@@ -1893,15 +1892,15 @@ GameAttacks  = {
             ]
 
         },
-        Ostrich = {
+        {
 
             name: "Ostrich",
             type: "Jungle",
             strength: 70,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 60,
             BtnColor: "tan",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1504,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fast ostrich kicks.",
@@ -1921,15 +1920,15 @@ GameAttacks  = {
             ]
 
         },
-        Porcupine = {
+        {
 
             name: "Porcupine",
             type: "Jungle",
             strength: 60,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 45,
             BtnColor: "gray",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1505,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A defensive porcupine throws quills.",
@@ -1949,15 +1948,15 @@ GameAttacks  = {
             ]
 
         },
-        JungleBoar = {
+        {
 
             name: "Jungle_Boar",
             type: "Jungle",
             strength: 75,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 65,
             BtnColor: "brown",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1508,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A ferocious jungle boar charges.",
@@ -1977,15 +1976,15 @@ GameAttacks  = {
             ]
 
         },
-        Orangutan = {
+        {
 
             name: "Orangutan",
             type: "Jungle",
             strength: 70,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 60,
             BtnColor: "orange",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1506,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful orangutan swings and strikes.",
@@ -2005,15 +2004,15 @@ GameAttacks  = {
             ]
 
         },
-        Lion = {
+        {
 
             name: "Lion",
             type: "Jungle",
             strength: 85,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 75,
             BtnColor: "goldenrod",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1509,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic lion roars and attacks.",
@@ -2022,7 +2021,7 @@ GameAttacks  = {
                     name: "Roar",
                     type: "Jungle",
                     damage: 7,
-                    description: "The Lion's roar causes fear and weakens the enemy."
+                    description: "The Lion's roar causes fear and wearknessLevelens the enemy."
                 },
                 {
                     name: "Bite",
@@ -2039,14 +2038,15 @@ GameAttacks  = {
             ]
 
         },
-        Giraffe = {
+        {
+
             name: "Giraffe",
             type: "Jungle",
             strength: 70,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 60,
             BtnColor: "yellow",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1513,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tall giraffe kicks with its long legs.",
@@ -2066,15 +2066,15 @@ GameAttacks  = {
             ]
 
         },
-        Buffalo = {
+        {
 
             name: "Buffalo",
             type: "Jungle",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 70,
             BtnColor: "brown",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1512,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A strong buffalo charges with its horns.",
@@ -2094,15 +2094,15 @@ GameAttacks  = {
             ]
 
         },
-        Elephant = {
+        {
 
             name: "Elephant",
             type: "Jungle",
             strength: 90,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 80,
             BtnColor: "gray",
-            catId : 1500,
+            powerId : 1500,
             creatureId : 1515,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive elephant charges with its tusks.",
@@ -2127,14 +2127,15 @@ GameAttacks  = {
 
     Mountain : [
 
-        Goat = {
+        {
+
             name: "Goat",
             type: "Mountain",
             strength: 65,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 50,
             BtnColor: "gray",
-            catId : 2400,
+            powerId : 2400,
             creatureId : 2401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A nimble goat strikes with its horns.",
@@ -2154,15 +2155,15 @@ GameAttacks  = {
             ]
 
         },
-        Eagle = {
+        {
 
             name : "Eagle",
             type: "Mountain",
             strength: 70,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 60,
             BtnColor: "brown",
-            catId : 2400,
+            powerId : 2400,
             creatureId : 2402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic Eagle swoops.",
@@ -2181,15 +2182,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Bear = {
+        {
 
             name: "MountainBear",
             type: "Mountain",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 70,
             BtnColor: "brown",
-            catId : 2400,
+            powerId : 2400,
             creatureId : 2403,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful mountain bear swipes.",
@@ -2208,15 +2209,15 @@ GameAttacks  = {
                 }
             ]
         },
-        MountainLion = {
+        {
 
             name: "MountainLion",
             type: "Mountain",
             strength: 75,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 65,
             BtnColor: "tan",
-            catId : 2400,
+            powerId : 2400,
             creatureId : 2405,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stealthy mountain lion pounces.",
@@ -2236,14 +2237,14 @@ GameAttacks  = {
             ]
 
         },
-        Rock = { 
+        {
 
             name : "Rock",
             strength: 70,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 60,
             BtnColor: "black",
-            catId : 2400,
+            powerId : 2400,
             creatureId : 2408,
             attacks: [
                 {
@@ -2259,25 +2260,23 @@ GameAttacks  = {
 
     Volcano : [
 
-        Lava = {},
-        Ash = {},
-        Smoke = {},
-        Magma = {},
-        Eruption = {},
+        {},
+        {},
+        {},
 
     ],
 
     Swamp : [
 
-        Alligator = {
+        {
             
             name: "Alligator",
             type: "Swamp",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 70,
             BtnColor: "darkgreen",
-            catId : 2300,
+            powerId : 2300,
             creatureId : 2301,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fierce alligator lurking in the murky waters.",
@@ -2296,15 +2295,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Mosquito = {
+        {
 
             name: "Mosquito",
             type: "Swamp",
             strength: 40,
-            weak: 80,
+            wearknessLevel: 80,
             Power: 35,
             BtnColor: "brown",
-            catId : 2300,
+            powerId : 2300,
             creatureId : 2302,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodsucking menace of the swamp.",
@@ -2323,15 +2322,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Frog = {
+        {
 
             name: "Frog",
             type: "Swamp",
             strength: 60,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 50,
             BtnColor: "green",
-            catId : 2300,
+            powerId : 2300,
             creatureId : 2303,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A nimble amphibian that leaps through the swamp.",
@@ -2350,15 +2349,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Flamingo = {
+        {
 
             name: "Flamingo",
             type: "Swamp",
             strength: 55,
-            weak: 45,
+            wearknessLevel: 45,
             Power: 60,
             BtnColor: "pink",
-            catId : 2300,
+            powerId : 2300,
             creatureId : 2304,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A majestic bird standing tall in swamp waters.",
@@ -2377,15 +2376,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Crocodrile = {
+        {
 
             name: "Crocodile",
             type: "Swamp",
             strength: 85,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 75,
             BtnColor: "darkolivegreen",
-            catId : 2300,
+            powerId : 2300,
             creatureId : 2305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful reptile lurking beneath the water surface.",
@@ -2416,15 +2415,15 @@ GameAttacks  = {
 
     Sea : [
 
-        Crab = {
+        {
 
             name: "Crab",
             type: "Sea",
             strength: 50,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 45,
             BtnColor: "red",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2201,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tough crab pinches with its claws.",
@@ -2444,14 +2443,15 @@ GameAttacks  = {
             ]
 
         },
-        Shark = {
+        {
+
             name: "Shark",
             type: "Sea",
             strength: 80,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 70,
             BtnColor: "blue",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2202,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful shark bites with its sharp teeth.",
@@ -2477,15 +2477,15 @@ GameAttacks  = {
             ]
             
         },
-        Whale = {
+        {
 
             name: "Whale",
             type: "Sea",
             strength: 85,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 75,
             BtnColor: "blue",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive whale strikes with its tail.",
@@ -2505,15 +2505,15 @@ GameAttacks  = {
             ]
 
         },
-        Octopus = {
+        {
 
             name: "Octopus",
             type: "Sea",
             strength: 70,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 60,
             BtnColor: "purple",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2208,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning octopus wraps with its tentacles.",
@@ -2533,15 +2533,15 @@ GameAttacks  = {
             ]
 
         },
-        JellyFish = {
+        {
 
             name: "JellyFish",
             type: "Sea",
             strength: 65,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 50,
             BtnColor: "lightblue",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A stinging jellyfish releases its tentacles.",
@@ -2561,15 +2561,15 @@ GameAttacks  = {
             ]
 
         },
-        Elver = {
+        {
 
             name: "Elver",
             type: "Sea",
             strength: 55,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 40,
             BtnColor: "green",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A slippery elver bites.",
@@ -2590,15 +2590,15 @@ GameAttacks  = {
 
         },
 
-        Squid = {
+        {
 
             name: "Squid",
             type: "Sea",
             strength: 75,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 65,
             BtnColor: "black",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2212,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fast squid strikes with its tentacles.",
@@ -2618,15 +2618,15 @@ GameAttacks  = {
             ]
 
         },
-        CaveFish = {
+        {
 
             name: "Cave Fish",
             type: "Sea",
             strength: 60,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 45,
             BtnColor: "gray",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2215,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A blind cave fish bites.",
@@ -2653,15 +2653,15 @@ GameAttacks  = {
 
 
         },
-        SeaTurtle = {
+        {
 
             name: "Sea Turtle",
             type: "Sea",
             strength: 80,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 70,
             BtnColor: "green",
-            catId : 2200,
+            powerId : 2200,
             creatureId : 2218,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A resilient sea turtle bites.",
@@ -2686,15 +2686,15 @@ GameAttacks  = {
 
     Bugs : [
 
-        Amoeba = {
+        {
 
             name: "Amoeba",
             type: "Bugs",
             strength: 10,
-            weak: 90,
+            wearknessLevel: 90,
             Power: 5,
             BtnColor: "green",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1101,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tiny amoeba engulfs.",
@@ -2714,15 +2714,15 @@ GameAttacks  = {
             ]
 
         },
-        Bacterium = {
+        {
 
             name: "Bacterium",
             type: "Bugs",
             strength: 15,
-            weak: 85,
+            wearknessLevel: 85,
             Power: 10,
             BtnColor: "yellow",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1103,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A swarm of bacteria infects.",
@@ -2748,15 +2748,15 @@ GameAttacks  = {
             ]
 
         },
-        Beetle = {
+        {
 
             name: "Beetle",
             type: "Bugs",
             strength: 20,
-            weak: 80,
+            wearknessLevel: 80,
             Power: 15,
             BtnColor: "brown",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1102,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A tough beetle bites.",
@@ -2776,15 +2776,15 @@ GameAttacks  = {
             ]
 
         },
-        Worm = {
+        {
 
             name: "Worm",
             type: "Bugs",
             strength: 18,
-            weak: 82,
+            wearknessLevel: 82,
             Power: 12,
             BtnColor: "red",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1105,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A slithering worm burrows.",
@@ -2805,14 +2805,15 @@ GameAttacks  = {
 
         },
         
-        Bloodbug = {
+        {
+
             name: "Bloodbug",
             type: "Bugs",
             strength: 25,
-            weak: 75,
+            wearknessLevel: 75,
             Power: 20,
             BtnColor: "red",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1106,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodsucking bug drains life.",
@@ -2832,18 +2833,18 @@ GameAttacks  = {
             ]
         },
 
-        Parasite = {
+        {
 
             name: "Parasite",
             type: "Bugs",
             strength: 30,
-            weak: 70,
+            wearknessLevel: 70,
             Power: 25,
             BtnColor: "purple",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1109,
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A parasite drains and weakens.",
+            description: "A parasite drains and wearknessLevelens.",
             attacks: [
                 {
                     name: "Drain",
@@ -2855,20 +2856,20 @@ GameAttacks  = {
                     name: "Weaken",
                     type: "Bugs",
                     damage: 5,
-                    description: "The Parasite weakens and make feel sick."
+                    description: "The Parasite wearknessLevelens and make feel sick."
                 }
             ]
 
         },
-        EvilBug = {
+        {
 
             name: "EvilBug",
             type: "Bugs",
             strength: 90,
-            weak: 10,
+            wearknessLevel: 10,
             Power: 85,
             BtnColor: "black",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1113,
             ranDamage: Math.floor(Math.random() * 10) + 11,
             description: "A highly dangerous bug that spreads deadly diseases.",
@@ -2896,15 +2897,15 @@ GameAttacks  = {
             ]
 
         } ,
-        EvilVirus = {
+        {
 
             name: "EvilVirus",
             type: "Bugs",
             strength: 95,
-            weak: 5,
+            wearknessLevel: 5,
             Power: 90,
             BtnColor: "darkred",
-            catId : 1100,
+            powerId : 1100,
             creatureId : 1115,
             ranDamage: Math.floor(Math.random() * 10) + 13,
             description: "A highly contagious and lethal virus.",
@@ -2929,15 +2930,15 @@ GameAttacks  = {
 
     Darkness : [
 
-        Shadow = {
+        {
 
             name: "DarkShadow",
             type: "Darkness",
             strength: 70,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 65,
             BtnColor: "black",
-            catId : 5400,
+            powerId : 5400,
             creatureId : 5401,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A shadowy figure strikes.",
@@ -2950,15 +2951,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Ash = {
+        {
 
             name: "Ash",
             type: "Darkness",
             strength: 65,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 60,
             BtnColor: "gray",
-            catId : 5400,
+            powerId : 5400,
             creatureId : 5402,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cloud of ash chokes.",
@@ -2971,15 +2972,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Eclipse = {
+        {
 
             name: "Eclipse",
             type: "Darkness",
             strength: 80,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 75,
             BtnColor: "black",
-            catId : 5400,
+            powerId : 5400,
             creatureId : 5404,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "An eclipse drains light and energy.",
@@ -2992,15 +2993,15 @@ GameAttacks  = {
                 }
             ]
         },
-        BlackHole = {
+        {
 
             name: "Black Hole",
             type: "Darkness",
             strength: 90,
-            weak: 10,
+            wearknessLevel: 10,
             Power: 95,
             BtnColor: "black",
-            catId : 5400,
+            powerId : 5400,
             creatureId : 5410,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A black hole consumes all.",
@@ -3014,14 +3015,15 @@ GameAttacks  = {
             ]
 
         },
-        EvilEye = {
+        {
+
             name: "EvilEye",
             type: "Darkness",
             strength: 85,
-            weak: 15,
+            wearknessLevel: 15,
             Power: 80,
             BtnColor: "black",
-            catId : 5400,
+            powerId : 5400,
             creatureId : 5420,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "An evil eye curses.",
@@ -3039,15 +3041,15 @@ GameAttacks  = {
 
     Monsters : [
 
-        Orc = {
+        {
 
             name: "Orc",
             type: "Monsters",
             strength: 70,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 60,
             BtnColor: "green",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4101,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A brutal orc swings its axe.",
@@ -3067,15 +3069,15 @@ GameAttacks  = {
             ]
 
         },
-        Goblin = {
+        {
 
             name: "Goblin",
             type: "Monsters",
             strength: 60,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 45,
             BtnColor: "brown",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4103,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A cunning goblin throws daggers.",
@@ -3095,15 +3097,15 @@ GameAttacks  = {
             ]
 
         },
-        Ogre = {
+        {
 
             name: "Ogre",
             type: "Monsters",
             strength: 80,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 70,
             BtnColor: "darkgreen",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4105,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive ogre clubs with its fist.",
@@ -3123,15 +3125,15 @@ GameAttacks  = {
             ]
 
         },
-        Troll = {
+        {
 
             name: "Troll",
             type: "Monsters",
             strength: 75,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 65,
             BtnColor: "darkgray",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4108,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A regenerative troll claws.",
@@ -3151,15 +3153,15 @@ GameAttacks  = {
             ]
 
         },
-        Cyclops = {
+        {
 
             name: "Cyclops",
             type: "Monsters",
             strength: 85,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 75,
             BtnColor: "brown",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4110,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A massive cyclops swings its club.",
@@ -3180,15 +3182,14 @@ GameAttacks  = {
 
         },
 
-        Dragon = {
-
+        {
             name: "Dragon",
             type: "Monsters",
             strength: 90,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 80,
             BtnColor: "red",
-            catId : 4100,
+            powerId : 4100,
             creatureId : 4116,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mighty dragon breathes fire.",
@@ -3219,15 +3220,15 @@ GameAttacks  = {
 
     SeaMonster : [
 
-        Kraken = {
+        {
 
             name: "Kraken",
             type: "SeaMonster",
             strength: 95,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 90,
             BtnColor: "darkblue",
-            catId : 4200,
+            powerId : 4200,
             creatureId : 4218,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A legendary sea creature with massive tentacles.",
@@ -3247,15 +3248,15 @@ GameAttacks  = {
             ]
         
         },
-        Hydra = {
+        {
 
             name: "Hydra",
             type: "SeaMonster",
             strength: 90,
-            weak: 25,
+            wearknessLevel: 25,
             Power: 85,
             BtnColor: "darkcyan",
-            catId : 4200,
+            powerId : 4200,
             creatureId : 4210,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A monstrous serpent with multiple regenerating heads.",
@@ -3275,14 +3276,15 @@ GameAttacks  = {
             ]
 
         },
-        Mermaid = {
+        {
+
             name: "Mermaid",
             type: "SeaMonster",
             strength: 70,
-            weak: 50,
+            wearknessLevel: 50,
             Power: 60,
             BtnColor: "aqua",
-            catId : 4200,
+            powerId : 4200,
             creatureId : 4205,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A mystical sea being with enchanting powers.",
@@ -3291,7 +3293,7 @@ GameAttacks  = {
                     name: "Siren Song",
                     type: "SeaMonster",
                     damage: Math.floor(Math.random() * 9) + 1,
-                    description: "The Mermaid sings a hypnotic melody that weakens enemies."
+                    description: "The Mermaid sings a hypnotic melody that wearknessLevelens enemies."
                 },
                 { 
                     name: "Water Whip",
@@ -3302,15 +3304,15 @@ GameAttacks  = {
             ]
 
         },
-        SeaSerpent = {
+        {
 
             name: "SeaSerpent",
             type: "SeaMonster",
             strength: 85,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 80,
             BtnColor: "teal",
-            catId : 4200,
+            powerId : 4200,
             creatureId : 4209,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A colossal serpent lurking beneath the waves.",
@@ -3330,15 +3332,15 @@ GameAttacks  = {
             ]
 
         },
-        SeaDragon = {
+        {
 
             name: "SeaDragon",
             type: "SeaMonster",
             strength: 100,
-            weak: 15,
+            wearknessLevel: 15,
             Power: 95,
             BtnColor: "navy",
-            catId : 4200,
+            powerId : 4200,
             creatureId : 4216,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A fearsome dragon that commands the power of the ocean.",
@@ -3363,14 +3365,15 @@ GameAttacks  = {
 
     underGround : [
 
-        Ghost = {
+        {
+
             name: "Ghost",
             type: "underGround",
             strength: 60,
-            weak: 70,
+            wearknessLevel: 70,
             Power: 55,
             BtnColor: "gray",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4301,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A restless spirit that haunts the living.",
@@ -3385,19 +3388,20 @@ GameAttacks  = {
                     name: "Ethereal Screech",
                     type: "underGround",
                     damage: Math.floor(Math.random() * 9) + 1,
-                    description: "A chilling scream that weakens the enemy’s willpower."
+                    description: "A chilling scream that wearknessLevelens the enemy’s willpower."
                 }
             ]
 
         },
-        Witch = {
+        {
+
             name: "Witch",
             type: "underGround",
             strength: 75,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 70,
             BtnColor: "purple",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4303,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A powerful spellcaster skilled in dark magic.",
@@ -3424,14 +3428,15 @@ GameAttacks  = {
             ]
 
         },
-        Troll = {
+        {
+
             name: "Troll",
             type: "underGround",
             strength: 90,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 85,
             BtnColor: "darkgreen",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4302,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A monstrous brute with immense strength.",
@@ -3456,14 +3461,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Vampire = {
+        {
+
             name: "Vampire",
             type: "underGround",
             strength: 85,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 80,
             BtnColor: "crimson",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A bloodthirsty immortal with supernatural abilities.",
@@ -3482,14 +3488,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Zombie = {
+        {
+
             name: "Zombie",
             type: "underGround",
             strength: 50,
-            weak: 80,
+            wearknessLevel: 80,
             Power: 45,
             BtnColor: "olive",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4307,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A reanimated corpse that hungers for flesh.",
@@ -3508,15 +3515,15 @@ GameAttacks  = {
                 }
             ]
         },
-        SpiderWeb = {
+        {
 
             name: "SpiderWeb",
             type: "underGround",
             strength: 65,
-            weak: 50,
+            wearknessLevel: 50,
             Power: 60,
             BtnColor: "black",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4309,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A giant spider lurking in the darkness.",
@@ -3536,13 +3543,13 @@ GameAttacks  = {
             ]
             
         },
-        Wizard = {
+        {
             type: "underGround",
             strength: 95,
-            weak: 10,
+            wearknessLevel: 10,
             Power: 90,
             BtnColor: "gold",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4315,
             ranDamage: Math.floor(Math.random() * 10) + 1,
             description: "A master of arcane knowledge and powerful spells.",
@@ -3573,14 +3580,15 @@ GameAttacks  = {
 
     Mythical : [
 
-        Elf = {
+        {
+
             name: "Elf",
             type: "Mythical",
             strength: 90,
-            weak: 40,
+            wearknessLevel: 40,
             Power: 85,
             BtnColor: "forestgreen",
-            catId : 4500,
+            powerId : 4500,
             creatureId : 4505,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A noble and swift warrior with unmatched agility.",
@@ -3606,15 +3614,15 @@ GameAttacks  = {
             ]
 
         },
-        Unicorn = {
+        {
 
             name: "Unicorn",
             type: "Mythical",
             strength: 95,
-            weak: 35,
+            wearknessLevel: 35,
             Power: 90,
             BtnColor: "white",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4301,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A mystical horse with a divine horn and healing powers.",
@@ -3634,15 +3642,15 @@ GameAttacks  = {
             ]
 
         },
-        Centaur = {
+        {
 
             name: "Centaur",
             type: "Mythical",
             strength: 100,
-            weak: 30,
+            wearknessLevel: 30,
             Power: 95,
             BtnColor: "brown",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4303,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A fierce warrior with the body of a horse and the skill of a hunter.",
@@ -3663,15 +3671,15 @@ GameAttacks  = {
 
         },
 
-        Minotaur = {
+        {
 
             name: "Minotaur",
             type: "Mythical",
             strength: 130,
-            weak: 20,
+            wearknessLevel: 20,
             Power: 125,
             BtnColor: "darkbrown",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4304,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A monstrous beast with immense strength and a warrior’s rage.",
@@ -3691,14 +3699,15 @@ GameAttacks  = {
             ]
         },
 
-        Fairy = {
+        {
+
             name: "Fairy",
             type: "Mythical",
             strength: 80,
-            weak: 60,
+            wearknessLevel: 60,
             Power: 75,
             BtnColor: "lightpink",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4309,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A small but incredibly powerful magical being.",
@@ -3718,15 +3727,15 @@ GameAttacks  = {
             ]
 
         },
-        Harpy = {
+        {
 
             name: "Harpy",
             type: "Mythical",
             strength: 85,
-            weak: 50,
+            wearknessLevel: 50,
             Power: 80,
             BtnColor: "darkred",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4314,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A winged predator with a voice that can mesmerize or destroy.",
@@ -3751,15 +3760,15 @@ GameAttacks  = {
                 }
             ]
         },
-        Sphinx = {
+        {
             
             name : "Sphinx",
             type : "Fire",
             strength : 75,
-            weak : 15,
+            wearknessLevel : 15,
             BtnColor : "red",
             Power : 65 ,
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4315,
             ranDamage  : Math.floor(Math.random() * 10) + 1,
             description : "The Fire Sphinx guards the temple",
@@ -3785,15 +3794,15 @@ GameAttacks  = {
             ]
 
         },
-        Phoenix = {
+        {
 
             name: "Phoenix",
             type: "Mythical",
             strength: 120,
-            weak: 10,
+            wearknessLevel: 10,
             Power: 110,
             BtnColor: "orange",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4311,
             ranDamage: Math.floor(Math.random() * 15) + 5,
             description: "A legendary firebird that is reborn from its ashes.",
@@ -3812,15 +3821,15 @@ GameAttacks  = {
                 }
             ]
         },
-        SpaceDragon = {
+        {
 
             name: "SpaceDragon",
             type: "Mythical",
             strength: 150,
-            weak: 5,
+            wearknessLevel: 5,
             Power: 140,
             BtnColor: "darkblue",
-            catId : 4300,
+            powerId : 4300,
             creatureId : 4320,
             ranDamage: Math.floor(Math.random() * 15) + 15,
             description: "A cosmic being that breathes pure energy from the stars.",
@@ -3851,37 +3860,29 @@ GameAttacks  = {
 
     Storm : [
 
-        Thunder = {},
-        Lightning = {},
-        Rain = {},
-        Flood = {},
-        Typhoon = {},
-        Twister = {},
-        Vortex = {},
-        Hurricane = {},
 
     ],
 
 }
 
 
-const DragonFireClawsAttack = GameAttacks.Fire[2].attacks[2].name;
-const DragonFireClawsDamage = GameAttacks.Fire[2].attacks[2].damage;
-const DragonFireClawsDescription = GameAttacks.Fire[2].attacks[2].description;
+const DragonFireClawsAttack = AttacksByCreatures.Fire[2].attacks[2].name;
+const DragonFireClawsDamage = AttacksByCreatures.Fire[2].attacks[2].damage;
+const DragonFireClawsDescription = AttacksByCreatures.Fire[2].attacks[2].description;
 
 console.log(`The Dragon's Fire Claws Attack is ${DragonFireClawsAttack} with a damage of ${DragonFireClawsDamage} and the description is ${DragonFireClawsDescription} .`);
 
-console.log( typeof GameAttacks.Fire );
+console.log( typeof AttacksByCreatures.Fire );
 
 //________
 
 // Accessing the Shark's attacks and logging them to the console.
-const sharkAttacks = GameAttacks.Sea.find(creature => creature.name === "Shark").attacks;
+const sharkAttacks = AttacksByCreatures.Sea.find(creature => creature.name === "Shark").attacks;
 
 console.log("Shark's Attacks:", sharkAttacks);
 
 // Accessing the Shark's Bite attack and logging it to the console.
-const shark = GameAttacks.Sea.find(creature => creature.name === "Shark");
+const shark = AttacksByCreatures.Sea.find(creature => creature.name === "Shark");
 
 if (shark && shark.attacks) {
     const biteAttack = shark.attacks.find(attack => attack.name === "Bite");
@@ -3896,14 +3897,14 @@ if (shark && shark.attacks) {
 }
 
 // Access the Spider creature object
-const spider = GameAttacks.Poison.find(creature => creature.name === "Spider");
+const spider = AttacksByCreatures.Poison.find(creature => creature.name === "Spider");
 
 if (spider) {
     // Extract the desired properties
     const spiderName = spider.name;
     const spiderType = spider.type;
     const spiderStrength = spider.strength;
-    const spiderWeak = spider.weak;
+    const spiderWeak = spider.wearknessLevel;
     const spiderBtnColor = spider.BtnColor;
     const spiderPower = spider.Power;
     const spiderRanDamage = spider.ranDamage;
@@ -3931,8 +3932,8 @@ if (spider) {
 }
 
 
-const Mosquit0 = GameAttacks.Swamp.find( creature => creature.name === "Mosquito" );
-//const Mosquito = GameAttacks.Swamp.Mosquito;
+const Mosquit0 = AttacksByCreatures.Swamp.find( creature => creature.name === "Mosquito" );
+//const Mosquito = AttacksByCreatures.Swamp.Mosquito;
 
 if ( Mosquit0 ) {
 
@@ -3952,14 +3953,14 @@ if ( Mosquit0 ) {
 console.log("\n--------------\n");
 console.log("Check the Desert_Snake Sub Object \n");
 // Access the DesertSnake object in the Desert array
-const desertSnake = GameAttacks.Desert.find(creature => creature.name === "DesertSnake");
+const desertSnake = AttacksByCreatures.Desert.find(creature => creature.name === "DesertSnake");
 
 if (desertSnake) {
     // Extract the desired properties
     const desertSnakeName = desertSnake.name;
     const desertSnakeType = desertSnake.type;
     const desertSnakeStrength = desertSnake.strength;
-    const desertSnakeWeak = desertSnake.weak;
+    const desertSnakeWeak = desertSnake.wearknessLevel;
     const desertSnakeBtnColor = desertSnake.BtnColor;
     const desertSnakePower = desertSnake.Power;
     const desertSnakeRanDamage = desertSnake.ranDamage;
@@ -3996,11 +3997,11 @@ function getCreatureInfo(creatureName) {
     let foundCreature = null;
 
     // Iterate through all arrays within meAttacks
-    for (const key in GameAttacks) {
+    for (const key in AttacksByCreatures ) {
 
-        if (Array.isArray(GameAttacks[key])) {
+        if (Array.isArray(AttacksByCreatures[key])) {
 
-            const creature = GameAttacks[key].find(c => c.name === creatureName);
+            const creature = AttacksByCreatures[key].find(c => c.name === creatureName);
 
             if (creature) {
 
@@ -4012,15 +4013,29 @@ function getCreatureInfo(creatureName) {
     }
 
     if (foundCreature) {
-        // Extract and log information
-        console.log("Creature Name:", foundCreature.name);
-        console.log("Creature Type:", foundCreature.type);
-        console.log("Creature Strength:", foundCreature.strength);
-        console.log("Creature Weakness:", foundCreature.weak);
-        console.log("Creature Button Color:", foundCreature.BtnColor);
-        console.log("Creature Power:", foundCreature.Power);
-        console.log("Creature Random Damage:", foundCreature.ranDamage);
-        console.log("Creature Description:", foundCreature.description);
+        // Extract and log information .
+        const foundCreatureName = foundCreature.name;
+    	const foundCreatureType =  foundCreature.type;
+    	const foundCreatureStrength = foundCreature.strength;
+    	const foundCreatureWeaknessLevel = foundCreature.wearknessLevel;
+    	const foundCreaturePower = foundCreature.Power;
+    	const foundCreaturepowerId =  foundCreature.powerId;
+    	const foundCreatureId =  foundCreature.creatureId;
+    	const foundCreatureRandDamage =  foundCreature.ranDamage ;
+    	const foundCreatureBtnColor =   foundCreature.BtnColor;
+    	const foundCreatureDescription =   foundCreature.description ;
+        //Shows  the foundCreature Info by Console.log(). ...
+        console.log("Creature Name:", foundCreatureName);
+        console.log("Creature Type:", foundCreatureType);
+        console.log("Creature Strength:", foundCreatureStrength);
+        console.log("Creature Weakness:", foundCreatureWeaknessLevel);
+        console.log("Creature Button Color:",foundCreatureBtnColor);
+        console.log("Creature Power:", foundCreaturePower);
+        console.log("Creature Random Damage:", foundCreatureRandDamage);
+        console.log("Creature PowerId : ", foundCreaturepowerId);
+        console.log("Creature Id :", foundCreatureId);
+        console.log("Creature Button Color:",foundCreatureBtnColor);
+        console.log("Creature Description:", foundCreatureDescription);
         console.log("\n");
         console.log(`${foundCreature.name} Attacks`);
         console.log("\n");
@@ -4049,3 +4064,116 @@ console.log("*****************\n");
 const searchCreature3 = "SeaSerpent";
 getCreatureInfo(searchCreature3);
 console.log("*****************\n");
+
+function displaySelectedCreatures() {
+    // Clear the container
+    battleContainer.innerHTML = "";
+    const chosenCreatueres = document.createElement("h2");
+    const thisCreatuere = selectCreature();
+    chosenCreatueres.textContent = `Your have Chosen  ${thisCreatuere}, and the Web Browser has Chosen ${computerCreature} as its Creature`;
+    battleContainer.appendChild(chosenCreatueres);
+    const fightingField = document.createElement("div");
+    fightingField.classList.add("fighting-field");
+    // Apply flex styling to the battle container
+    fightingField.style.display = "flex";
+    fightingField.style.justifyContent = "space-evenly";
+    fightingField.style.alignItems = "center";
+
+    const playerCreatureDiv = document.createElement("div");
+    playerCreatureDiv.classList.add("fighting-field");
+
+    const playerCreatureName = document.createElement("h3");
+    playerCreatureName.textContent = `Your Creature: ${thisCreatuere}`;
+    playerCreatureDiv.appendChild(playerCreatureName);
+
+    const imgPlayerCreature = document.createElement("img");
+    imgPlayerCreature.src = `./creatures/${thisCreatuere}.svg`;
+    imgPlayerCreature.alt = `${thisCreatuere} Creature`;
+    imgPlayerCreature.classList.add("creature-image");
+    playerCreatureDiv.appendChild(imgPlayerCreature);
+    fightingField.appendChild(playerCreatureDiv);
+    battleContainer.appendChild(fightingField);
+
+    // Get the User Creature Selected Power ...
+    let currentPower = getSelectedPower(thisCreatuere);
+    console.log("this is the current player Power here : ", currentPower);
+    // Get the computer selected Power 
+    let computerPower = getSelectedPower(computerCreature);
+    console.log("this is the current computer Power here : ", computerPower);
+
+    // Set div container for the computer creature ...
+    const computerCreatureDiv = document.createElement("div");
+    computerCreatureDiv.classList.add("fighting-field");
+
+    computerCreatureName = document.createElement("h3");
+    computerCreatureName.textContent = `Computer Creature: ${computerCreature}`;
+    computerCreatureDiv.appendChild(computerCreatureName);
+
+    const imgComputerCreature = document.createElement("img");
+    imgComputerCreature.src = `./creatures/${computerCreature}.svg`;
+    imgComputerCreature.alt = `${computerCreature} Creature`;
+    imgComputerCreature.classList.add("creature-image");
+    computerCreatureDiv.appendChild(imgComputerCreature);
+    fightingField.appendChild(computerCreatureDiv)
+    battleContainer.appendChild(fightingField);
+
+    // Fetch and display creature info
+    const foundCreature = getCreatureInfo(thisCreatuere);
+    showCreatureInfo(foundCreature);
+
+    // Get the computer selected attack
+    let computerAttack = computerChooseAttack(computerCreature);
+    console.log(`Computer selected creature: ${computerCreature}`);
+    console.log(`Computer selected attack: ${computerAttack}`);
+}
+
+function showCreatureInfo(foundCreature) {
+    const foundCreatureName = foundCreature.name;
+    const foundCreatureType = foundCreature.type;
+    const foundCreatureStrength = foundCreature.strength;
+    const foundCreatureWeaknessLevel = foundCreature.weak;
+    const foundCreaturePower = foundCreature.Power;
+    const foundCreatureRandDamage = foundCreature.ranDamage;
+    const foundCreatureBtnColor = foundCreature.BtnColor;
+    const foundCreatureDescription = foundCreature.description;
+
+    // Create and append elements to display creature info
+    const creatureInfoDiv = document.createElement("div");
+    creatureInfoDiv.classList.add("creature-info");
+
+    const nameElement = document.createElement("p");
+    nameElement.textContent = `Name: ${foundCreatureName}`;
+    creatureInfoDiv.appendChild(nameElement);
+
+    const typeElement = document.createElement("p");
+    typeElement.textContent = `Type: ${foundCreatureType}`;
+    creatureInfoDiv.appendChild(typeElement);
+
+    const strengthElement = document.createElement("p");
+    strengthElement.textContent = `Strength: ${foundCreatureStrength}`;
+    creatureInfoDiv.appendChild(strengthElement);
+
+    const weaknessElement = document.createElement("p");
+    weaknessElement.textContent = `Weakness: ${foundCreatureWeaknessLevel}`;
+    creatureInfoDiv.appendChild(weaknessElement);
+
+    const powerElement = document.createElement("p");
+    powerElement.textContent = `Power: ${foundCreaturePower}`;
+    creatureInfoDiv.appendChild(powerElement);
+
+    const damageElement = document.createElement("p");
+    damageElement.textContent = `Random Damage: ${foundCreatureRandDamage}`;
+    creatureInfoDiv.appendChild(damageElement);
+
+    const btnColorElement = document.createElement("p");
+    btnColorElement.textContent = `Button Color: ${foundCreatureBtnColor}`;
+    creatureInfoDiv.appendChild(btnColorElement);
+
+    const descriptionElement = document.createElement("p");
+    descriptionElement.textContent = `Description: ${foundCreatureDescription}`;
+    creatureInfoDiv.appendChild(descriptionElement);
+
+    battleContainer.appendChild(creatureInfoDiv);
+}
+
+
