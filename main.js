@@ -1,7 +1,7 @@
 console.log("Hello World");
 import { creaturesByPower } from "./gameCreatures.mjs";
 import { AttacksByCreatures  } from "./creaturesAttacks.js";
-import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
+// import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
 // Function to start the game
 // This function will be called when the window is loaded
@@ -136,7 +136,7 @@ function startGame() {
             const input = document.createElement("input");
             input.type = "radio";
             input.name = "creature";
-            input.id = creature.toLowerCase();
+            input.id = creature;
 
             const label = document.createElement("label");
             label.htmlFor = creature.toLowerCase();
@@ -292,7 +292,6 @@ function startGame() {
         battleContainer.appendChild(fightingField);
         getCreatureInfo(thisCreatuere);
         showCreaturesInfo(thisCreatuere);
-        getCreatureInfo( thisCreatuere ) ;
         //Get the computer selected attack
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected creature: ${computerCreature}`);
@@ -316,6 +315,7 @@ function startGame() {
         I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
 
         */
+       console.log("Creatures  name _line 319 :", creature);
        const currentCreatureAttacks = AttacksByCreatures.currentPower.find( c => c.name = creature );
 
         const attacks = AttacksByCreatures[currentPower];
@@ -339,7 +339,7 @@ function startGame() {
             console.log(attackBtn.id);
             attackBtn.classList.add("attack-btn");
             myAttacks.appendChild(attackBtn);
-            displayAttackDescription(attack);
+            //displayAttackDescription(attack);
 
         });
         //Get the player selected attack
@@ -362,6 +362,7 @@ function startGame() {
 
     console.log("++++++++++++++++++++++++++++++++\n");
 
+    //Function in order to get creature Information on display ....
     function getCreatureInfo(creatureName) {
 
         console.log("Results for " + creatureName + "\n");
@@ -410,6 +411,43 @@ function startGame() {
             console.log("\n");
             console.log(`${foundCreature.name} Attacks`);
             console.log("\n");
+            // Create and append elements to display creature info
+            const creatureInfoDiv = document.createElement("div");
+            creatureInfoDiv.classList.add("creature-info");
+
+            const nameElement = document.createElement("p");
+            nameElement.textContent = `Name: ${foundCreatureName}`;
+            creatureInfoDiv.appendChild(nameElement);
+
+            const typeElement = document.createElement("p");
+            typeElement.textContent = `Type: ${foundCreatureType}`;
+            creatureInfoDiv.appendChild(typeElement);
+
+            const strengthElement = document.createElement("p");
+            strengthElement.textContent = `Strength: ${foundCreatureStrength}`;
+            creatureInfoDiv.appendChild(strengthElement);
+
+            const weaknessElement = document.createElement("p");
+            weaknessElement.textContent = `Weakness: ${foundCreatureWeaknessLevel}`;
+            creatureInfoDiv.appendChild(weaknessElement);
+
+            const powerElement = document.createElement("p");
+            powerElement.textContent = `Power: ${foundCreaturePower}`;
+            creatureInfoDiv.appendChild(powerElement);
+
+            const damageElement = document.createElement("p");
+            damageElement.textContent = `Random Damage: ${foundCreatureRandDamage}`;
+            creatureInfoDiv.appendChild(damageElement);
+
+            const btnColorElement = document.createElement("p");
+            btnColorElement.textContent = `Button Color: ${foundCreatureBtnColor}`;
+            creatureInfoDiv.appendChild(btnColorElement);
+
+            const descriptionElement = document.createElement("p");
+            descriptionElement.textContent = `Description: ${foundCreatureDescription}`;
+            creatureInfoDiv.appendChild(descriptionElement);
+
+            battleContainer.appendChild(creatureInfoDiv);
             let i = 1;
             foundCreature.attacks.forEach( attack => {
 
@@ -476,6 +514,7 @@ function startGame() {
         const attackDescription = document.createElement("p");
         attackDescription.textContent = attack.description;
         battleContainer.appendChild(attackDescription);
+        
     }
 
     let restartBtn = document.getElementById("restart-game--bnt");

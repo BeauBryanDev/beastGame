@@ -14,7 +14,7 @@
 //The object should have at least 3 different creatures
 //The object should have at least 3 different attacks
 
-export  const AttacksByCreatures  = {
+export const AttacksByCreatures  = {
 
     Fire : [
 
@@ -1086,7 +1086,7 @@ export  const AttacksByCreatures  = {
         },
         {
 
-            name: "Crocodile",
+            name: "Crocodrile",
             type: "Swamp",
             strength: 85,
             wearknessLevel: 25,
@@ -1095,19 +1095,19 @@ export  const AttacksByCreatures  = {
             powerId : 1300,
             creatureId : 1305,
             ranDamage: Math.floor(Math.random() * 10) + 1,
-            description: "A powerful reptile lurking beneath the water surface.",
+            description: "A powerful Reptile lurking beneath the water surface.",
             attacks: [
                 { 
                     name: "Jaw Crush",
                     type: "Swamp",
                     damage: Math.floor(Math.random() * 9) + 1,
-                    description: "The Crocodile crushes its prey with immense force."
+                    description: "The Crocodrile crushes its prey with immense force."
                 },
                 { 
                     name: "Tail Whip",
                     type: "Swamp",
                     damage: Math.floor(Math.random() * 9) + 1,
-                    description: "The Crocodile swings its tail with brutal strength."
+                    description: "The Crocodrile swings its tail with brutal strength."
                 }
             ]
 
@@ -1782,7 +1782,7 @@ export  const AttacksByCreatures  = {
         },
         {
 
-            name: "Bald Eagle",
+            name: "BaldEagle",
             type: "Forest",
             strength: 70,
             wearknessLevel: 30,
@@ -3865,7 +3865,6 @@ export  const AttacksByCreatures  = {
 
 }
 
-
 const DragonFireClawsAttack = AttacksByCreatures.Fire[2].attacks[2].name;
 const DragonFireClawsDamage = AttacksByCreatures.Fire[2].attacks[2].damage;
 const DragonFireClawsDescription = AttacksByCreatures.Fire[2].attacks[2].description;
@@ -4065,6 +4064,7 @@ const searchCreature3 = "SeaSerpent";
 getCreatureInfo(searchCreature3);
 console.log("*****************\n");
 
+/*
 function displaySelectedCreatures() {
     // Clear the container
     battleContainer.innerHTML = "";
@@ -4176,4 +4176,4 @@ function showCreatureInfo(foundCreature) {
     battleContainer.appendChild(creatureInfoDiv);
 }
 
-
+*/
