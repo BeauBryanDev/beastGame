@@ -56,8 +56,6 @@ function startGame() {
         });
     });
 
-  
-
     function getCreaturesByPower(power) {
 
         return creaturesByPower[power];
@@ -316,12 +314,14 @@ function startGame() {
 
         */
        console.log("Creatures  name _line 319 :", creature);
-       const currentCreatureAttacks = AttacksByCreatures.currentPower.find( c => c.name = creature );
+       console.log("Show CurrentPower in Line 319 : ", currentPower);
 
-        const attacks = AttacksByCreatures[currentPower];
+       const currentCreatureObject = AttacksByCreatures[currentPower]?.find(c => c.name === creature);
+
+        const attacks = currentCreatureObject.attacks;
         console.log(attacks);
         battleContainer.appendChild(myAttacks);
-        attacks.forEach(attack => {
+        currentCreatureObject.attacks.forEach(attack => {
 
             const attackBtn = document.createElement("button");
             attackBtn.textContent = attack.name;
@@ -332,7 +332,7 @@ function startGame() {
             attackBtn.style.borderRadius = "10px";
             attackBtn.style.cursor = "pointer";
             attackBtn.style.fontSize = "1.2rem";
-            attackBtn.style.backgroundColor = attack.BtnColor;
+            attackBtn.style.backgroundColor = currentCreatureObject.BtnColor;
             attackBtn.style.color = "black";
             //attackBtn.disabled = true ;
             attackBtn.id = attack.name.toLowerCase().split(" ").join("-");
@@ -467,7 +467,7 @@ function startGame() {
     function computerChooseAttack(creature) {
 
         let currentPower = getSelectedPower(creature);
-        const attacks = attacksByPower[currentPower];
+        const attacks = AttacksByCreatures[currentPower];
         const randomAttack = attacks[randomNumber(0, attacks.length - 1)];
 
         return randomAttack.name.toLowerCase().split(" ").join("-");
@@ -530,7 +530,6 @@ function startGame() {
 
     }
 
-
     const battleBtn = document.getElementById("battle--btn");
 
     if (battleBtn) {
@@ -554,7 +553,6 @@ function selectWater() {
     console.log("Water selected");
     alert("Water selected");
 }
-
 
 function selectCreature() {
 
