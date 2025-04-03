@@ -1,3 +1,21 @@
+#Ignore .txt files
+
+aux.txt
+
+
+#Ignore myTester JS File 
+
+myTester.js
+
+#Ignore myTester HTML File
+
+myTester.html
+
+
+#Ignore Python Files .
+
+Capitalize.py
+
 # Logs
 logs
 *.log
@@ -134,4 +152,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
->>>>>>> origin/master
+
