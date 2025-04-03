@@ -4,20 +4,14 @@ import { AttacksByCreatures  } from "./creaturesAttacks.js";
 // import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
 // Function to start the game
-// This function will be called when the window is loaded
-// It will contain all the game logic
-// It will be responsible for starting the game
-// It will be responsible for getting the selected creature
-// It will be responsible for getting the computer's selected creature
-// It will be responsible for displaying the selected creatures
-// It will be responsible for displaying the computer's selected creature
-// It will be responsible for displaying the player's selected creature
-// It will be responsible for displaying the computer's selected creature
-// It will be responsible for displaying the selected creatures
 
 let playerAttack;
 
 function startGame() {
+
+    let BattleGround = document.getElementById("battle-Container");
+    BattleGround.style.display = 'none';
+
 
     let selectFire = document.getElementById("fire-btn--select");
 
@@ -28,9 +22,6 @@ function startGame() {
 
     let selectWaterBtn = document.getElementById("water-btn--select");
     selectWaterBtn.addEventListener("click", selectWater );
-
-    let BattleGround = document.getElementById("battle-Container");
-    BattleGround.style.display = 'none';
 
     let creatureContainer = document.getElementById("Creature-Container");
 
@@ -118,7 +109,7 @@ function startGame() {
         creatureContainer.innerHTML = "";
         //create an h2 title that show the Power selected by the User ...
         const h2Power = document.createElement("h2");
-        h2Power.textContent = `Your have Chosen  ${power}, Then these are Creatures of ${power}`;
+        h2Power.textContent = `Your have Chosen  ${power}, Then these are the Monster from ${power}`;
         creatureContainer.appendChild(h2Power);
 
         //create an h2 title inside Creature-Container div
@@ -126,6 +117,12 @@ function startGame() {
         h2Title.textContent = "Choose your Creature";
         creatureContainer.appendChild(h2Title);
 
+        const displayMonsters = document.createElement("div");
+        displayMonsters.classList.add("monster-display");
+        displayMonsters.style.display = 'flex';
+        displayMonsters.style.flexDirection = 'row';
+
+        const currentColor = AttacksByCreatures[power];
 
         creaturesByPower[power].forEach(creature => {
             const creatureDiv = document.createElement("div");
@@ -139,6 +136,7 @@ function startGame() {
             const label = document.createElement("label");
             label.htmlFor = creature.toLowerCase();
             label.textContent = creature;
+            label.style.backgroundColor = currentColor.BtnColor;
 
             const img = document.createElement("img");
             img.src = `./creatures/${creature}.svg`;
@@ -149,7 +147,9 @@ function startGame() {
             creatureDiv.appendChild(label);
             creatureDiv.appendChild(img);
 
-            creatureContainer.appendChild(creatureDiv);
+            displayMonsters.appendChild(creatureDiv);
+            creatureContainer.appendChild(displayMonsters);
+
 
         });
         //Avoid using innerHTML , It may be a security concern, use the DOM API to create elements and append them to the container

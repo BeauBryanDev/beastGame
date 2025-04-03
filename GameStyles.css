@@ -3,14 +3,22 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+
 }
+
 h1 {
     text-align: center;
-    color: #333;
+    color: darkgreen;
     margin-top: 0;
     padding: 20px;
     background-color: #333;
     color: #fff;
+
+}
+.main-title {
+
+    color: green;
+    font-size: 48px;
 }
 section {
     margin: 20px;
@@ -132,3 +140,9 @@ button:hover {
     color : gray;
 }
 
+.these-creatures--section {
+
+    display: flex;
+
+    flex-direction: row;
+}
