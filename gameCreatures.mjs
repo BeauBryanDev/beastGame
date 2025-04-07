@@ -27,9 +27,44 @@ export const creaturesByPower = {
         Monster: ["Orc","Goblin", "Ogre", "Troll", "Dragon", "Cyclops"],
         SeaMonster: ["Kraken", "Hydra","Mermaid", "SeaSerpent", "SeaDragon"],
         UnderGround: [ "Ghost", "Witch", "Troll", "Vampire", "Zombie", "Spider-Web","Wizard"] ,
-        Mythical: ["Elf", "Unicorn", "Griffin", "Centaur","Harpy" , "Sphinx", "Phoenix", "SpaceDragon","Minotaur", "Fairy"],
+        Mythical: [ "Fairy" ,"Elf","Phoenix", "Harpy" ,"Griffin", "Sphinx", "Unicorn",  "Centaur","Minotaur", "SpaceDragon"],
        
     };
+
+    export const colorByPowers = {
+        Fire: "red",
+        Water: "blue",
+        Snow: "white",
+        Air: "lightblue",
+        Earth: "brown",
+        Light: "yellow",
+        River: "cyan",
+        Poison: "purple",
+        Ice: "cyan",
+        Desert: "orange",
+        Forest: "green",
+        Jungle: "darkgreen",
+        Mountain: "gray",
+        Sky: "skyblue",
+        Swamp: "darkgreen",
+        Volcano: "red",
+        Bugs: "black",
+        Sea: "blue",
+        Wind: "lightblue",
+        Storm: "gray",
+        Disasters: "brown",
+        Darkness: "white",
+        OuterSpace: "darkblue",
+        Cold: "white",
+        Monster: "green",
+        SeaMonster: "blue",
+        UnderGround: "darkgray",
+        Mythical: "darkviolet",
+    };
+    // Function to get the power of a selected animal
+    // This function takes an animal name as input and returns its corresponding power category
+    // It first capitalizes the first letter of the animal name and then iterates through the creaturesByPower object
+    // to find the matching power category. If found, it returns the category; otherwise, it returns "Not found".
 
     function getSelectedPower(animal) {
 

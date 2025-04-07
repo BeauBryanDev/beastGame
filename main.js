@@ -1,5 +1,5 @@
 console.log("Hello World");
-import { creaturesByPower } from "./gameCreatures.mjs";
+import { creaturesByPower, colorByPowers  } from "./gameCreatures.mjs";
 import { AttacksByCreatures  } from "./creaturesAttacks.js";
 // import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
@@ -115,37 +115,97 @@ function startGame() {
         //create an h2 title inside Creature-Container div
         const h2Title = document.createElement("h2");
         h2Title.textContent = "Choose your Creature";
+        h2Title.style.textAlign = "center";
+        h2Title.style.fontSize = "2rem";
+        h2Title.style.color = "black";
+        h2Title.style.fontWeight = "bold";
+        h2Title.style.fontFamily = "Arial, sans-serif";
+        h2Title.style.margin = "10px";
+        h2Title.style.padding = "10px";
         creatureContainer.appendChild(h2Title);
 
         const displayMonsters = document.createElement("div");
         displayMonsters.classList.add("monster-display");
         displayMonsters.style.display = 'flex';
         displayMonsters.style.flexDirection = 'row';
+        displayMonsters.style.justifyContent = 'space-evenly';
+        displayMonsters.style.alignItems = 'center';
+        displayMonsters.style.flexWrap = 'wrap';
+        displayMonsters.style.gap = '10px';
+        displayMonsters.style.width = '100%';
+        displayMonsters.style.margin = 'auto';
+        displayMonsters.style.padding = '10px';
+        displayMonsters.style.border = '2px solid black';
 
-        const currentColor = AttacksByCreatures[power];
+        const currentColor =  colorByPowers[power];
+        displayMonsters.style.backgroundColor = currentColor;
+        displayMonsters.style.borderRadius = '10px';
+        displayMonsters.style.padding = '10px';
+        displayMonsters.style.width = '100%';
+        displayMonsters.style.height = 'auto';
+        displayMonsters.style.margin = 'auto';
+        displayMonsters.style.gap = '10px';
+        displayMonsters.style.textAlign = 'center';
+        displayMonsters.style.fontSize = '1.2rem';
+        displayMonsters.style.color = 'black';
+        displayMonsters.style.fontWeight = 'bold';
+        displayMonsters.style.fontFamily = 'Arial, sans-serif';
+        displayMonsters.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        displayMonsters.style.border = '2px solid black';
+        displayMonsters.style.borderRadius = '10px';
 
         creaturesByPower[power].forEach(creature => {
             const creatureDiv = document.createElement("div");
             creatureDiv.classList.add("creature-card");
 
-            const input = document.createElement("input");
-            input.type = "radio";
-            input.name = "creature";
-            input.id = creature;
-
             const label = document.createElement("label");
             label.htmlFor = creature.toLowerCase();
             label.textContent = creature;
-            label.style.backgroundColor = currentColor.BtnColor;
+            label.style.fontSize = "1.2rem";
+            label.style.color = "black";
+            label.style.padding = "10px";
+            label.style.border = "2px solid black";
+            label.style.borderRadius = "10px";
+            label.style.cursor = "pointer";
+            label.style.margin = "10px";
+            label.style.width = "auto";
+            label.style.height = "auto";
+            //label.style.height = "20px";
+            label.style.display = "flex";
+            label.style.alignItems = "center";
+            label.style.justifyContent = "center";
+            label.style.fontSize = "1.2rem";
+            label.style.fontWeight = "bold";
+            label.style.textAlign = "center";
+            label.style.backgroundColor = 'black';
+            label.style.color = currentColor;
+            label.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "creature";
+            input.value = creature;
+            input.id = creature.toLowerCase();
+            // input.style.backgroundColor = currentColor.BtnColor;
+            // input.style.color = currentColor.BtnColor;
+            input.style.border = "2px solid black";
+            input.style.width = "50px";
+            input.style.height = "70px";
+            input.style.borderRadius = "10px";
+            input.style.cursor = "pointer";
+            input.style.margin = "10px";
+            input.style.padding = "10px";
+            input.style.fontSize = "1.2rem";
+            input.id = creature;
 
             const img = document.createElement("img");
             img.src = `./creatures/${creature}.svg`;
             img.alt = `${creature} Creature`;
             img.classList.add("creature-image");
 
-            creatureDiv.appendChild(input);
             creatureDiv.appendChild(label);
             creatureDiv.appendChild(img);
+            creatureDiv.appendChild(input);
 
             displayMonsters.appendChild(creatureDiv);
             creatureContainer.appendChild(displayMonsters);
