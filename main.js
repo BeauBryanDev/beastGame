@@ -378,10 +378,33 @@ function startGame() {
 
        const currentCreatureObject = AttacksByCreatures[currentPower]?.find(c => c.name === creature);
 
+       // Add error handling
+        if (!currentCreatureObject) {
+            console.error(`Creature "${creature}" not found in power "${currentPower}".`);
+            alert(`Creature "${creature}" not found for the selected power.`);
+            return;
+        }
+
         const attacks = currentCreatureObject.attacks;
-        console.log(attacks);
+        //debug attacks array in console ....
+        console.log("Current Creature Object:", currentCreatureObject);
+        console.log("Attacks Array:", attacks);
+
+        if (!attacks || attacks.length === 0) {
+            console.error(`No attacks found for creature "${creature}".`);
+            alert(`No attacks found for creature "${creature}".`);
+            return;
+        }
+
+        // Ensure battleContainer is defined
+        if (typeof battleContainer === 'undefined') {
+            console.error('battleContainer is not defined.');
+            return;
+        }
+
         battleContainer.appendChild(myAttacks);
-        currentCreatureObject.attacks.forEach(attack => {
+
+        attacks.forEach(attack => {
 
             const attackBtn = document.createElement("button");
             attackBtn.textContent = attack.name;

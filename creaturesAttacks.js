@@ -3363,12 +3363,12 @@ export const AttacksByCreatures  = {
 
     ],
 
-    underGround : [
+    UnderGround : [
 
         {
 
             name: "Ghost",
-            type: "underGround",
+            type: "UnderGround",
             strength: 60,
             wearknessLevel: 70,
             Power: 55,
@@ -3396,7 +3396,7 @@ export const AttacksByCreatures  = {
         {
 
             name: "Witch",
-            type: "underGround",
+            type: "UnderGround",
             strength: 75,
             wearknessLevel: 40,
             Power: 70,
@@ -3415,7 +3415,7 @@ export const AttacksByCreatures  = {
                 },
                 { 
                     name: "Hex Curse",
-                    type: "underGround",
+                    type: "UnderGround",
                     damage: Math.floor(Math.random() * 9) + 1,
                     description: "Curses the target, reducing their strength."
                 },
@@ -3431,7 +3431,7 @@ export const AttacksByCreatures  = {
         {
 
             name: "Troll",
-            type: "underGround",
+            type: "UnderGround",
             strength: 90,
             wearknessLevel: 20,
             Power: 85,
@@ -3464,7 +3464,7 @@ export const AttacksByCreatures  = {
         {
 
             name: "Vampire",
-            type: "underGround",
+            type: "UnderGround",
             strength: 85,
             wearknessLevel: 30,
             Power: 80,
@@ -3491,7 +3491,7 @@ export const AttacksByCreatures  = {
         {
 
             name: "Zombie",
-            type: "underGround",
+            type: "UnderGround",
             strength: 50,
             wearknessLevel: 80,
             Power: 45,
@@ -3517,8 +3517,8 @@ export const AttacksByCreatures  = {
         },
         {
 
-            name: "SpiderWeb",
-            type: "underGround",
+            name: "Spider-Web",
+            type: "UnderGround",
             strength: 65,
             wearknessLevel: 50,
             Power: 60,
@@ -3543,8 +3543,8 @@ export const AttacksByCreatures  = {
             ]
             
         },
-        {
-            type: "underGround",
+        {   name : "Wizard",
+            type: "UnderGround",
             strength: 95,
             wearknessLevel: 10,
             Power: 90,
@@ -3792,6 +3792,35 @@ export const AttacksByCreatures  = {
                     description : "The Sphinx whips with its tail."
                 }
             ]
+
+        },
+        {
+            name: "Griffin",
+            type: "Mythical",
+            strength: 110,
+            wearknessLevel: 20,
+            Power: 100,
+            BtnColor: "gold",
+            strength : 115,
+            powerId : 4300,
+            creatureId : 4310,
+            ranDamage: Math.floor(Math.random() * 15) + 5,
+            ranDamage : Math.floor(Math.random() * 10) + 12,
+            description : "Ancient creature with the body of a lion and the head of an eagle.",
+            attacks : [
+                { 
+                    name : "Air Claw",
+                    type : "Air",
+                    damage : 8,
+                    description : "The  Griffin scratches with its claws."
+                },
+                { 
+                    name : "Air Beak",
+                    type : "Air",
+                    damage : 8.5,
+                    description : "The Griffin peak with is powerfull Beak."
+                }
+            ],
 
         },
         {

@@ -24,7 +24,7 @@ export const creaturesByPower = {
         Darkness : ["DarkShadow", "Ash", "Eclipse", "BlackHole","EvilEye"],
         OuterSpace: ["Planet", "Alien", "Galaxy", "SpaceComet", "Quasar", "BlackHole"],
         Cold: ["Snow", "Ice", "SnowStorm", "Frost","WaterWave"],
-        Monster: ["Orc","Goblin", "Ogre", "Troll", "Dragon", "Cyclops"],
+        Monsters: ["Orc","Goblin", "Ogre", "Troll", "Dragon", "Cyclops"],
         SeaMonster: ["Kraken", "Hydra","Mermaid", "SeaSerpent", "SeaDragon"],
         UnderGround: [ "Ghost", "Witch", "Troll", "Vampire", "Zombie", "Spider-Web","Wizard"] ,
         Mythical: [ "Fairy" ,"Elf","Phoenix", "Harpy" ,"Griffin", "Sphinx", "Unicorn",  "Centaur","Minotaur", "SpaceDragon"],
