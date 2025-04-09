@@ -1,5 +1,5 @@
 console.log("Hello World");
-import { creaturesByPower, colorByPowers  } from "./gameCreatures.mjs";
+import { creaturesByPower, colorByPowers , BasicCreatures,  IntermediateCreatures , AdvanceCreatures , SupremeCreatures } from "./gameCreatures.mjs";
 import { AttacksByCreatures  } from "./creaturesAttacks.js";
 // import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
@@ -234,6 +234,37 @@ function startGame() {
         const creatures = creaturesByPower[randomPower];
         const randomCreature = creatures[randomNumber(0, creatures.length - 1)];
         //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
+    
+        const CrtrId = getCreatureInfo( playerCreature2 ) ;
+
+        if ( CrtrId == 1 ) {
+
+
+        } else {
+
+            if ( CrtrId == 2 ) {
+
+
+            } else {
+
+                if ( CrtrId == 3 ) {
+
+
+                } else {
+
+                    if ( CrtrId == 5 ) {
+
+
+                    }  else {
+
+
+
+                    }
+                }
+            }
+
+        }
+        
         return randomCreature;
 
     }
@@ -543,6 +574,10 @@ function startGame() {
             console.log(`Creature "${creatureName}" not found.`);
 
         }
+
+        categoryId = foundCreature.cid ;
+
+        return categoryId;
 
     }
     console.log("/*****************\n");
