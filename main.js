@@ -236,6 +236,16 @@ function startGame() {
         //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
         return randomCreature;
     }
+
+    function computerPlayBasic() {
+
+        let BattleGround = document.getElementById("battle-Container");
+        BattleGround.style.display = 'block';
+
+    }
+
+
+
     let playerCreature ;
     // Call computerPlay after the user has selected their creature
     let chooseCreatureBtn = document.getElementById("select-creature--btn");
@@ -271,9 +281,65 @@ function startGame() {
                 console.log("Player Crature cid : ", playerCreatureObject.cid);
             }
 
+            // const playerCid = playerCreatureObject.cid ;
+
+            // if ( playerCid ==  1 )  {
+
+            //     const compputerChoseCreature = computerPlayBasic();
+            //     console.log(`Computer selected creature: ${ compputerChoseCreature}`);
+
+            // } else  if ( playerCid == 2 ) {
+
+            //     const compputerChoseCreature = computerPlayMid();
+            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
+
+            // } else if ( playerCid == 3 ) {
+
+            //     const compputerChoseCreature = computerPlayAdv();
+            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
+
+            // } else if ( playerCid == 4 ) {
+
+            //     const compputerChoseCreature = computerPlayDragon();
+            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
+                
+            // } else if (  playerCid == 5 ) {
+
+            //     const computerChooseAttack = computerPlaySupreme();
+            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
+
+            // } else {
+
+            //     //it is for Disasters;
+            // }
+
+            const playerCreatureCid = playerCreatureObject.cid;
+
+            // Filter the computer's creatures by cid
+            const computerCreaturesPool = Object.values(AttacksByCreatures).flat() // Flatten the array of arrays
+                .filter(creature => creature.cid === playerCreatureCid);
+
+            if (computerCreaturesPool.length === 0) {
+                console.error(`No computer creatures found with cid "${playerCreatureCid}".`);
+                alert(`No computer creatures available for the selected player creature.`);
+                return;
+            }
+            // Randomly select a computer creature from the filtered pool
+            const computerCreature2 = computerCreaturesPool[Math.floor(Math.random() * computerCreaturesPool.length)];
+
+            // Log the computer's chosen creature
+            console.log("Computer selected creature2:", computerCreature2);
+            console.log("Computer Creature2 Name:", computerCreature2.name);
+            console.log("Computer Creature2 cid:", computerCreature2.cid);
+            console.log("Computer Creature2 Strength:", computerCreature2.strength);
+            console.log("Computer Creature2 Life Points:", computerCreature2.lifePoints);
+            console.log("Computer Creature2 Attack Points:", computerCreature2.attackPoints);
+            console.log("Computer Creature2 Defense Points:", computerCreature2.defensePoints);
+
             //Continue with ComputerPlay Logic .
             const computerCreature = computerPlay();
             console.log(`Computer selected creature: ${computerCreature}`);
+
         });
 
     }
