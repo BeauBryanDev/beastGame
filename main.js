@@ -236,12 +236,42 @@ function startGame() {
         //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
         return randomCreature;
     }
-
+    let playerCreature ;
     // Call computerPlay after the user has selected their creature
     let chooseCreatureBtn = document.getElementById("select-creature--btn");
 
     if (chooseCreatureBtn) {
         chooseCreatureBtn.addEventListener("click", function () {
+            const selectedCreature = document.querySelector("input[name='creature']:checked");
+            if (!selectedCreature) {
+                alert("Please select a creature before proceeding.");
+                return;
+            }
+            // Assign the selected creature to the global variable
+            playerCreature = selectCreature();
+            console.log(`Player selected creature: ${playerCreature}`);
+
+            const playerCreatureObject = AttacksByCreatures[window.selectedPower]?.find(c => c.name === playerCreature);
+            // Add error handling
+            if (!playerCreatureObject) {
+                console.error(`Creature "${playerCreature}" not found in power "${window.selectedPower}".`);
+                alert(`Creature "${playerCreature}" not found for the selected power.`);
+                return;
+            }  
+            else {
+                const categoryID = playerCreatureObject.creatureId;
+                console.log("Player Creature ID: ", categoryID);
+                console.log("Player Creature Object: ", playerCreatureObject);
+                console.log("Player Creature Name: ", playerCreatureObject.name);
+                console.log("Player Creature Type: ", playerCreatureObject.type);
+                console.log("Player Creature Strength: ", playerCreatureObject.strength);
+                console.log("Player Creature Weakness: ", playerCreatureObject.wearknessLevel);
+                console.log("Player Creature Power: ", playerCreatureObject.Power);
+                console.log("Player Creature Power ID: ", playerCreatureObject.powerId);
+                console.log("Player Crature cid : ", playerCreatureObject.cid);
+            }
+
+            //Continue with ComputerPlay Logic .
             const computerCreature = computerPlay();
             console.log(`Computer selected creature: ${computerCreature}`);
         });
@@ -254,7 +284,6 @@ function startGame() {
 
     console.log(`Computer selected creature: ${computerCreature}`); 
 
-    let playerCreature = getSelectedCreature();
     console.log(`Player selected creature: ${playerCreature}`);
 
     let computerCreatureName = document.getElementById("computer-creature--name");
@@ -356,7 +385,7 @@ function startGame() {
         
 
     }
-
+    
     function showCreaturesInfo(creature) {   
 
         const myAttacks = document.createElement("div");
@@ -554,7 +583,7 @@ function startGame() {
         return randomAttack.name.toLowerCase().split(" ").join("-");
 
     }
-
+    
     function displayAttackDescription(attack) { 
 
         const attackName = document.createElement("h4");

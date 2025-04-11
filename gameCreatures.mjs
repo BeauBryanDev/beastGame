@@ -173,7 +173,7 @@ export const creaturesByPower = {
 
     export const AdvanceCreatures = [
         //attackPoints is between 50 and 100 .
-        { name : "Sphinx", lifePoints : 325, strength : 85 , power : "Fire", attackPoints : 65, defensePoints : 10, speedPoints : 8, weakeness : [ "Water" ], cid : 3 , color: "red" },
+        {  name : "Sphinx", lifePoints : 325, strength : 85 , power : "Fire", attackPoints : 65, defensePoints : 10, speedPoints : 8, weakeness : [ "Water" ], cid : 3 , color: "red" },
         //Fire Creatures
         { name : "FireDragon", lifePoints : 385, strength : 85 , power : "Fire", attackPoints : 95, defensePoints : 10, speedPoints : 8, weakeness : [ "Water" ], cid : 3 ,color: "red" },
         //Water Creatures 
