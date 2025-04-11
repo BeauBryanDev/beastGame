@@ -2622,7 +2622,7 @@ export const AttacksByCreatures  = {
         },
         {
 
-            name: "Cave Fish",
+            name: "CaveFish",
             type: "Sea",
             strength: 60,
             wearknessLevel: 40,
@@ -2657,7 +2657,7 @@ export const AttacksByCreatures  = {
         },
         {
 
-            name: "Sea Turtle",
+            name: "Sea-Turtle",
             type: "Sea",
             strength: 80,
             wearknessLevel: 30,
@@ -2683,6 +2683,39 @@ export const AttacksByCreatures  = {
             ]
 
         },
+        {
+            name : "BlueWhale",
+            type : "Snow",
+            strength : 75,
+            wearknessLevel : 35,
+            Power : 55 ,
+            BtnColor : "blue",
+            powerId : 3200,
+            creatureId : 3204,
+            ranDamage  : Math.floor(Math.random() * 10) + 1,
+            description : "The Blue Whale swims in the cold seas.",
+            attacks : [
+                { 
+                    name : "Snow Ball",
+                    type : "Snow",
+                    damage : 7,
+                    description : "The Blue Whale throws a snow ball."
+                },
+                { 
+                    name : "Cold Water Bubble",
+                    type : "Snow",
+                    damage : 8,
+                    description : "The Blue Whale attack with a bubble flow to sneeze its victims."
+                },
+                { 
+                    name : "Snow Tail",
+                    type : "Snow",
+                    damage : 8.5,
+                    description : "The Blue Whale whips with its tail."
+                }
+            ]
+
+        }
 
     ],
 

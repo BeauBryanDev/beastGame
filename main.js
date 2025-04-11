@@ -234,39 +234,7 @@ function startGame() {
         const creatures = creaturesByPower[randomPower];
         const randomCreature = creatures[randomNumber(0, creatures.length - 1)];
         //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
-    
-        const CrtrId = getCreatureInfo( playerCreature2 ) ;
-
-        if ( CrtrId == 1 ) {
-
-
-        } else {
-
-            if ( CrtrId == 2 ) {
-
-
-            } else {
-
-                if ( CrtrId == 3 ) {
-
-
-                } else {
-
-                    if ( CrtrId == 5 ) {
-
-
-                    }  else {
-
-
-
-                    }
-                }
-            }
-
-        }
-        
         return randomCreature;
-
     }
 
     // Call computerPlay after the user has selected their creature
@@ -398,12 +366,7 @@ function startGame() {
         myAttacks.appendChild(h3Attacks);
         let thisCreatuere = getSelectedCreature();
         let currentPower = getSelectedPower(creature);
-        /* Beau , You have to CHANGE ALL THIS LOGIC SINCE I WILL BE USING THE Main Object attackByCreatures
-        that is in ./creaturesAttack.js file, I will be using the attackByCreatures object to get the attacks of the creatures
-        based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file,
-        I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
-
-        */
+        
        console.log("Creatures  name _line 319 :", creature);
        console.log("Show CurrentPower in Line 319 : ", currentPower);
 
@@ -575,9 +538,9 @@ function startGame() {
 
         }
 
-        categoryId = foundCreature.cid ;
+        //let categoryId = foundCreature.cid ;
 
-        return categoryId;
+        //return categoryId;
 
     }
     console.log("/*****************\n");
