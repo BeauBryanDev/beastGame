@@ -88,7 +88,7 @@ function startGame() {
 
 
     // Ensure creatures are displayed before attempting to get the selected creature
-    showCreatures("Fire"); // Replace "Fire" with the desired default power if needed
+    //showCreatures("Desert"); // Replace "Fire" with the desired default power if needed
     const myCreature = getSelectedCreature();
     console.log(myCreature);
 
@@ -244,8 +244,6 @@ function startGame() {
 
     }
 
-
-
     let playerCreature ;
     // Call computerPlay after the user has selected their creature
     let chooseCreatureBtn = document.getElementById("select-creature--btn");
@@ -263,6 +261,7 @@ function startGame() {
 
             const playerCreatureObject = AttacksByCreatures[window.selectedPower]?.find(c => c.name === playerCreature);
             // Add error handling
+            
             if (!playerCreatureObject) {
                 console.error(`Creature "${playerCreature}" not found in power "${window.selectedPower}".`);
                 alert(`Creature "${playerCreature}" not found for the selected power.`);
@@ -280,38 +279,6 @@ function startGame() {
                 console.log("Player Creature Power ID: ", playerCreatureObject.powerId);
                 console.log("Player Crature cid : ", playerCreatureObject.cid);
             }
-
-            // const playerCid = playerCreatureObject.cid ;
-
-            // if ( playerCid ==  1 )  {
-
-            //     const compputerChoseCreature = computerPlayBasic();
-            //     console.log(`Computer selected creature: ${ compputerChoseCreature}`);
-
-            // } else  if ( playerCid == 2 ) {
-
-            //     const compputerChoseCreature = computerPlayMid();
-            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
-
-            // } else if ( playerCid == 3 ) {
-
-            //     const compputerChoseCreature = computerPlayAdv();
-            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
-
-            // } else if ( playerCid == 4 ) {
-
-            //     const compputerChoseCreature = computerPlayDragon();
-            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
-                
-            // } else if (  playerCid == 5 ) {
-
-            //     const computerChooseAttack = computerPlaySupreme();
-            //     console.log( `Computer selected creature: ${ compputerChoseCreature}` );
-
-            // } else {
-
-            //     //it is for Disasters;
-            // }
 
             const playerCreatureCid = playerCreatureObject.cid;
 
@@ -331,6 +298,7 @@ function startGame() {
             console.log("Computer selected creature2:", computerCreature2);
             console.log("Computer Creature2 Name:", computerCreature2.name);
             console.log("Computer Creature2 cid:", computerCreature2.cid);
+            console.log("Computer Creature2 Type:", computerCreature2.type);
             console.log("Computer Creature2 Strength:", computerCreature2.strength);
             console.log("Computer Creature2 Life Points:", computerCreature2.lifePoints);
             console.log("Computer Creature2 Attack Points:", computerCreature2.attackPoints);

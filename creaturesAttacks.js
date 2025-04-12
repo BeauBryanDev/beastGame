@@ -16,6 +16,28 @@
 
 export const AttacksByCreatures  = {
 
+    Storm : [
+        {
+            name : "Hurricane",
+            type : "Storm",
+            strength : 75,
+            wearknessLevel : 25,
+            BtnColor : "lightblue",
+            Power : 125 ,
+            description : "Powerful Hurricane",
+            cid : 10 ,
+            attacks : [
+
+            {
+                name : "Hurricane",
+                type : "Storm",
+                damage : 8,
+                description : "The Hurricane blows everything away."
+            },
+            ]
+        }
+    ],
+
     Fire : [
 
         {
@@ -4045,11 +4067,6 @@ export const AttacksByCreatures  = {
             ]
 
         },
-
-    ],
-
-    Storm : [
-
 
     ],
 
