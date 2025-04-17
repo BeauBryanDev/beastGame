@@ -416,7 +416,6 @@ function startGame() {
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected creature: ${computerCreature}`);
         console.log(`Computer selected attack: ${computerAttack}`);
-        
 
     }
     
@@ -488,8 +487,19 @@ function startGame() {
             attackBtn.addEventListener("click", function() {
                 playerAttack = attackBtn.id;
                 console.log(playerAttack);
-                // const computerAttack = computerChooseAttack( computerCreature );
-                // console.log(`Computer selected attack: ${computerAttack}`);
+                const currentAttack = document.createElement("p");
+                currentAttack.textContent = `You selected attack: ${playerAttack}`;
+                const attackDescription = document.createElement("p");
+                attackDescription.textContent = `Attack Description: ${currentCreatureObject.attacks.find(a => a.name.toLowerCase().split(" ").join("-") === playerAttack).description}`;
+                attackDescription.style.fontSize = "1.2rem";
+                currentAttack.style.fontSize = "1.2rem";
+
+                battleContainer.appendChild(currentAttack);
+                battleContainer.appendChild(attackDescription);
+                //displayAttackDescription(attack);
+
+                 const computerAttack = computerChooseAttack( computerCreature );
+                console.log(`Computer selected attack: ${computerAttack}`);
                 // battle(playerAttack, computerAttack);
                 
             });
@@ -497,6 +507,8 @@ function startGame() {
         });
 
         return playerAttack;
+
+
 
     }
 

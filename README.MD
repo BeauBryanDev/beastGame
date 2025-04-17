@@ -10,7 +10,7 @@ It still have many console.logs and .erros on the browser JS console in order to
 
 We are still working on its source code, 
 
-it will be a BackEnd in Node.js and MongoDB as its main Data Base  to store new users points.
+it will be a BackEnd in Node.js and MongoDB as its main Data Base  to store new users points before summer.
 
 
 
