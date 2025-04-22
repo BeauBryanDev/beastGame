@@ -206,7 +206,16 @@ function startGame() {
             creatureDiv.appendChild(label);
             creatureDiv.appendChild(img);
             creatureDiv.appendChild(input);
-
+            // Add event listener to change the background color of the selected creature card
+            input.addEventListener("change", function () {
+                const allCreatureCards = document.querySelectorAll(".creature-card");
+                allCreatureCards.forEach(card => {
+                    card.style.backgroundColor = ""; // Reset background color for all cards
+                });
+                if (input.checked) {
+                    creatureDiv.style.backgroundColor = "red"; // Highlight the selected card
+                }
+            });
             displayMonsters.appendChild(creatureDiv);
             creatureContainer.appendChild(displayMonsters);
 
@@ -465,12 +474,14 @@ function startGame() {
             const attackBtn = document.createElement("button");
             attackBtn.textContent = attack.name;
             //set styles to attackBtns 
-            attackBtn.style.padding = "10px";
+            attackBtn.style.padding = "10px , 10px , 10px , 10px";
             attackBtn.style.margin = "10px";
             attackBtn.style.border = "2px solid black";
             attackBtn.style.borderRadius = "10px";
             attackBtn.style.cursor = "pointer";
             attackBtn.style.fontSize = "1.2rem";
+            attackBtn.style.fontWeight = "bold";
+            attackBtn.style.width = "auto";
             attackBtn.style.backgroundColor = currentCreatureObject.BtnColor;
             attackBtn.style.color = "black";
             //attackBtn.disabled = true ;
@@ -699,9 +710,6 @@ function startGame() {
             attack();
         });
     }
-
-    console.log("Player Attack| ", playerAttack);
-    //End of the Game Function() ...
 
 }
 
