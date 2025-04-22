@@ -43,6 +43,21 @@ function startGame() {
             // checkedSelectedCreature();
             // getSelectedCreature();
             showCreatures(selectedPower);
+            button.style.backgroundColor = colorByPowers[selectedPower];
+            if ( button.style.backgroundColor === colorByPowers[selectedPower]) {
+                button.style.color = "white";
+            }
+            button.style.fontSize = "1.2rem";
+            button.style.fontWeight = "bold";
+            button.style.border = "2px solid black";
+            // Reset the background color of all buttons to their original color
+            // powerButtons.forEach(btn => {
+            //     btn.style.backgroundColor = "";
+            //     btn.style.color = "";
+            //     btn.style.fontSize = "";
+            //     btn.style.fontWeight = "";
+            //     btn.style.border = "";
+            // });
 
         });
     });
