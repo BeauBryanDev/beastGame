@@ -3,7 +3,25 @@ import { creaturesByPower, colorByPowers , BasicCreatures,  IntermediateCreature
 import { AttacksByCreatures  } from "./creaturesAttacks.js";
 // import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
-// Function to start the game
+// Function to start the game...
+
+class Creature {
+
+    constructor(name, type, strength, weaknessLevel, powerId, cid, ranDamage, BtnColor) {
+        this.name = name;
+        this.type = type;
+        this.strength = strength;
+        this.wearknessLevel = weaknessLevel;
+        this.powerId = powerId;
+        this.cid = cid;
+        this.ranDamage = ranDamage;
+        this.BtnColor = BtnColor;
+        this.description = this.description;
+    }
+    getDescription() {
+        return `${this.name} is a ${this.type} type creature with a strength level of ${this.strength} and a weakness level of ${this.wearknessLevel}.`;
+    }
+}
 
 let playerAttack;
 
