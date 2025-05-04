@@ -744,6 +744,8 @@ function startGame() {
 
     restartBtn.addEventListener("click", restartGame );
 
+    //joinGame();
+
     function attack() { 
 
         
@@ -829,6 +831,21 @@ function restartGame() {
     location.reload();
 }
  
+// function joinGame()  {
+
+//     fetch("localhost:3000/joinGame")
+//         .then( function ( response ) {
+//             if ( response.ok ) {
+//                 response.text()
+//                 .then( function ( data ) {
+//                     console.log( data );
+//                     //alert( data );
+//                 }
+//                 );
+//             }
+//             throw new Error("Network response was not ok.");
+//         })
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
         

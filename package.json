@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/BeauBryanDev/beastGame#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }
