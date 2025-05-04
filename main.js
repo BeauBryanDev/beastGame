@@ -23,12 +23,18 @@ class Creature {
     }
 }
 
+const mapSection = document.getElementById("map-section");
+const myMap      =  document.getElementById("map");
+const myCanva          = myMap.getContext("2d");
+
 let playerAttack;
 
 function startGame() {
 
     let BattleGround = document.getElementById("battle-Container");
     BattleGround.style.display = 'none';
+
+    mapSection.style.display = 'none';
 
 
     let selectFire = document.getElementById("fire-btn--select");
@@ -458,6 +464,23 @@ function startGame() {
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected creature: ${computerCreature}`);
         console.log(`Computer selected attack: ${computerAttack}`);
+        mapSection.style.display = 'flex';
+        mapSection.style.flexDirection = 'column';
+        //myMap.style.display = 'block';
+        //myCanva.style.display = 'block';
+        //myCanva.drawImage(imgPlayerCreature, 10, 15, 100, 100);
+        //myCanva.drawImage(imgComputerCreature, 200, 0, 100, 100);
+        let playerImage = new Image();
+        playerImage.src = `./creatures/${thisCreatuere}.svg`;
+        playerImage.onload = function() {
+            myCanva.drawImage(imgPlayerCreature, 10, 15, 60, 70);
+        };
+        let computerImage = new Image();
+        computerImage.src = `./creatures/${computerCreature}.svg`;
+        computerImage.onload = function() {
+            myCanva.drawImage(computerImage, 200, 30, 60, 70);
+        };
+        
 
     }
     

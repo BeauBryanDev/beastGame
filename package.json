@@ -1,0 +1,32 @@
+{
+  "name": "monsterversegame",
+  "version": "1.0.0",
+  "description": "this is a combat game, user choses a creature and web broswer choses another creature, then these two caracters exchanges attacks in battleground.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeauBryanDev/beastGame.git"
+  },
+  "keywords": [
+    "creatures",
+    "nonsters",
+    "attacks",
+    "power",
+    "players",
+    "combat",
+    "fight",
+    "battleground."
+  ],
+  "author": "BeauBryanDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BeauBryanDev/beastGame/issues"
+  },
+  "homepage": "https://github.com/BeauBryanDev/beastGame#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -16,3 +16,54 @@ myTester.html
 
 Capitalize.py
 
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Production build
+build
+dist
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files and directories
+tmp
+temp
+.tmp
+
+# Cache directories
+node_modules/.cache
+.eslintcache
+.stylelintcache
+.webpackcache
+.parcel-cache
+.turbo
+
+# Editor and IDE related
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Others
+package-lock.json # Recommended to commit this
+yarn.lock        # Recommended to commit this
