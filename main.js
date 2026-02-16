@@ -1,23 +1,41 @@
 console.log("Hello World");
-import { creaturesByPower } from "./gameCreatures.mjs";
+import { creaturesByPower, colorByPowers , BasicCreatures,  IntermediateCreatures , AdvanceCreatures , SupremeCreatures } from "./gameCreatures.mjs";
 import { AttacksByCreatures  } from "./creaturesAttacks.js";
 // import { showCurrentAttacks, getDamageByAttack } from "./attacks.js";
 
-// Function to start the game
-// This function will be called when the window is loaded
-// It will contain all the game logic
-// It will be responsible for starting the game
-// It will be responsible for getting the selected creature
-// It will be responsible for getting the computer's selected creature
-// It will be responsible for displaying the selected creatures
-// It will be responsible for displaying the computer's selected creature
-// It will be responsible for displaying the player's selected creature
-// It will be responsible for displaying the computer's selected creature
-// It will be responsible for displaying the selected creatures
+// Function to start the game...
+
+class Creature {
+
+    constructor(name, type, strength, weaknessLevel, powerId, cid, ranDamage, BtnColor) {
+        this.name = name;
+        this.type = type;
+        this.strength = strength;
+        this.wearknessLevel = weaknessLevel;
+        this.powerId = powerId;
+        this.cid = cid;
+        this.ranDamage = ranDamage;
+        this.BtnColor = BtnColor;
+        this.description = this.description;
+    }
+    getDescription() {
+        return `${this.name} is a ${this.type} type creature with a strength level of ${this.strength} and a weakness level of ${this.wearknessLevel}.`;
+    }
+}
+
+const mapSection = document.getElementById("map-section");
+const myMap      =  document.getElementById("map");
+const myCanva          = myMap.getContext("2d");
 
 let playerAttack;
 
 function startGame() {
+
+    let BattleGround = document.getElementById("battle-Container");
+    BattleGround.style.display = 'none';
+
+    mapSection.style.display = 'none';
+
 
     let selectFire = document.getElementById("fire-btn--select");
 
@@ -28,9 +46,6 @@ function startGame() {
 
     let selectWaterBtn = document.getElementById("water-btn--select");
     selectWaterBtn.addEventListener("click", selectWater );
-
-    let BattleGround = document.getElementById("battle-Container");
-    BattleGround.style.display = 'none';
 
     let creatureContainer = document.getElementById("Creature-Container");
 
@@ -52,6 +67,21 @@ function startGame() {
             // checkedSelectedCreature();
             // getSelectedCreature();
             showCreatures(selectedPower);
+            button.style.backgroundColor = colorByPowers[selectedPower];
+            if ( button.style.backgroundColor === colorByPowers[selectedPower]) {
+                button.style.color = "white";
+            }
+            button.style.fontSize = "1.2rem";
+            button.style.fontWeight = "bold";
+            button.style.border = "2px solid black";
+            // Reset the background color of all buttons to their original color
+            // powerButtons.forEach(btn => {
+            //     btn.style.backgroundColor = "";
+            //     btn.style.color = "";
+            //     btn.style.fontSize = "";
+            //     btn.style.fontWeight = "";
+            //     btn.style.border = "";
+            // });
 
         });
     });
@@ -97,7 +127,7 @@ function startGame() {
 
 
     // Ensure creatures are displayed before attempting to get the selected creature
-    showCreatures("Fire"); // Replace "Fire" with the desired default power if needed
+    //showCreatures("Desert"); // Replace "Fire" with the desired default power if needed
     const myCreature = getSelectedCreature();
     console.log(myCreature);
 
@@ -118,38 +148,116 @@ function startGame() {
         creatureContainer.innerHTML = "";
         //create an h2 title that show the Power selected by the User ...
         const h2Power = document.createElement("h2");
-        h2Power.textContent = `Your have Chosen  ${power}, Then these are Creatures of ${power}`;
+        h2Power.textContent = `Your have Chosen  ${power}, Then these are the Monster from ${power}`;
         creatureContainer.appendChild(h2Power);
 
         //create an h2 title inside Creature-Container div
         const h2Title = document.createElement("h2");
         h2Title.textContent = "Choose your Creature";
+        h2Title.style.textAlign = "center";
+        h2Title.style.fontSize = "2rem";
+        h2Title.style.color = "black";
+        h2Title.style.fontWeight = "bold";
+        h2Title.style.fontFamily = "Arial, sans-serif";
+        h2Title.style.margin = "10px";
+        h2Title.style.padding = "10px";
         creatureContainer.appendChild(h2Title);
 
+        const displayMonsters = document.createElement("div");
+        displayMonsters.classList.add("monster-display");
+        displayMonsters.style.display = 'flex';
+        displayMonsters.style.flexDirection = 'row';
+        displayMonsters.style.justifyContent = 'space-evenly';
+        displayMonsters.style.alignItems = 'center';
+        displayMonsters.style.flexWrap = 'wrap';
+        displayMonsters.style.gap = '10px';
+        displayMonsters.style.width = '100%';
+        displayMonsters.style.margin = 'auto';
+        displayMonsters.style.padding = '10px';
+        displayMonsters.style.border = '2px solid black';
+
+        const currentColor =  colorByPowers[power];
+        displayMonsters.style.backgroundColor = currentColor;
+        displayMonsters.style.borderRadius = '10px';
+        displayMonsters.style.padding = '10px';
+        displayMonsters.style.width = '100%';
+        displayMonsters.style.height = 'auto';
+        displayMonsters.style.margin = 'auto';
+        displayMonsters.style.gap = '10px';
+        displayMonsters.style.textAlign = 'center';
+        displayMonsters.style.fontSize = '1.2rem';
+        displayMonsters.style.color = 'black';
+        displayMonsters.style.fontWeight = 'bold';
+        displayMonsters.style.fontFamily = 'Arial, sans-serif';
+        displayMonsters.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        displayMonsters.style.border = '2px solid black';
+        displayMonsters.style.borderRadius = '10px';
 
         creaturesByPower[power].forEach(creature => {
             const creatureDiv = document.createElement("div");
             creatureDiv.classList.add("creature-card");
 
-            const input = document.createElement("input");
-            input.type = "radio";
-            input.name = "creature";
-            input.id = creature;
-
             const label = document.createElement("label");
             label.htmlFor = creature.toLowerCase();
             label.textContent = creature;
+            label.style.fontSize = "1.2rem";
+            label.style.color = "black";
+            label.style.padding = "10px";
+            label.style.border = "2px solid black";
+            label.style.borderRadius = "10px";
+            label.style.cursor = "pointer";
+            label.style.margin = "10px";
+            label.style.width = "auto";
+            label.style.height = "auto";
+            //label.style.height = "20px";
+            label.style.display = "flex";
+            label.style.alignItems = "center";
+            label.style.justifyContent = "center";
+            label.style.fontSize = "1.2rem";
+            label.style.fontWeight = "bold";
+            label.style.textAlign = "center";
+            label.style.backgroundColor = 'black';
+            label.style.color = currentColor;
+            label.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "creature";
+            input.value = creature;
+            input.id = creature.toLowerCase();
+            // input.style.backgroundColor = currentColor.BtnColor;
+            // input.style.color = currentColor.BtnColor;
+            input.style.border = "2px solid black";
+            input.style.width = "50px";
+            input.style.height = "70px";
+            input.style.borderRadius = "10px";
+            input.style.cursor = "pointer";
+            input.style.margin = "10px";
+            input.style.padding = "10px";
+            input.style.fontSize = "1.2rem";
+            input.id = creature;
 
             const img = document.createElement("img");
             img.src = `./creatures/${creature}.svg`;
             img.alt = `${creature} Creature`;
             img.classList.add("creature-image");
 
-            creatureDiv.appendChild(input);
             creatureDiv.appendChild(label);
             creatureDiv.appendChild(img);
+            creatureDiv.appendChild(input);
+            // Add event listener to change the background color of the selected creature card
+            input.addEventListener("change", function () {
+                const allCreatureCards = document.querySelectorAll(".creature-card");
+                allCreatureCards.forEach(card => {
+                    card.style.backgroundColor = ""; // Reset background color for all cards
+                });
+                if (input.checked) {
+                    creatureDiv.style.backgroundColor = "red"; // Highlight the selected card
+                }
+            });
+            displayMonsters.appendChild(creatureDiv);
+            creatureContainer.appendChild(displayMonsters);
 
-            creatureContainer.appendChild(creatureDiv);
 
         });
         //Avoid using innerHTML , It may be a security concern, use the DOM API to create elements and append them to the container
@@ -175,16 +283,79 @@ function startGame() {
         const randomCreature = creatures[randomNumber(0, creatures.length - 1)];
         //const capitalizedComputerCreature = randomCreature.charAt(0).toUpperCase() + randomCreature.slice(1);
         return randomCreature;
+    }
+
+    function computerPlayBasic() {
+
+        let BattleGround = document.getElementById("battle-Container");
+        BattleGround.style.display = 'block';
 
     }
 
+    let playerCreature ;
     // Call computerPlay after the user has selected their creature
     let chooseCreatureBtn = document.getElementById("select-creature--btn");
 
     if (chooseCreatureBtn) {
         chooseCreatureBtn.addEventListener("click", function () {
+            const selectedCreature = document.querySelector("input[name='creature']:checked");
+            if (!selectedCreature) {
+                alert("Please select a creature before proceeding.");
+                return;
+            }
+            // Assign the selected creature to the global variable
+            playerCreature = selectCreature();
+            console.log(`Player selected creature: ${playerCreature}`);
+
+            const playerCreatureObject = AttacksByCreatures[window.selectedPower]?.find(c => c.name === playerCreature);
+            // Add error handling
+            
+            if (!playerCreatureObject) {
+                console.error(`Creature "${playerCreature}" not found in power "${window.selectedPower}".`);
+                alert(`Creature "${playerCreature}" not found for the selected power.`);
+                return;
+            }  
+            else {
+                const categoryID = playerCreatureObject.creatureId;
+                console.log("Player Creature ID: ", categoryID);
+                console.log("Player Creature Object: ", playerCreatureObject);
+                console.log("Player Creature Name: ", playerCreatureObject.name);
+                console.log("Player Creature Type: ", playerCreatureObject.type);
+                console.log("Player Creature Strength: ", playerCreatureObject.strength);
+                console.log("Player Creature Weakness: ", playerCreatureObject.wearknessLevel);
+                console.log("Player Creature Power: ", playerCreatureObject.Power);
+                console.log("Player Creature Power ID: ", playerCreatureObject.powerId);
+                console.log("Player Crature cid : ", playerCreatureObject.cid);
+            }
+
+            const playerCreatureCid = playerCreatureObject.cid;
+
+            // Filter the computer's creatures by cid
+            const computerCreaturesPool = Object.values(AttacksByCreatures).flat() // Flatten the array of arrays
+                .filter(creature => creature.cid === playerCreatureCid);
+
+            if (computerCreaturesPool.length === 0) {
+                console.error(`No computer creatures found with cid "${playerCreatureCid}".`);
+                alert(`No computer creatures available for the selected player creature.`);
+                return;
+            }
+            // Randomly select a computer creature from the filtered pool
+            const computerCreature2 = computerCreaturesPool[Math.floor(Math.random() * computerCreaturesPool.length)];
+
+            // Log the computer's chosen creature
+            console.log("Computer selected creature2:", computerCreature2);
+            console.log("Computer Creature2 Name:", computerCreature2.name);
+            console.log("Computer Creature2 cid:", computerCreature2.cid);
+            console.log("Computer Creature2 Type:", computerCreature2.type);
+            console.log("Computer Creature2 Strength:", computerCreature2.strength);
+            console.log("Computer Creature2 Life Points:", computerCreature2.lifePoints);
+            console.log("Computer Creature2 Attack Points:", computerCreature2.attackPoints);
+            console.log("Computer Creature2 Defense Points:", computerCreature2.defensePoints);
+
+            //Continue with ComputerPlay Logic .
             const computerCreature = computerPlay();
             console.log(`Computer selected creature: ${computerCreature}`);
+
         });
 
     }
@@ -195,7 +366,6 @@ function startGame() {
 
     console.log(`Computer selected creature: ${computerCreature}`); 
 
-    let playerCreature = getSelectedCreature();
     console.log(`Player selected creature: ${playerCreature}`);
 
     let computerCreatureName = document.getElementById("computer-creature--name");
@@ -294,10 +464,26 @@ function startGame() {
         let computerAttack = computerChooseAttack(computerCreature);
         console.log(`Computer selected creature: ${computerCreature}`);
         console.log(`Computer selected attack: ${computerAttack}`);
+        mapSection.style.display = 'flex';
+        mapSection.style.flexDirection = 'column';
+        //myMap.style.display = 'block';
+        //myCanva.style.display = 'block';
+        //myCanva.drawImage(imgPlayerCreature, 10, 15, 100, 100);
+        //myCanva.drawImage(imgComputerCreature, 200, 0, 100, 100);
+        let playerImage = new Image();
+        playerImage.src = `./creatures/${thisCreatuere}.svg`;
+        playerImage.onload = function() {
+            myCanva.drawImage(imgPlayerCreature, 10, 15, 60, 70);
+        };
+        let computerImage = new Image();
+        computerImage.src = `./creatures/${computerCreature}.svg`;
+        computerImage.onload = function() {
+            myCanva.drawImage(computerImage, 200, 30, 60, 70);
+        };
         
 
     }
-
+    
     function showCreaturesInfo(creature) {   
 
         const myAttacks = document.createElement("div");
@@ -307,31 +493,51 @@ function startGame() {
         myAttacks.appendChild(h3Attacks);
         let thisCreatuere = getSelectedCreature();
         let currentPower = getSelectedPower(creature);
-        /* Beau , You have to CHANGE ALL THIS LOGIC SINCE I WILL BE USING THE Main Object attackByCreatures
-        that is in ./creaturesAttack.js file, I will be using the attackByCreatures object to get the attacks of the creatures
-        based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file,
-        I will be using the attackByCreatures object to get the attacks of the creatures based on the selected power by the user, I will be using the attackByCreatures object to get the attacks of the creatures,  that is a better Object Option with more detailed Information about each creatures attacks rather tnat the current attackByPower object that I have created in the ./attacks.js file
-
-        */
+        
        console.log("Creatures  name _line 319 :", creature);
        console.log("Show CurrentPower in Line 319 : ", currentPower);
 
        const currentCreatureObject = AttacksByCreatures[currentPower]?.find(c => c.name === creature);
 
+       // Add error handling
+        if (!currentCreatureObject) {
+            console.error(`Creature "${creature}" not found in power "${currentPower}".`);
+            alert(`Creature "${creature}" not found for the selected power.`);
+            return;
+        }
+
         const attacks = currentCreatureObject.attacks;
-        console.log(attacks);
+        //debug attacks array in console ....
+        console.log("Current Creature Object:", currentCreatureObject);
+        console.log("Attacks Array:", attacks);
+
+        if (!attacks || attacks.length === 0) {
+            console.error(`No attacks found for creature "${creature}".`);
+            alert(`No attacks found for creature "${creature}".`);
+            return;
+        }
+
+        // Ensure battleContainer is defined
+        if (typeof battleContainer === 'undefined') {
+            console.error('battleContainer is not defined.');
+            return;
+        }
+
         battleContainer.appendChild(myAttacks);
-        currentCreatureObject.attacks.forEach(attack => {
+
+        attacks.forEach(attack => {
 
             const attackBtn = document.createElement("button");
             attackBtn.textContent = attack.name;
             //set styles to attackBtns 
-            attackBtn.style.padding = "10px";
+            attackBtn.style.padding = "10px , 10px , 10px , 10px";
             attackBtn.style.margin = "10px";
             attackBtn.style.border = "2px solid black";
             attackBtn.style.borderRadius = "10px";
             attackBtn.style.cursor = "pointer";
             attackBtn.style.fontSize = "1.2rem";
+            attackBtn.style.fontWeight = "bold";
+            attackBtn.style.width = "auto";
             attackBtn.style.backgroundColor = currentCreatureObject.BtnColor;
             attackBtn.style.color = "black";
             //attackBtn.disabled = true ;
@@ -348,8 +554,19 @@ function startGame() {
             attackBtn.addEventListener("click", function() {
                 playerAttack = attackBtn.id;
                 console.log(playerAttack);
-                // const computerAttack = computerChooseAttack( computerCreature );
-                // console.log(`Computer selected attack: ${computerAttack}`);
+                const currentAttack = document.createElement("p");
+                currentAttack.textContent = `You selected attack: ${playerAttack}`;
+                const attackDescription = document.createElement("p");
+                attackDescription.textContent = `Attack Description: ${currentCreatureObject.attacks.find(a => a.name.toLowerCase().split(" ").join("-") === playerAttack).description}`;
+                attackDescription.style.fontSize = "1.2rem";
+                currentAttack.style.fontSize = "1.2rem";
+
+                battleContainer.appendChild(currentAttack);
+                battleContainer.appendChild(attackDescription);
+                //displayAttackDescription(attack);
+
+                 const computerAttack = computerChooseAttack( computerCreature );
+                console.log(`Computer selected attack: ${computerAttack}`);
                 // battle(playerAttack, computerAttack);
                 
             });
@@ -357,6 +574,8 @@ function startGame() {
         });
 
         return playerAttack;
+
+
 
     }
 
@@ -461,6 +680,10 @@ function startGame() {
 
         }
 
+        //let categoryId = foundCreature.cid ;
+
+        //return categoryId;
+
     }
     console.log("/*****************\n");
 
@@ -473,7 +696,7 @@ function startGame() {
         return randomAttack.name.toLowerCase().split(" ").join("-");
 
     }
-
+    
     function displayAttackDescription(attack) { 
 
         const attackName = document.createElement("h4");
@@ -521,6 +744,8 @@ function startGame() {
 
     restartBtn.addEventListener("click", restartGame );
 
+    //joinGame();
+
     function attack() { 
 
         
@@ -543,9 +768,6 @@ function startGame() {
             attack();
         });
     }
-
-    console.log("Player Attack| ", playerAttack);
-    //End of the Game Function() ...
 
 }
 
@@ -609,6 +831,21 @@ function restartGame() {
     location.reload();
 }
  
+// function joinGame()  {
+
+//     fetch("localhost:3000/joinGame")
+//         .then( function ( response ) {
+//             if ( response.ok ) {
+//                 response.text()
+//                 .then( function ( data ) {
+//                     console.log( data );
+//                     //alert( data );
+//                 }
+//                 );
+//             }
+//             throw new Error("Network response was not ok.");
+//         })
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
         
